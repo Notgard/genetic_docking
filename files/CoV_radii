@@ -1,0 +1,46 @@
+# Taken from https://fr.wikipedia.org/wiki/Rayon_de_covalence
+# date : 2023 12 20
+# content : line 1 to 4 of the table
+# the data are in picometers ( 1 pm <=> 0.01 angrstroms)
+# format:
+#  columns 1  to  3: atomic number
+#  columns 4  to  5: element name
+#  columns 6  to  8: radius for simple bond
+#  columns 9  to 11: radius for double bond (if it exists in real life)
+#  columns 12 to 14: radius for triple bond (if it exists in real life)
+  1H 32
+  2He46
+  3Li133124
+  4Be102 90 85
+  5B  85 78 73
+  6C  75 67 60
+  7N  71 60 54
+  8O  63 57 53
+  9F  64 59 53
+ 10Ne 67 96
+ 11Na155160
+ 12Mg139132127
+ 13Al126113111
+ 14Si116107102
+ 15P 111102 94
+ 16S 103 94 95
+ 17Cl 99 95 93
+ 18Ar 9610796
+ 19K 196193
+ 20Ca171147133
+ 21Sc148116114
+ 22Ti136117108
+ 23V 134112106
+ 24Cr122111103
+ 25Mn119105103
+ 26Fe116109102
+ 27Co11110396
+ 28Ni110101101
+ 29Cu112115120
+ 30Zn118120
+ 31Ga124117121
+ 32Ge124117121
+ 33As121114106
+ 34Se116107107
+ 35Br114109110
+ 36Kr117121108
