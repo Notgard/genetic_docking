@@ -347,8 +347,8 @@ contains
 
       ! Main loop: ligand H to site EN, and site H to ligand EN
       !$omp parallel default(shared) private(i,j,k,distance,x1,y1,z1,x2,y2,z2,x3,y3,z3), &
-      !$omp private(vec1,vec2,vec_len1,vec_len2,dot_product,angle_deg) reduction(+:hbond_count)
-      ! Case 1: H from ligand, EN from site
+      !$omp private(vec1,vec2,vec_len1,vec_len2,dot_product,angle_deg)
+      !$omp do schedule(dynamic) reduction(+:hbond_count)
       do i = 1, n_lig
          if (hydrogens_lig(i)) then
             x1 = ligand%atoms(i)%coordinates(1)
@@ -385,10 +385,6 @@ contains
                                  dot_product = dot_product3(vec1, vec2)
                                  angle_deg = acos(dot_product / (vec_len1*vec_len2)) * 180.0 / 3.14159265
                                  if (angle_deg >= 90.0 .and. angle_deg <= 150.0) then
-                                    !$omp critical
-                                       !print *, "H-bond found: ", ligand%atoms(i)%number, site%atoms(j)%number, &
-                                       !site%atoms(k)%number, distance, angle_deg
-                                    !$omp end critical
                                     hbond_count = hbond_count + 1
                                     exit
                                  end if
@@ -452,7 +448,7 @@ contains
       write(unit, '(A)') "@<TRIPOS>ATOM"
 
       do i = 1, mol%nb_atoms
-         write(unit, '(I5,A4,F8.4,F8.4,F8.4,A6,I5,A6,F8.4)') &
+         write(unit, '(I5,A4,6X,F8.4,2X,F8.4,2X,F8.4,2X,A6,I5,A6,F8.4)') &
             mol%atoms(i)%number, trim(mol%atoms(i)%element), &
             mol%atoms(i)%coordinates(1), mol%atoms(i)%coordinates(2), &
             mol%atoms(i)%coordinates(3), trim(mol%atoms(i)%type), &

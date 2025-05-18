@@ -4,9 +4,9 @@ FC = gfortran
 #FC = flang
 
 # Compilation flags
-FCFLAGS_DEBUG = -c -g -fbacktrace -fbounds-check -fcheck=all -Wall -O0 -Jmod -Imod -fopenmp
+FCFLAGS_DEBUG = -c -pg -g -fbacktrace -fbounds-check -fcheck=all -Wall -O0 -Jmod -Imod -fopenmp
 FCFLAGS = -O3 -c -Jmod -Imod -fopenmp
-LDFLAGS = -fopenmp
+LDFLAGS = -fopenmp -pg -g
 
 FCFLAGS = $(FCFLAGS_DEBUG)
 

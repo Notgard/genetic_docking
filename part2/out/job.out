@@ -9,205 +9,205 @@ File to read = ../files/site.mol2
 Reading bonds from file: ../files/site.mol2
  Read        1610 bonds from file
  Atoms are bonded
- Best fitness:    64.0000000    
- Best index:            1
+ Best fitness:    6.00000000    
+ Best index:           14
  Molecule saved to file: results/best_ligand_10.mol2
  Writing to file: results/best_ligand_10_WITH_BONDS.mol2
- Best fitness:    64.0000000    
- Best index:            1
+ Best fitness:    896.000000    
+ Best index:           82
  Molecule saved to file: results/best_ligand_20.mol2
  Writing to file: results/best_ligand_20_WITH_BONDS.mol2
- Best fitness:    64.0000000    
- Best index:            1
+ Best fitness:    832.000000    
+ Best index:           91
  Molecule saved to file: results/best_ligand_30.mol2
  Writing to file: results/best_ligand_30_WITH_BONDS.mol2
- Best fitness:    448.000000    
- Best index:           48
+ Best fitness:    705.000000    
+ Best index:           19
  Molecule saved to file: results/best_ligand_40.mol2
  Writing to file: results/best_ligand_40_WITH_BONDS.mol2
- Best fitness:    1017.00000    
- Best index:           19
+ Best fitness:    704.000000    
+ Best index:           77
  Molecule saved to file: results/best_ligand_50.mol2
  Writing to file: results/best_ligand_50_WITH_BONDS.mol2
- Best fitness:    1088.00000    
- Best index:            5
+ Best fitness:    452.000000    
+ Best index:           50
  Molecule saved to file: results/best_ligand_60.mol2
  Writing to file: results/best_ligand_60_WITH_BONDS.mol2
- Best fitness:    1088.00000    
- Best index:           11
+ Best fitness:    453.000000    
+ Best index:           16
  Molecule saved to file: results/best_ligand_70.mol2
  Writing to file: results/best_ligand_70_WITH_BONDS.mol2
- Best fitness:    1787.00000    
- Best index:           82
+ Best fitness:    705.000000    
+ Best index:           64
  Molecule saved to file: results/best_ligand_80.mol2
  Writing to file: results/best_ligand_80_WITH_BONDS.mol2
- Best fitness:    1344.00000    
- Best index:            4
+ Best fitness:    453.000000    
+ Best index:           38
  Molecule saved to file: results/best_ligand_90.mol2
  Writing to file: results/best_ligand_90_WITH_BONDS.mol2
- Best fitness:    1344.00000    
- Best index:            9
+ Best fitness:    704.000000    
+ Best index:           45
  Molecule saved to file: results/best_ligand_100.mol2
  Writing to file: results/best_ligand_100_WITH_BONDS.mol2
- Best fitness:    1660.00000    
- Best index:           84
+ Best fitness:    834.000000    
+ Best index:           20
  Molecule saved to file: results/best_ligand_110.mol2
  Writing to file: results/best_ligand_110_WITH_BONDS.mol2
- Best fitness:    1784.00000    
- Best index:           35
+ Best fitness:    708.000000    
+ Best index:           52
  Molecule saved to file: results/best_ligand_120.mol2
  Writing to file: results/best_ligand_120_WITH_BONDS.mol2
- Best fitness:    1722.00000    
- Best index:           28
+ Best fitness:    707.000000    
+ Best index:           12
  Molecule saved to file: results/best_ligand_130.mol2
  Writing to file: results/best_ligand_130_WITH_BONDS.mol2
- Best fitness:    1723.00000    
- Best index:           97
+ Best fitness:    707.000000    
+ Best index:           83
  Molecule saved to file: results/best_ligand_140.mol2
  Writing to file: results/best_ligand_140_WITH_BONDS.mol2
- Best fitness:    1792.00000    
- Best index:           72
+ Best fitness:    1024.00000    
+ Best index:           98
  Molecule saved to file: results/best_ligand_150.mol2
  Writing to file: results/best_ligand_150_WITH_BONDS.mol2
- Best fitness:    1661.00000    
- Best index:            3
+ Best fitness:    1468.00000    
+ Best index:           71
  Molecule saved to file: results/best_ligand_160.mol2
  Writing to file: results/best_ligand_160_WITH_BONDS.mol2
- Best fitness:    1344.00000    
- Best index:           73
+ Best fitness:    1472.00000    
+ Best index:           99
  Molecule saved to file: results/best_ligand_170.mol2
  Writing to file: results/best_ligand_170_WITH_BONDS.mol2
- Best fitness:    1786.00000    
- Best index:           76
+ Best fitness:    1533.00000    
+ Best index:           70
  Molecule saved to file: results/best_ligand_180.mol2
  Writing to file: results/best_ligand_180_WITH_BONDS.mol2
- Best fitness:    1722.00000    
- Best index:           54
+ Best fitness:    1341.00000    
+ Best index:           80
  Molecule saved to file: results/best_ligand_190.mol2
  Writing to file: results/best_ligand_190_WITH_BONDS.mol2
- Best fitness:    1720.00000    
- Best index:           50
+ Best fitness:    1092.00000    
+ Best index:           47
  Molecule saved to file: results/best_ligand_200.mol2
  Writing to file: results/best_ligand_200_WITH_BONDS.mol2
- Best fitness:    1785.00000    
- Best index:           35
+ Best fitness:    1410.00000    
+ Best index:           59
  Molecule saved to file: results/best_ligand_210.mol2
  Writing to file: results/best_ligand_210_WITH_BONDS.mol2
- Best fitness:    1725.00000    
- Best index:            2
+ Best fitness:    1784.00000    
+ Best index:           52
  Molecule saved to file: results/best_ligand_220.mol2
  Writing to file: results/best_ligand_220_WITH_BONDS.mol2
- Best fitness:    1344.00000    
- Best index:           24
+ Best fitness:    1725.00000    
+ Best index:           50
  Molecule saved to file: results/best_ligand_230.mol2
  Writing to file: results/best_ligand_230_WITH_BONDS.mol2
- Best fitness:    1728.00000    
- Best index:            6
+ Best fitness:    1849.00000    
+ Best index:           44
  Molecule saved to file: results/best_ligand_240.mol2
  Writing to file: results/best_ligand_240_WITH_BONDS.mol2
- Best fitness:    2173.00000    
- Best index:           14
+ Best fitness:    1411.00000    
+ Best index:           18
  Molecule saved to file: results/best_ligand_250.mol2
  Writing to file: results/best_ligand_250_WITH_BONDS.mol2
- Best fitness:    1729.00000    
- Best index:            3
+ Best fitness:    1790.00000    
+ Best index:           97
  Molecule saved to file: results/best_ligand_260.mol2
  Writing to file: results/best_ligand_260_WITH_BONDS.mol2
- Best fitness:    1729.00000    
- Best index:           45
+ Best fitness:    1663.00000    
+ Best index:           77
  Molecule saved to file: results/best_ligand_270.mol2
  Writing to file: results/best_ligand_270_WITH_BONDS.mol2
- Best fitness:    2048.00000    
- Best index:           74
+ Best fitness:    1789.00000    
+ Best index:           90
  Molecule saved to file: results/best_ligand_280.mol2
  Writing to file: results/best_ligand_280_WITH_BONDS.mol2
- Best fitness:    2109.00000    
- Best index:           44
+ Best fitness:    1662.00000    
+ Best index:           61
  Molecule saved to file: results/best_ligand_290.mol2
  Writing to file: results/best_ligand_290_WITH_BONDS.mol2
- Best fitness:    1978.00000    
- Best index:           14
+ Best fitness:    1663.00000    
+ Best index:           13
  Molecule saved to file: results/best_ligand_300.mol2
  Writing to file: results/best_ligand_300_WITH_BONDS.mol2
- Best fitness:    2043.00000    
- Best index:           52
+ Best fitness:    1723.00000    
+ Best index:            9
  Molecule saved to file: results/best_ligand_310.mol2
  Writing to file: results/best_ligand_310_WITH_BONDS.mol2
- Best fitness:    1729.00000    
- Best index:           76
+ Best fitness:    1791.00000    
+ Best index:           22
  Molecule saved to file: results/best_ligand_320.mol2
  Writing to file: results/best_ligand_320_WITH_BONDS.mol2
- Best fitness:    1980.00000    
- Best index:           76
+ Best fitness:    1854.00000    
+ Best index:           24
  Molecule saved to file: results/best_ligand_330.mol2
  Writing to file: results/best_ligand_330_WITH_BONDS.mol2
- Best fitness:    1729.00000    
- Best index:           95
+ Best fitness:    2105.00000    
+ Best index:           77
  Molecule saved to file: results/best_ligand_340.mol2
  Writing to file: results/best_ligand_340_WITH_BONDS.mol2
- Best fitness:    2102.00000    
- Best index:           94
+ Best fitness:    2171.00000    
+ Best index:           73
  Molecule saved to file: results/best_ligand_350.mol2
  Writing to file: results/best_ligand_350_WITH_BONDS.mol2
- Best fitness:    2105.00000    
- Best index:            4
+ Best fitness:    1792.00000    
+ Best index:           52
  Molecule saved to file: results/best_ligand_360.mol2
  Writing to file: results/best_ligand_360_WITH_BONDS.mol2
- Best fitness:    1728.00000    
- Best index:           81
+ Best fitness:    1792.00000    
+ Best index:           43
  Molecule saved to file: results/best_ligand_370.mol2
  Writing to file: results/best_ligand_370_WITH_BONDS.mol2
- Best fitness:    1789.00000    
- Best index:           87
+ Best fitness:    2043.00000    
+ Best index:           28
  Molecule saved to file: results/best_ligand_380.mol2
  Writing to file: results/best_ligand_380_WITH_BONDS.mol2
- Best fitness:    2491.00000    
- Best index:           86
+ Best fitness:    2177.00000    
+ Best index:          100
  Molecule saved to file: results/best_ligand_390.mol2
  Writing to file: results/best_ligand_390_WITH_BONDS.mol2
- Best fitness:    2489.00000    
- Best index:           68
+ Best fitness:    1857.00000    
+ Best index:           16
  Molecule saved to file: results/best_ligand_400.mol2
  Writing to file: results/best_ligand_400_WITH_BONDS.mol2
- Best fitness:    2169.00000    
- Best index:           73
+ Best fitness:    2233.00000    
+ Best index:           40
  Molecule saved to file: results/best_ligand_410.mol2
  Writing to file: results/best_ligand_410_WITH_BONDS.mol2
- Best fitness:    2111.00000    
- Best index:           12
+ Best fitness:    2174.00000    
+ Best index:            7
  Molecule saved to file: results/best_ligand_420.mol2
  Writing to file: results/best_ligand_420_WITH_BONDS.mol2
- Best fitness:    2485.00000    
- Best index:           29
+ Best fitness:    1858.00000    
+ Best index:            3
  Molecule saved to file: results/best_ligand_430.mol2
  Writing to file: results/best_ligand_430_WITH_BONDS.mol2
- Best fitness:    2434.00000    
- Best index:           87
+ Best fitness:    1858.00000    
+ Best index:           10
  Molecule saved to file: results/best_ligand_440.mol2
  Writing to file: results/best_ligand_440_WITH_BONDS.mol2
- Best fitness:    2556.00000    
- Best index:           43
+ Best fitness:    1858.00000    
+ Best index:            3
  Molecule saved to file: results/best_ligand_450.mol2
  Writing to file: results/best_ligand_450_WITH_BONDS.mol2
- Best fitness:    2496.00000    
- Best index:           58
+ Best fitness:    1859.00000    
+ Best index:           43
  Molecule saved to file: results/best_ligand_460.mol2
  Writing to file: results/best_ligand_460_WITH_BONDS.mol2
- Best fitness:    2370.00000    
- Best index:           76
+ Best fitness:    2626.00000    
+ Best index:           22
  Molecule saved to file: results/best_ligand_470.mol2
  Writing to file: results/best_ligand_470_WITH_BONDS.mol2
- Best fitness:    2370.00000    
- Best index:           58
+ Best fitness:    3070.00000    
+ Best index:           20
  Molecule saved to file: results/best_ligand_480.mol2
  Writing to file: results/best_ligand_480_WITH_BONDS.mol2
- Best fitness:    2749.00000    
- Best index:           32
+ Best fitness:    2883.00000    
+ Best index:           16
  Molecule saved to file: results/best_ligand_490.mol2
  Writing to file: results/best_ligand_490_WITH_BONDS.mol2
- Best fitness:    2815.00000    
- Best index:           18
+ Best fitness:    2882.00000    
+ Best index:           73
  Molecule saved to file: results/best_ligand_500.mol2
  Writing to file: results/best_ligand_500_WITH_BONDS.mol2
- Fortran CPU time elapsed   62504.320649000001     
- OpenMP Walltime elapsed   985.07286543492228     
+ Fortran CPU time elapsed   37836.599347999996     
+ OpenMP Walltime elapsed   593.27846210310236     

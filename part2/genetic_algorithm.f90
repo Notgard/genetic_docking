@@ -16,6 +16,7 @@ contains
       real :: score
 
       score = detect_hydrogen_bonds_between(ligand, ligand%nb_atoms, site, site%nb_atoms)
+      !score = 1.0
    end function evaluate_fitness
 
 end module simulation_utils

@@ -1,0 +1,161 @@
+ Number of threads =           32
+File to read = ../files/ligand_NO_BOND.mol2
+File to read = ../files/site.mol2
+ Writing to file: ../files/ligand_NO_BOND_WITH_BONDS.mol2
+ Ligand size:           31
+ Site size:         1621
+Reading bonds from file: ../files/site.mol2
+ Read        1610 bonds from file
+ Atoms are bonded
+ Best fitness:    1.00000000    
+ Best index:            1
+ Error opening file: results/best_ligand_10.mol2
+ Best fitness:    7.00000000    
+ Best index:           17
+ Error opening file: results/best_ligand_20.mol2
+ Best fitness:    6.00000000    
+ Best index:           18
+ Error opening file: results/best_ligand_30.mol2
+ Best fitness:    10.0000000    
+ Best index:           87
+ Error opening file: results/best_ligand_40.mol2
+ Best fitness:    11.0000000    
+ Best index:           19
+ Error opening file: results/best_ligand_50.mol2
+ Best fitness:    10.0000000    
+ Best index:           43
+ Error opening file: results/best_ligand_60.mol2
+ Best fitness:    5.00000000    
+ Best index:            1
+ Error opening file: results/best_ligand_70.mol2
+ Best fitness:    11.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_80.mol2
+ Best fitness:    16.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_90.mol2
+ Best fitness:    26.0000000    
+ Best index:           72
+ Error opening file: results/best_ligand_100.mol2
+ Best fitness:    21.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_110.mol2
+ Best fitness:    21.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_120.mol2
+ Best fitness:    28.0000000    
+ Best index:           28
+ Error opening file: results/best_ligand_130.mol2
+ Best fitness:    27.0000000    
+ Best index:           72
+ Error opening file: results/best_ligand_140.mol2
+ Best fitness:    26.0000000    
+ Best index:           86
+ Error opening file: results/best_ligand_150.mol2
+ Best fitness:    27.0000000    
+ Best index:           50
+ Error opening file: results/best_ligand_160.mol2
+ Best fitness:    22.0000000    
+ Best index:           66
+ Error opening file: results/best_ligand_170.mol2
+ Best fitness:    21.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_180.mol2
+ Best fitness:    21.0000000    
+ Best index:           68
+ Error opening file: results/best_ligand_190.mol2
+ Best fitness:    26.0000000    
+ Best index:           32
+ Error opening file: results/best_ligand_200.mol2
+ Best fitness:    26.0000000    
+ Best index:           58
+ Error opening file: results/best_ligand_210.mol2
+ Best fitness:    26.0000000    
+ Best index:           76
+ Error opening file: results/best_ligand_220.mol2
+ Best fitness:    21.0000000    
+ Best index:           21
+ Error opening file: results/best_ligand_230.mol2
+ Best fitness:    26.0000000    
+ Best index:           35
+ Error opening file: results/best_ligand_240.mol2
+ Best fitness:    25.0000000    
+ Best index:            9
+ Error opening file: results/best_ligand_250.mol2
+ Best fitness:    30.0000000    
+ Best index:           24
+ Error opening file: results/best_ligand_260.mol2
+ Best fitness:    25.0000000    
+ Best index:           10
+ Error opening file: results/best_ligand_270.mol2
+ Best fitness:    30.0000000    
+ Best index:           20
+ Error opening file: results/best_ligand_280.mol2
+ Best fitness:    25.0000000    
+ Best index:           53
+ Error opening file: results/best_ligand_290.mol2
+ Best fitness:    25.0000000    
+ Best index:           26
+ Error opening file: results/best_ligand_300.mol2
+ Best fitness:    30.0000000    
+ Best index:           28
+ Error opening file: results/best_ligand_310.mol2
+ Best fitness:    31.0000000    
+ Best index:           66
+ Error opening file: results/best_ligand_320.mol2
+ Best fitness:    31.0000000    
+ Best index:           75
+ Error opening file: results/best_ligand_330.mol2
+ Best fitness:    32.0000000    
+ Best index:           11
+ Error opening file: results/best_ligand_340.mol2
+ Best fitness:    31.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_350.mol2
+ Best fitness:    31.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_360.mol2
+ Best fitness:    31.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_370.mol2
+ Best fitness:    31.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_380.mol2
+ Best fitness:    33.0000000    
+ Best index:           13
+ Error opening file: results/best_ligand_390.mol2
+ Best fitness:    35.0000000    
+ Best index:           48
+ Error opening file: results/best_ligand_400.mol2
+ Best fitness:    31.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_410.mol2
+ Best fitness:    38.0000000    
+ Best index:           29
+ Error opening file: results/best_ligand_420.mol2
+ Best fitness:    35.0000000    
+ Best index:           31
+ Error opening file: results/best_ligand_430.mol2
+ Best fitness:    35.0000000    
+ Best index:           95
+ Error opening file: results/best_ligand_440.mol2
+ Best fitness:    32.0000000    
+ Best index:           51
+ Error opening file: results/best_ligand_450.mol2
+ Best fitness:    31.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_460.mol2
+ Best fitness:    32.0000000    
+ Best index:           40
+ Error opening file: results/best_ligand_470.mol2
+ Best fitness:    38.0000000    
+ Best index:           74
+ Error opening file: results/best_ligand_480.mol2
+ Best fitness:    38.0000000    
+ Best index:           98
+ Error opening file: results/best_ligand_490.mol2
+ Best fitness:    31.0000000    
+ Best index:            1
+ Error opening file: results/best_ligand_500.mol2
+ Fortran CPU time elapsed   833.12739799999997     
+ OpenMP Walltime elapsed   30.248043123167008     
