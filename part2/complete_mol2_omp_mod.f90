@@ -70,6 +70,9 @@ contains
 
          coordinates = (/x, y, z/)
          call a%init_atom(atomNumber, atomName, coordinates, atomType)
+         a%subst_id = subStructureId
+         a%subst_name = subStructureName
+         a%charge = charge
          call rayon_covalence(a)
          call mol%add_atom(a)
          !atoms = [atoms, a]
@@ -160,7 +163,7 @@ contains
       character(len=256) :: newFileName, line
       integer :: ssize
 
-103   format(1x, i5, 1x, i5, 1x, i5, 1x, i1)
+      103   format(1x, i5, 1x, i5, 1x, i5, 1x, i1)
 
       ssize = len_trim(fileName)
       newFileName = trim(fileName(1:ssize-5)) // "_WITH_BONDS.mol2"
@@ -399,8 +402,6 @@ contains
          end if
       end do
 
-      ! (Optional) Case 2: H from site, EN from ligand (mirror the loop above)
-
       !$omp end parallel
 
       !print *, "Total hydrogen bonds found: ", hbond_count
@@ -419,4 +420,51 @@ contains
       dot = sum(v1 * v2)
    end function dot_product3
 
+   subroutine save_ligand_molecule(mol, generation, filename, dir)
+      use molecule_type
+      implicit none
+
+      type(molecule), intent(in) :: mol
+      integer, intent(in) :: generation
+      character(len=256), intent(in) :: filename
+      character(len=256), intent(in) :: dir 
+
+      integer :: unit, ios
+      integer :: i
+      character(len=256) :: line
+      character(len=256) :: file_path
+
+      file_path = trim(dir) // trim(filename)
+
+      unit = 20
+      open(unit=unit, file=file_path, status='new', action='write', iostat=ios)
+      if (ios /= 0) then
+         print *, "Error opening file: ", trim(file_path)
+         return
+      end if
+
+      write(unit, '(A)') "@<TRIPOS>MOLECULE"
+      write(unit, '(A)') "ligand.mol2"
+      write(unit, '(I5, I5, I5, I5, I5)') mol%nb_atoms, 0, 1, 0, 0
+      write(unit, '(A)') "SMALL"
+      write(unit, '(A)') "NO_CHARGES"
+      write(unit, '(/, /)')
+      write(unit, '(A)') "@<TRIPOS>ATOM"
+
+      do i = 1, mol%nb_atoms
+         write(unit, '(I5,A4,F8.4,F8.4,F8.4,A6,I5,A6,F8.4)') &
+            mol%atoms(i)%number, trim(mol%atoms(i)%element), &
+            mol%atoms(i)%coordinates(1), mol%atoms(i)%coordinates(2), &
+            mol%atoms(i)%coordinates(3), trim(mol%atoms(i)%type), &
+            mol%atoms(i)%subst_id, trim(mol%atoms(i)%subst_name), &
+            mol%atoms(i)%charge
+      end do
+
+      close(unit)
+      
+      print *, "Molecule saved to file: ", trim(file_path)
+      
+      call write_bounds_to_file(mol%atoms, mol%nb_atoms, file_path)
+
+   end subroutine save_ligand_molecule
 end module read_mol2

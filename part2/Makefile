@@ -29,13 +29,19 @@ molecule: molecule_type.o atom_type.o
 	@echo ""
 	$(FC) $(LDFLAGS) -o $@ $^
 
+io_utils: io_utils.o
+	@echo ""
+	@echo "Linking    $(@)"
+	@echo ""
+	$(FC) $(LDFLAGS) -o $@ $^
+
 atom: atom_type.o
 	@echo ""
 	@echo "Linking    $(@)"
 	@echo ""
 	$(FC) $(LDFLAGS) -o $@ $^
 
-genetic_algorithm: genetic_algorithm.o complete_mol2_omp_mod.o molecule_type.o atom_type.o
+genetic_algorithm: genetic_algorithm.o complete_mol2_omp_mod.o io_utils.o molecule_type.o atom_type.o
 	@echo ""
 	@echo "Linking    $(@)"
 	@echo ""
@@ -48,6 +54,11 @@ molecule_type.o: molecule_type.f90 atom_type.o
 	$(FC) $(FCFLAGS) $< -o $@
 
 atom_type.o: atom_type.f90
+	@echo ""
+	@echo "Generating $@"
+	$(FC) $(FCFLAGS) $< -o $@
+
+io_utils.o: io_utils.f90
 	@echo ""
 	@echo "Generating $@"
 	$(FC) $(FCFLAGS) $< -o $@

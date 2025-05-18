@@ -11,4 +11,7 @@
 
 romeo_load_x64cpu_env
 
+rm -f results/*
+rm -f fitness_log.csv
+
 ./genetic_algorithm ../files/ligand_NO_BOND.mol2 ../files/site.mol2

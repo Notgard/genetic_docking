@@ -22,13 +22,14 @@ end module simulation_utils
 
 program genetic_docking
    use simulation_utils
+   use io_utils
    implicit none
 
    integer, parameter :: population_size = 100
    integer, parameter :: max_generations = 500
    real, parameter :: crossover_rate = 0.95
    real, parameter :: mutation_rate = 0.05
-   integer, parameter :: log_interval = 100
+   integer, parameter :: log_interval = 10
 
    integer :: ok
 
@@ -38,13 +39,17 @@ program genetic_docking
    type(molecule), allocatable :: population(:)
    real, allocatable :: fitness(:)
    character(len=128) :: ligand_file, site_file
-   integer :: i, gen, best_idx, site_size, ligand_size
+   integer :: i, gen, site_size, ligand_size
+   INTEGER :: maxl(1)
    real :: best_fitness
-   integer :: string_size
-   character(len=256) :: bounds_file
+   !integer :: string_size
+   !character(len=256) :: bounds_file
    logical :: with_bond
    real :: hbond_count
    real :: score
+   character(len=256), parameter :: output_directory = "results/"
+   double precision :: start_time, end_time
+   double precision :: ostart,oend
 
    !legacy argc instrinsic
    integer :: n_args
@@ -72,6 +77,12 @@ program genetic_docking
    call getarg(1, ligand_file)
    call getarg(2, site_file)
 
+   !$OMP PARALLEL
+   if(omp_get_thread_num() == 0) then
+      print *, "Number of threads = ", omp_get_num_threads()
+   end if
+   !$OMP END PARALLEL
+
    call read_molecule_file(ligand_file, ligand, ligand_size)
    call read_molecule_file(site_file, site, site_size)
 
@@ -94,7 +105,12 @@ program genetic_docking
 
    hbond_count = detect_hydrogen_bonds_between(ligand, ligand_size, site, site_size)
 
-   !call evolve_population(population, population_size, fitness, crossover_rate, mutation_rate, site_size)
+   !create data log file
+   call create_csv("fitness_log.csv")
+
+   !start the genetic algorithm
+   call CPU_TIME(start_time) ! Start timing
+   ostart = omp_get_wtime()
 
    do gen = 1, max_generations
       do i = 1, population_size
@@ -104,41 +120,54 @@ program genetic_docking
 !
       if (mod(gen, log_interval) == 0) then
          call log_fitness(gen, fitness, population_size)
+         !save the best fitness molecule each log_interval generation
+         best_fitness = maxval(fitness)
+         maxl = maxloc(fitness)
+         print *, "Best fitness: ", best_fitness
+         print *, "Best index: ", maxl(1)
+         call save_best_population(population(maxl(1)), gen, output_directory)
       end if
 !
-      call evolve_population(population, population_size, fitness, crossover_rate, mutation_rate, site_size)
+      call evolve_population(population, population_size, fitness, crossover_rate, mutation_rate)
    end do
-   !
-   !call save_population(population, population_size)
+
+   call CPU_TIME(end_time) ! End timing
+   oend = omp_get_wtime()
+
+   write(*,*) 'Fortran CPU time elapsed', end_time-start_time
+   write(*,*) 'OpenMP Walltime elapsed', oend-ostart
 end program genetic_docking
 
 subroutine log_fitness(gen, fitness, pop_size)
+   use io_utils
    implicit none
    integer, intent(in) :: pop_size
    integer, intent(in) :: gen
    real, intent(in) :: fitness(pop_size)
    integer :: i
 
-   print *, "Generation: ", gen
-   print *, "Fitness: "
-   do i = 1, size(fitness)
-      print *, fitness(i)
-   end do
+   !print *, "Generation: ", gen
+   !print *, "Fitness: "
+   !do i = 1, size(fitness)
+   !   print *, fitness(i)
+   !end do
+   call add_csv_entry("fitness_log.csv", gen, minval(fitness), maxval(fitness), sum(fitness) / pop_size)
 end subroutine log_fitness
 
-subroutine save_population(population, pop_size)
+subroutine save_best_population(mol, generation, directory)
    use atom_type
    use molecule_type
+   use read_mol2
    implicit none
-   type(molecule), intent(in) :: population(pop_size)
-   integer, intent(in) :: pop_size
-   integer :: i
 
-   ! Save the population to a file or perform any other necessary operations
-   do i = 1, pop_size
-      !write(*,*) population(:,i)
-   end do
-end subroutine save_population
+   type(molecule), intent(in) :: mol
+   integer, intent(in) :: generation
+   character(len=256), intent(in) :: directory
+   character(len=256) :: filename
+
+   write(filename, "(A,I0,A)") "best_ligand_", generation, ".mol2"
+   call save_ligand_molecule(mol, generation, filename, directory)
+end subroutine save_best_population
 
 subroutine initialize_population(base_ligand, pop_size, population)
    use atom_type
@@ -189,12 +218,12 @@ subroutine randomize_conformation(base, base_size, individual)
    end do
 end subroutine randomize_conformation
 
-subroutine evolve_population(pop, pop_size, fitness, crossover_rate, mutation_rate, site_size)
+subroutine evolve_population(pop, pop_size, fitness, crossover_rate, mutation_rate)
    use atom_type
    use molecule_type
    use omp_lib
    implicit none
-   integer, intent(in) :: site_size
+   !integer, intent(in) :: site_size
    integer, intent(in) :: pop_size
    type(molecule), intent(inout) :: pop(pop_size)
    real, intent(in) :: fitness(pop_size), crossover_rate, mutation_rate
@@ -213,7 +242,7 @@ subroutine evolve_population(pop, pop_size, fitness, crossover_rate, mutation_ra
       !print *, "Number of atoms: ", pop(p1)%nb_atoms
       !print *, "Number of atoms: ", pop(p2)%nb_atoms
       if (r < crossover_rate) then
-         call crossover(pop(p1), pop(p2), new_pop(i), new_pop(i+1), site_size)
+         call crossover(pop(p1), pop(p2), new_pop(i), new_pop(i+1))
       else
          new_pop(i) = pop(p1)
          new_pop(i)%nb_atoms = pop(p1)%nb_atoms
@@ -225,7 +254,7 @@ subroutine evolve_population(pop, pop_size, fitness, crossover_rate, mutation_ra
    do i = 1, n
       call random_number(r)
       if (r < mutation_rate) then
-         call mutate(new_pop(i), site_size)
+         call mutate(new_pop(i))
       end if
    end do
 
@@ -266,11 +295,11 @@ subroutine select_parents(fitness, pop_size, p1, p2)
    end do
 end subroutine select_parents
  
-subroutine crossover(parent1, parent2, child1, child2, site_size)
+subroutine crossover(parent1, parent2, child1, child2)
    use atom_type
    use molecule_type
    implicit none
-   integer, intent(in) :: site_size
+   !integer, intent(in) :: site_size
    type(molecule), intent(in) :: parent1, parent2
    type(molecule), intent(out) :: child1, child2
    integer :: i, crossover_point
@@ -280,22 +309,24 @@ subroutine crossover(parent1, parent2, child1, child2, site_size)
 
    crossover_point = int(r * parent1%nb_atoms)
 
+   !add omp parallelization
    do i = 1, crossover_point
       child1 = parent1
       child2 = parent2
    end do
 
+   !add omp parallelization
    do i = crossover_point+1, parent1%nb_atoms
       child1 = parent2
       child2 = parent1
    end do
 end subroutine crossover
 
-subroutine mutate(individual, site_size)
+subroutine mutate(individual)
    use atom_type
    use molecule_type
    implicit none
-   integer, intent(in) :: site_size
+   !integer, intent(in) :: site_size
    type(molecule), intent(inout) :: individual
    integer :: mutation_point
    real :: r

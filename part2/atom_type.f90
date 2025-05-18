@@ -8,6 +8,10 @@ module atom_type
       real, dimension(3), public :: coordinates
       character(len=6), public :: type
       real, public :: radius1, radius2, radius3
+      integer, public :: subst_id
+      character(len=6), public :: subst_name
+      real, public :: charge
+      character(len=10), public :: status_bit
 
    contains
       procedure :: print_atom, init_atom
