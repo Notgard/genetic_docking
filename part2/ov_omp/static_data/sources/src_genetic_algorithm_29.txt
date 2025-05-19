@@ -1,0 +1,4 @@
+/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90: 332 - 332
+--------------------------------------------------------------------------------
+
+332:       electronegs_site = .false.

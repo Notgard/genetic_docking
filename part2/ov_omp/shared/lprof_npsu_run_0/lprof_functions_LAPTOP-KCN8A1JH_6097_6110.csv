@@ -1,0 +1,9 @@
+function_id;module;function_name;source_info;inc_time_p;inc_time_s;inc_time_s_min;inc_time_s_avg;inc_time_s_max;inc_cov_deviation;inc_time_deviation;exc_time_p;exc_time_s;exc_time_s_min;exc_time_s_avg;exc_time_s_max;exc_cov_deviation;exc_time_deviation;nb_threads;cats;label_name;flops;
+269;libgomp.so.1.0.0;omp_get_num_procs;;34.277683258057;0.60500001907349;0;0;0;0;0;34.277683258057;0.60500001907349;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";omp_get_num_procs;;
+1578;libc.so.6;_mcleanup;;28.328664779663;0.50000005960464;0;0;0;0;0;28.328664779663;0.50000005960464;0;0;0;0;0;;"0,0,0,0,100,0,0,0,0,0";_mcleanup;;
+29;genetic_algorithm;__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;complete_mol2_omp_mod.f90:350-389;27.478813171387;0.48500019311905;0;0;0;0;0;1.133150935173;0.020000077784061;0;0;0;0;0;;"100,0,0,0,0,0,0,0,0,0";__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;;
+20;genetic_algorithm;is_bonded;complete_mol2_omp_mod.f90:6-14;5.665732383728;0.099999994039536;0;0;0;0;0;5.665732383728;0.099999994039536;0;0;0;0;0;;"100,0,0,0,0,0,0,0,0,0";__bond_utils_MOD_is_bonded;;
+253;libgomp.so.1.0.0;omp_fulfill_event;;1.9830061197281;0.034999992698431;0;0;0;0;0;1.9830061197281;0.034999992698431;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";omp_fulfill_event;;
+1582;libc.so.6;_mcount;;1.6997195482254;0.029999995604157;0;0;0;0;0;1.6997195482254;0.029999995604157;0;0;0;0;0;;"0,0,0,0,100,0,0,0,0,0";_mcount;;
+152;libgomp.so.1.0.0;GOMP_loop_dynamic_start;;0.28328660130501;0.00499999942258;0;0;0;0;0;0.28328660130501;0.00499999942258;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";GOMP_loop_dynamic_start;;
+109;libm.so.6;acosf;;0.28328660130501;0.00499999942258;0;0;0;0;0;0.28328660130501;0.00499999942258;0;0;0;0;0;;"0,0,0,100,0,0,0,0,0,0";acosf;;

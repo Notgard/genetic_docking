@@ -154,7 +154,7 @@ contains
 
       integer :: i, j, ios
       real :: radius1_sum, radius2_sum, radius3_sum
-      real :: delta = 0.1
+      real :: delta = 0.2
       real :: distance, lb, ub
       integer :: old_file_unit = 11
       integer :: new_file_unit = 12
@@ -196,6 +196,7 @@ contains
       write(new_file_unit, '(A)') "@<TRIPOS>BOND"
 
       !$omp parallel private(j, x, y, z, xb, yb, zb, distance, radius1_sum, radius2_sum, radius3_sum, lb, ub)
+      bounds_count = 1
       !$omp do schedule(dynamic)
       do i = 1, atom_nums
          do j = i+1, atom_nums
@@ -211,32 +212,29 @@ contains
             radius2_sum = atoms(i)%radius2 + atoms(j)%radius2
             radius3_sum = atoms(i)%radius3 + atoms(j)%radius3
 
+            !$omp critical
             lb = radius1_sum * (1 - delta)
             ub = radius1_sum * (1 + delta)
+            !print *, "Thread: ", omp_get_thread_num(), " i: ", i, " j: ", j, "bounds_count: ", bounds_count
             if(distance >= lb .and. distance <= ub) then
-               !$omp critical
                write(new_file_unit, 103) bounds_count, atoms(i)%number, atoms(j)%number, 1
                bounds_count = bounds_count + 1
-               !$omp end critical
             end if
 
             lb = radius2_sum * (1 - delta)
             ub = radius2_sum * (1 + delta)
             if(distance >= lb .and. distance <= ub) then
-               !$omp critical
                write(new_file_unit, 103) bounds_count, atoms(i)%number, atoms(j)%number, 2
                bounds_count = bounds_count + 1
-               !$omp end critical
             end if
 
             lb = radius3_sum * (1 - delta)
             ub = radius3_sum * (1 + delta)
             if(distance >= lb .and. distance <= ub) then
-               !$omp critical
                write(new_file_unit, 103) bounds_count, atoms(i)%number, atoms(j)%number, 3
                bounds_count = bounds_count + 1
-               !$omp end critical
             end if
+            !$omp end critical
          end do
       end do
       !$omp end do

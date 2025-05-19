@@ -1,0 +1,7 @@
+/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90: 336 - 339
+--------------------------------------------------------------------------------
+
+336:       do i = 1, n_lig
+337:          if (trim(ligand%atoms(i)%element(1:1)) == "H") hydrogens_lig(i) = .true.
+338:          if (trim(ligand%atoms(i)%element(1:1)) == "N" .or. trim(ligand%atoms(i)%element(1:1)) == "O" .or. &
+339:             trim(ligand%atoms(i)%element(1:1)) == "F" .or. trim(ligand%atoms(i)%element(1:2)) == "Cl") electronegs_lig(i) = .true.

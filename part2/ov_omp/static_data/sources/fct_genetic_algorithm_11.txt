@@ -1,0 +1,21 @@
+/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90: 299 - 324
+--------------------------------------------------------------------------------
+
+299: subroutine crossover(parent1, parent2, child1, child2)
+[...]
+309:    call random_number(r)
+310: 
+311:    crossover_point = int(r * parent1%nb_atoms)
+312: 
+313:    !add omp parallelization
+314:    do i = 1, crossover_point
+315:       child1 = parent1
+316:       child2 = parent2
+317:    end do
+318: 
+319:    !add omp parallelization
+320:    do i = crossover_point+1, parent1%nb_atoms
+321:       child1 = parent2
+322:       child2 = parent1
+323:    end do
+324: end subroutine crossover

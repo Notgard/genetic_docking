@@ -1,0 +1,11 @@
+function_id;module;function_name;source_info;inc_time_p;inc_time_s;inc_time_s_min;inc_time_s_avg;inc_time_s_max;inc_cov_deviation;inc_time_deviation;exc_time_p;exc_time_s;exc_time_s_min;exc_time_s_avg;exc_time_s_max;exc_cov_deviation;exc_time_deviation;nb_threads;cats;label_name;flops;
+269;libgomp.so.1.0.0;omp_get_num_procs;;37.352993011475;0.63499999046326;0;0;0;0;0;37.352993011475;0.63499999046326;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";omp_get_num_procs;;
+29;genetic_algorithm;__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;complete_mol2_omp_mod.f90:350-389;29.117696762085;0.49500015377998;0;0;0;0;0;1.1764789819717;0.020000113174319;0;0;0;0;0;;"100,0,0,0,0,0,0,0,0,0";__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;;
+1578;libc.so.6;_mcleanup;;24.117687225342;0.41000008583069;0;0;0;0;0;24.117687225342;0.41000008583069;0;0;0;0;0;;"0,0,0,0,100,0,0,0,0,0";_mcleanup;;
+20;genetic_algorithm;is_bonded;complete_mol2_omp_mod.f90:6-14;5.0000061988831;0.084999978542328;0;0;0;0;0;5.0000061988831;0.084999978542328;0;0;0;0;0;;"100,0,0,0,0,0,0,0,0,0";__bond_utils_MOD_is_bonded;;
+1582;libc.so.6;_mcount;;2.0588262081146;0.034999996423721;0;0;0;0;0;2.0588262081146;0.034999996423721;0;0;0;0;0;;"0,0,0,0,100,0,0,0,0,0";_mcount;;
+253;libgomp.so.1.0.0;omp_fulfill_event;;1.1764721870422;0.01999999769032;0;0;0;0;0;1.1764721870422;0.01999999769032;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";omp_fulfill_event;;
+165;libgomp.so.1.0.0;GOMP_loop_dynamic_next;;0.29411804676056;0.00499999942258;0;0;0;0;0;0.29411804676056;0.00499999942258;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";GOMP_loop_dynamic_next;;
+152;libgomp.so.1.0.0;GOMP_loop_dynamic_start;;0.29411804676056;0.00499999942258;0;0;0;0;0;0.29411804676056;0.00499999942258;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";GOMP_loop_dynamic_start;;
+150;libgomp.so.1.0.0;omp_get_device_num;;0.29411804676056;0.00499999942258;0;0;0;0;0;0.29411804676056;0.00499999942258;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";omp_get_device_num;;
+109;libm.so.6;acosf;;0.29411804676056;0.00499999942258;0;0;0;0;0;0.29411804676056;0.00499999942258;0;0;0;0;0;;"0,0,0,100,0,0,0,0,0,0";acosf;;

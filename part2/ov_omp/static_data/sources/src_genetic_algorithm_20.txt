@@ -1,0 +1,6 @@
+/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90: 117 - 119
+--------------------------------------------------------------------------------
+
+117:       do i = 1, population_size
+118:          score = evaluate_fitness(population(i), site)
+119:          fitness(i) = score

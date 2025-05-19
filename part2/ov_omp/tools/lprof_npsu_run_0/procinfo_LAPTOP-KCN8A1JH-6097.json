@@ -1,0 +1,20 @@
+{
+  "content": {
+    "proc_name"          : "AMD_fam17h_mod60h",
+    "hostname"           : "LAPTOP-KCN8A1JH",
+    "architecture_code"  : "2",
+    "uarchitecture_code" : "36",
+    "architecture"       : "x86_64",
+    "uarchitecture"      : "ZEN_V2",
+    "cpui_model_name"    : "AMD Ryzen 5 4600H with Radeon Graphics",
+    "cpui_cache_size"    : "512 KB",
+    "cpui_cpu_cores"     : "6",
+    "max_frequency"          : "0",
+    "cur_frequency"      : "0",
+    "driver_frequency"   : "NA",
+    "scaling_governor"   : "NA",
+    "huge_pages"         : "always",
+    "os_version"         : "Linux 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024",
+    "is_lstopo"          : true,
+  }
+}

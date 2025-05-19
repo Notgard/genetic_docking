@@ -1,0 +1,7 @@
+module;src_file;score;issue;opts;
+genetic_algorithm;complete_mol2_omp_mod.f90;0.25;"-O3 or -Ofast is missing. ";"GNU Fortran2008 11.4.0 -mtune=generic -march=x86-64 -g -O0 -p -fbacktrace -fbounds-check -fcheck=all -fopenmp -J mod -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/11/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h ";
+genetic_algorithm;complete_mol2_omp_mod.f90;;"-march=x86-64 is used but it should be replaced by a more architecture specific option or -march=native.";"";
+genetic_algorithm;complete_mol2_omp_mod.f90;;"-funroll-loops is missing. ";"";
+genetic_algorithm;genetic_algorithm.f90;0.25;"-O3 or -Ofast is missing. ";"GNU Fortran2008 11.4.0 -mtune=generic -march=x86-64 -g -O0 -p -fbacktrace -fbounds-check -fcheck=all -fopenmp -J mod -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/11/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h ";
+genetic_algorithm;genetic_algorithm.f90;;"-march=x86-64 is used but it should be replaced by a more architecture specific option or -march=native.";"";
+genetic_algorithm;genetic_algorithm.f90;;"-funroll-loops is missing. ";"";

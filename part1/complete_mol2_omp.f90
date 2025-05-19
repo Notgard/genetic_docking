@@ -185,7 +185,7 @@ subroutine write_bounds_to_file(atoms, atom_nums, fileName)
 
    integer :: i, j, ios
    real :: radius1_sum, radius2_sum, radius3_sum
-   real :: delta = 0.1
+   real :: delta = 0.09
    real :: distance, lb, ub
    integer :: old_file_unit = 11
    integer :: new_file_unit = 12

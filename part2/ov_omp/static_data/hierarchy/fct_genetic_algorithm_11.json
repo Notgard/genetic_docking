@@ -1,0 +1,42 @@
+{
+  "__fct":
+    {
+      "loops":
+        {
+          "_6":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90",
+                    "regions":
+                      [
+                        [
+                        314,
+                        316
+                        ]
+                      ]
+                  }
+                ],
+              "src": "genetic_algorithm.f90:314-316"
+            },
+          "_5":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90",
+                    "regions":
+                      [
+                        [
+                        320,
+                        322
+                        ]
+                      ]
+                  }
+                ],
+              "src": "genetic_algorithm.f90:320-322"
+            }
+        }
+    }
+}

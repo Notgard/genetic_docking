@@ -30,7 +30,7 @@ program genetic_docking
    integer, parameter :: max_generations = 500
    real, parameter :: crossover_rate = 0.95
    real, parameter :: mutation_rate = 0.05
-   integer, parameter :: log_interval = 10
+   integer, parameter :: log_interval = 5
 
    integer :: ok
 
@@ -229,7 +229,7 @@ subroutine evolve_population(pop, pop_size, fitness, crossover_rate, mutation_ra
    type(molecule), intent(inout) :: pop(pop_size)
    real, intent(in) :: fitness(pop_size), crossover_rate, mutation_rate
    type(molecule), allocatable :: new_pop(:)
-   integer :: n, i, p1, p2
+   integer :: n, i, p1, p2, j
    real :: r
 
    call random_number(r)
@@ -252,12 +252,22 @@ subroutine evolve_population(pop, pop_size, fitness, crossover_rate, mutation_ra
       end if
    end do
 
+   !$omp parallel do
    do i = 1, n
       call random_number(r)
       if (r < mutation_rate) then
          call mutate(new_pop(i))
       end if
    end do
+   !$omp end parallel do
+
+      !print population
+   !do i = 1, n
+   !   do j = 1, pop(i)%nb_atoms
+   !      print *, "Population: ", i, " ", pop(i)%atoms(j)%element, pop(i)%atoms(j)%coordinates(1), &
+   !      pop(i)%atoms(j)%coordinates(2), pop(i)%atoms(j)%coordinates(3)
+   !   end do
+   !end do
 
    pop = new_pop
 end subroutine evolve_population
@@ -267,34 +277,43 @@ subroutine select_parents(fitness, pop_size, p1, p2)
    integer, intent(in) :: pop_size
    real, intent(in) :: fitness(pop_size)
    integer, intent(out) :: p1, p2
+   real :: total_fitness, rand_val, cumulative
    integer :: i
-   real :: r, total_fitness, rand_val
+   real :: r
 
    total_fitness = sum(fitness)
+
    call random_number(r)
-   rand_val = r
-
-   p1 = 1
-   p2 = 1
-
-   do i = 1, size(fitness)
-      if (rand_val < fitness(i)) then
+   rand_val = r * total_fitness
+   cumulative = 0.0
+   do i = 1, pop_size
+      cumulative = cumulative + fitness(i)
+      if (cumulative >= rand_val) then
          p1 = i
          exit
       end if
-      rand_val = rand_val - fitness(i)
    end do
-   call random_number(r)
-   rand_val = r
 
-   do i = 1, size(fitness)
-      if (rand_val < fitness(i)) then
-         p2 = i
-         exit
-      end if
-      rand_val = rand_val - fitness(i)
+   do
+      call random_number(r)
+      rand_val = r * total_fitness
+      cumulative = 0.0
+      do i = 1, pop_size
+         cumulative = cumulative + fitness(i)
+         if (cumulative >= rand_val) then
+            if (i /= p1) then
+               p2 = i
+               exit
+            end if
+         end if
+      end do
+      if (p2 /= 0 .and. p2 /= p1) exit
    end do
+
+   !print *, "Parent 1: ", p1
+   !print *, "Parent 2: ", p2
 end subroutine select_parents
+
  
 subroutine crossover(parent1, parent2, child1, child2)
    use atom_type
@@ -310,16 +329,20 @@ subroutine crossover(parent1, parent2, child1, child2)
 
    crossover_point = int(r * parent1%nb_atoms)
 
-   !add omp parallelization
-   do i = 1, crossover_point
-      child1 = parent1
-      child2 = parent2
-   end do
+   child1%nb_atoms = parent1%nb_atoms
+   child2%nb_atoms = parent1%nb_atoms
 
-   !add omp parallelization
-   do i = crossover_point+1, parent1%nb_atoms
-      child1 = parent2
-      child2 = parent1
+   allocate(child1%atoms(child1%nb_atoms))
+   allocate(child2%atoms(child2%nb_atoms))
+
+   do i = 1, parent1%nb_atoms
+      if (i <= crossover_point) then
+         child1%atoms(i) = parent1%atoms(i)
+         child2%atoms(i) = parent2%atoms(i)
+      else
+         child1%atoms(i) = parent2%atoms(i)
+         child2%atoms(i) = parent1%atoms(i)
+      end if
    end do
 end subroutine crossover
 
@@ -330,7 +353,8 @@ subroutine mutate(individual)
    !integer, intent(in) :: site_size
    type(molecule), intent(inout) :: individual
    integer :: mutation_point
-   real :: r
+   real :: r, delta
+   real, parameter :: range = 10.0
 
    call random_number(r)
 
@@ -341,9 +365,16 @@ subroutine mutate(individual)
 
    ! Randomly change the coordinates of the atom at mutation_point
    call random_number(r)
-   individual%atoms(mutation_point)%coordinates(1) = r
+   delta = (r - 0.5) * range
+   !print *, "Delta: ", delta
+   
+   individual%atoms(mutation_point)%coordinates(1) = individual%atoms(mutation_point)%coordinates(1) - delta
    call random_number(r)
-   individual%atoms(mutation_point)%coordinates(2) = r
+   delta = (r - 0.5) * range
+
+   individual%atoms(mutation_point)%coordinates(2) = individual%atoms(mutation_point)%coordinates(2) - delta
    call random_number(r)
-   individual%atoms(mutation_point)%coordinates(3) = r
+   delta = (r - 0.5) * range
+
+   individual%atoms(mutation_point)%coordinates(3) = individual%atoms(mutation_point)%coordinates(3) - delta
 end subroutine mutate

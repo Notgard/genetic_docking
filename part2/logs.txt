@@ -1,0 +1,78 @@
+ Number of threads =            1
+File to read = ../files/ligand_NO_BOND.mol2
+File to read = ../files/site.mol2
+ Writing to file: ../files/ligand_NO_BOND_WITH_BONDS.mol2
+ Ligand size:           31
+ Site size:         1621
+Reading bonds from file: ../files/site.mol2
+ Read        1610 bonds from file
+ Atoms are bonded
+ Delta:    1.16518831    
+ New coordinates:   -10.7989082      0.208368093      -1.78494227      -15.9579000    
+ Delta:    1.10145283    
+ New coordinates:   -13.3485012     -0.339294672       5.06444550      -15.9579000    
+ Delta:  -0.568424821    
+ New coordinates:   -10.9892607       1.35420918       3.49886084      -15.9579000    
+ Delta:  -0.791720510    
+ New coordinates:   -15.2416744     -0.726723671       3.88786578      -15.9579000    
+ Delta:   -1.26080024    
+ New coordinates:   -12.6425858      0.709312856      -1.18069804      -15.9579000    
+ Delta:   0.417644262    
+ New coordinates:   -13.2904024       2.29186058      0.129769862      -15.9579000    
+ Delta:  -0.298825264    
+ New coordinates:   -14.3661442       2.59044576      0.101410985      -15.9579000    
+ Delta:  -0.641903222    
+ New coordinates:   -10.7862797       8.75662565E-02  -4.19277954      -15.9579000    
+ Delta:   0.326507986    
+ New coordinates:   -10.3815289      0.319552660       4.74460649      -15.9579000    
+ Delta:   0.442274451    
+ New coordinates:   -14.0076799      -1.36451888       5.01720905      -15.9579000    
+ Delta:   0.777855456    
+ New coordinates:   -12.4460516     -0.227891207     -0.696671724      -15.9579000    
+ Delta:  -0.195666969    
+ New coordinates:   -12.8286695      -2.77400327      -5.66936064      -15.9579000    
+ Delta:   0.415445566    
+ New coordinates:   -11.5355892      -3.60245705E-02   2.44942260      -15.9579000    
+ Delta:  -0.382294714    
+ New coordinates:   -15.9110165     -0.616464555      0.746387720      -15.9579000    
+ Delta:  -0.771036386    
+ New coordinates:   -12.1528215     -0.671478689       1.07429683      -15.9579000    
+ Delta:    1.18019736    
+ New coordinates:   -10.7838984      -1.72151136      -2.13951111      -15.9579000    
+ Delta:   0.659279287    
+ New coordinates:   -10.0487576      0.852794051       3.50485086      -15.9579000    
+ Delta:   0.572437048    
+ New coordinates:   -15.4610958     -0.287344158       1.23885083      -15.9579000    
+ Delta:   0.985709846    
+ New coordinates:   -11.6472921      -1.53227687      -4.36138725      -15.9579000    
+ Delta:   -4.00067568E-02
+ New coordinates:   -16.0735397       1.35380626      0.904874325      -15.9579000    
+ Delta:  -0.443323195    
+ New coordinates:   -12.4074192     -0.131525189      -1.86732912      -15.9579000    
+ Delta:  -0.888057768    
+ New coordinates:   -16.9215908       1.98896265       1.88049257      -15.9579000    
+ Delta:  -0.364686012    
+ New coordinates:   -10.7855215       1.41970849       1.52542639      -15.9579000    
+ Delta:  -0.688501596    
+ New coordinates:   -17.3552475      0.941050529       1.61947107      -15.9579000    
+ Delta:   0.783038557    
+ New coordinates:   -11.3822374      0.703081369       6.24681711      -15.9579000    
+ Delta:  -0.124358833    
+ New coordinates:   -14.1430941      0.660603523      -1.41503584      -15.9579000    
+ Best fitness:    1.00000000    
+ Best index:            1
+ Error opening file: results/best_ligand_5.mol2
+ Delta:   0.309969485    
+ New coordinates:   -11.8553057      0.815935016       5.26034403      -15.9579000    
+ Delta:   0.916987896    
+ New coordinates:   -14.8015728     -0.450662196     -0.767791569      -15.9579000    
+ Delta:   0.416871071    
+ New coordinates:   -12.9677019      -5.64381480E-02   4.55901527      -15.9579000    
+ Delta:   0.924773276    
+ New coordinates:   -9.78326321       1.02791858       3.59612727      -15.9579000    
+ Delta:   0.428634524    
+ New coordinates:   -13.6386843       1.91311455     -0.496758461      -15.9579000    
+ Delta:  -0.849644423    
+ New coordinates:   -12.2314301     -0.435254574      0.601569295      -15.9579000    
+ Fortran CPU time elapsed  0.15657399999999999     
+ OpenMP Walltime elapsed  0.14815656799873977     

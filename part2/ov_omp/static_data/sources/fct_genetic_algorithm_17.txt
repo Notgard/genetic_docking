@@ -1,0 +1,81 @@
+/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90: 24 - 140
+--------------------------------------------------------------------------------
+
+24: program genetic_docking
+[...]
+37:    type(molecule) :: site, ligand
+38:    !type(atom), allocatable :: site(:)
+39:    !type(atom), allocatable :: population(:,:)
+40:    type(molecule), allocatable :: population(:)
+41:    real, allocatable :: fitness(:)
+[...]
+58:    n_args = command_argument_count()
+59: 
+60:    allocate(fitness(population_size), stat=ok)
+61:    if (ok /= 0) then
+62:       print *, "Error during fitness allocation"
+63:       stop 1
+64:    end if
+65:    allocate(population(population_size), stat=ok)
+66:    if (ok /= 0) then
+67:       print *, "Error during population allocation"
+68:       stop 2
+69:    end if
+70:    if (n_args /= 2) then
+71:       print *, "Usage: genetic_docking <ligand_file> <site_file>"
+72:       stop 4
+[...]
+78:    call getarg(1, ligand_file)
+79:    call getarg(2, site_file)
+[...]
+90:    call write_bounds_to_file(ligand%atoms, ligand_size, ligand_file)
+91: 
+92:    print *, "Ligand size: ", ligand_size
+93:    print *, "Site size: ", site_size
+94: 
+95:    call read_bounds_from_file(site_size, site_file)
+96: 
+97:    !test bound
+98:    with_bond = is_bonded(site%atoms(1524)%number, site%atoms(1531)%number)
+99:    if (with_bond) then
+100:       print *, "Atoms are bonded"
+101:    else
+102:       print *, "Atoms are not bonded"
+103:    end if
+104: 
+105:    call initialize_population(ligand, population_size, population)
+106: 
+107:    hbond_count = detect_hydrogen_bonds_between(ligand, ligand_size, site, site_size)
+108: 
+109:    !create data log file
+110:    call create_csv("fitness_log.csv")
+111: 
+112:    !start the genetic algorithm
+113:    call CPU_TIME(start_time) ! Start timing
+114:    ostart = omp_get_wtime()
+115: 
+116:    do gen = 1, max_generations
+117:       do i = 1, population_size
+118:          score = evaluate_fitness(population(i), site)
+119:          fitness(i) = score
+120:       end do
+121: !
+122:       if (mod(gen, log_interval) == 0) then
+123:          call log_fitness(gen, fitness, population_size)
+124:          !save the best fitness molecule each log_interval generation
+125:          best_fitness = maxval(fitness)
+126:          maxl = maxloc(fitness)
+127:          print *, "Best fitness: ", best_fitness
+128:          print *, "Best index: ", maxl(1)
+129:          call save_best_population(population(maxl(1)), gen, output_directory)
+130:       end if
+131: !
+132:       call evolve_population(population, population_size, fitness, crossover_rate, mutation_rate)
+133:    end do
+134: 
+135:    call CPU_TIME(end_time) ! End timing
+136:    oend = omp_get_wtime()
+137: 
+138:    write(*,*) 'Fortran CPU time elapsed', end_time-start_time
+139:    write(*,*) 'OpenMP Walltime elapsed', oend-ostart
+140: end program genetic_docking

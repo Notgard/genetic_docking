@@ -1,0 +1,36 @@
+/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90: 309 - 404
+--------------------------------------------------------------------------------
+
+309:    real function detect_hydrogen_bonds_between(ligand, n_lig, site, n_site) result(hbond_count)
+[...]
+322:       logical :: electronegs_lig(n_lig), hydrogens_lig(n_lig)
+323:       logical :: electronegs_site(n_site), hydrogens_site(n_site)
+324:       real :: x1, y1, z1, x2, y2, z2, x3, y3, z3
+325:       real :: vec1(3), vec2(3), vec_len1, vec_len2, dot_product
+326:       logical :: with_bond
+327: 
+328:       hbond_count = 0
+329: 
+330:       ! Identify electronegative and hydrogen atoms
+331:       electronegs_lig = .false.
+332:       electronegs_site = .false.
+333:       hydrogens_lig = .false.
+334:       hydrogens_site = .false.
+335: 
+336:       do i = 1, n_lig
+337:          if (trim(ligand%atoms(i)%element(1:1)) == "H") hydrogens_lig(i) = .true.
+338:          if (trim(ligand%atoms(i)%element(1:1)) == "N" .or. trim(ligand%atoms(i)%element(1:1)) == "O" .or. &
+339:             trim(ligand%atoms(i)%element(1:1)) == "F" .or. trim(ligand%atoms(i)%element(1:2)) == "Cl") electronegs_lig(i) = .true.
+340:       end do
+341: 
+342:       do i = 1, n_site
+343:          if (trim(site%atoms(i)%element(1:1)) == "H") hydrogens_site(i) = .true.
+344:          if (trim(site%atoms(i)%element(1:1)) == "N" .or. trim(site%atoms(i)%element(1:1)) == "O" .or. &
+345:             trim(site%atoms(i)%element(1:1)) == "F" .or. trim(site%atoms(i)%element(1:2)) == "Cl") electronegs_site(i) = .true.
+346:       end do
+347: 
+348:       ! Main loop: ligand H to site EN, and site H to ligand EN
+349:       !$omp parallel default(shared) private(i,j,k,distance,x1,y1,z1,x2,y2,z2,x3,y3,z3), &
+350:       !$omp private(vec1,vec2,vec_len1,vec_len2,dot_product,angle_deg)
+[...]
+404:    end function detect_hydrogen_bonds_between

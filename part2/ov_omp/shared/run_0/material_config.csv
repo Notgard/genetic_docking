@@ -1,0 +1,2 @@
+node;proc_name;architecture_code;uarchitecture_code;architecture;uarchitecture;cpui_model_name;cpui_cache_size;cpui_cpu_cores;max_frequency;cur_frequency;driver_frequency;scaling_governor;huge_pages;os_version;pids;
+LAPTOP-KCN8A1JH;AMD_fam17h_mod60h;2;36;x86_64;ZEN_V2;AMD Ryzen 5 4600H with Radeon Graphics;512 KB;6;0;0;NA;NA;always;Linux 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024;6097;

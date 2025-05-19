@@ -1,0 +1,43 @@
+/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90: 350 - 389
+--------------------------------------------------------------------------------
+
+350:       !$omp private(vec1,vec2,vec_len1,vec_len2,dot_product,angle_deg)
+351:       !$omp do schedule(dynamic) reduction(+:hbond_count)
+352:       do i = 1, n_lig
+353:          if (hydrogens_lig(i)) then
+354:             x1 = ligand%atoms(i)%coordinates(1)
+355:             y1 = ligand%atoms(i)%coordinates(2)
+356:             z1 = ligand%atoms(i)%coordinates(3)
+357: 
+358:             !print *, "Ligand H: ", ligand%atoms(i)%number, x1, y1, z1
+359: 
+360:             do j = 1, n_site
+361:                if (electronegs_site(j)) then
+362:                   x2 = site%atoms(j)%coordinates(1)
+363:                   y2 = site%atoms(j)%coordinates(2)
+364:                   z2 = site%atoms(j)%coordinates(3)
+365:                   distance = sqrt((x1-x2)**2 + (y1-y2)**2 + (z1-z2)**2)
+366: 
+367:                   !print *, "Distance: ", distance
+368:                   if (distance >= 2.2 .and. distance <= 4.0) then
+369:                      do k = 1, n_site
+370:                         if (k /= j) then
+371:                            x3 = site%atoms(k)%coordinates(1)
+372:                            y3 = site%atoms(k)%coordinates(2)
+373:                            z3 = site%atoms(k)%coordinates(3)
+374:                            !detect bound using function
+375:                            with_bond = is_bonded(site%atoms(j)%number, site%atoms(k)%number)
+376:                            !print *, "Finding Bonded: ", site%atoms(j)%number, site%atoms(k)%number
+377:                            if (with_bond) then
+378:                               !print *, "Bonded: ", site%atoms(j)%number, site%atoms(k)%number
+379:                               ! Calculate angle
+380:                               vec1 = (/x1-x2, y1-y2, z1-z2/)
+381:                               vec2 = (/x3-x2, y3-y2, z3-z2/)
+382:                               vec_len1 = normalization(vec1)
+383:                               vec_len2 = normalization(vec2)
+384:                               if (vec_len1 > 0 .and. vec_len2 > 0) then
+385:                                  dot_product = dot_product3(vec1, vec2)
+386:                                  angle_deg = acos(dot_product / (vec_len1*vec_len2)) * 180.0 / 3.14159265
+387:                                  if (angle_deg >= 90.0 .and. angle_deg <= 150.0) then
+388:                                     hbond_count = hbond_count + 1
+389:                                     exit

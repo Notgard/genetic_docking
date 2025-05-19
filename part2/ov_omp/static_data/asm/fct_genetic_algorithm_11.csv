@@ -1,0 +1,620 @@
+address;source_location;insn;indent
+0x43c1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;PUSH	%RBP;
+0x43c2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RSP,%RBP;
+0x43c5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;PUSH	%R14;
+0x43c7;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;PUSH	%R13;
+0x43c9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;PUSH	%R12;
+0x43cb;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;PUSH	%RBX;
+0x43cc;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;SUB	$0xd0,%RSP;
+0x43d3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;CALLQ	0x11c17(%RIP);
+0x43d9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RDI,-0xd8(%RBP);
+0x43e0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RSI,-0xe0(%RBP);
+0x43e7;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RDX,-0xe8(%RBP);
+0x43ee;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,-0xf0(%RBP);
+0x43f5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOVQ	$0,-0xd0(%RBP);
+0x4400;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xe8(%RBP),%RAX;
+0x4407;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	(%RAX),%RCX;
+0x440a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x8(%RAX),%RBX;
+0x440e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,-0x80(%RBP);
+0x4412;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,-0x78(%RBP);
+0x4416;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x10(%RAX),%RCX;
+0x441a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x18(%RAX),%RBX;
+0x441e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,-0x70(%RBP);
+0x4422;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,-0x68(%RBP);
+0x4426;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x20(%RAX),%RCX;
+0x442a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x28(%RAX),%RBX;
+0x442e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,-0x60(%RBP);
+0x4432;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,-0x58(%RBP);
+0x4436;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x30(%RAX),%RCX;
+0x443a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x38(%RAX),%RBX;
+0x443e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,-0x50(%RBP);
+0x4442;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,-0x48(%RBP);
+0x4446;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x40(%RAX),%RAX;
+0x444a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RAX,-0x40(%RBP);
+0x444e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xe8(%RBP),%RAX;
+0x4455;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xd0(%RBP),%RCX;
+0x445c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xc8(%RBP),%RBX;
+0x4463;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,(%RAX);
+0x4466;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,0x8(%RAX);
+0x446a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xc0(%RBP),%RCX;
+0x4471;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xb8(%RBP),%RBX;
+0x4478;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,0x10(%RAX);
+0x447c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,0x18(%RAX);
+0x4480;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xb0(%RBP),%RCX;
+0x4487;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xa8(%RBP),%RBX;
+0x448e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,0x20(%RAX);
+0x4492;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,0x28(%RAX);
+0x4496;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xa0(%RBP),%RCX;
+0x449d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0x98(%RBP),%RBX;
+0x44a4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,0x30(%RAX);
+0x44a8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,0x38(%RAX);
+0x44ac;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0x90(%RBP),%RDX;
+0x44b3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RDX,0x40(%RAX);
+0x44b7;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0x80(%RBP),%RAX;
+0x44bb;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;TEST	%RAX,%RAX;
+0x44be;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;JE	44d4 <crossover_+0x113>;
+0x44c0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0x80(%RBP),%RAX;
+0x44c4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RAX,%RDI;
+0x44c7;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;CALL	2170 <@plt_start@+0x150>;
+0x44cc;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOVQ	$0,-0x80(%RBP);
+0x44d4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOVQ	$0,-0xd0(%RBP);
+0x44df;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xf0(%RBP),%RAX;
+0x44e6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	(%RAX),%RCX;
+0x44e9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x8(%RAX),%RBX;
+0x44ed;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,-0x80(%RBP);
+0x44f1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,-0x78(%RBP);
+0x44f5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x10(%RAX),%RCX;
+0x44f9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x18(%RAX),%RBX;
+0x44fd;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,-0x70(%RBP);
+0x4501;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,-0x68(%RBP);
+0x4505;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x20(%RAX),%RCX;
+0x4509;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x28(%RAX),%RBX;
+0x450d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,-0x60(%RBP);
+0x4511;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,-0x58(%RBP);
+0x4515;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x30(%RAX),%RCX;
+0x4519;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x38(%RAX),%RBX;
+0x451d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,-0x50(%RBP);
+0x4521;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,-0x48(%RBP);
+0x4525;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	0x40(%RAX),%RAX;
+0x4529;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RAX,-0x40(%RBP);
+0x452d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xf0(%RBP),%RAX;
+0x4534;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xd0(%RBP),%RCX;
+0x453b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xc8(%RBP),%RBX;
+0x4542;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,(%RAX);
+0x4545;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,0x8(%RAX);
+0x4549;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xc0(%RBP),%RCX;
+0x4550;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xb8(%RBP),%RBX;
+0x4557;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,0x10(%RAX);
+0x455b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,0x18(%RAX);
+0x455f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xb0(%RBP),%RCX;
+0x4566;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xa8(%RBP),%RBX;
+0x456d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,0x20(%RAX);
+0x4571;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,0x28(%RAX);
+0x4575;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0xa0(%RBP),%RCX;
+0x457c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0x98(%RBP),%RBX;
+0x4583;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RCX,0x30(%RAX);
+0x4587;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RBX,0x38(%RAX);
+0x458b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0x90(%RBP),%RDX;
+0x4592;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RDX,0x40(%RAX);
+0x4596;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0x80(%RBP),%RAX;
+0x459a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;TEST	%RAX,%RAX;
+0x459d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;JE	45b3 <crossover_+0x1f2>;
+0x459f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	-0x80(%RBP),%RAX;
+0x45a3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOV	%RAX,%RDI;
+0x45a6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;CALL	2170 <@plt_start@+0x150>;
+0x45ab;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:299;MOVQ	$0,-0x80(%RBP);
+0x45b3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:309;LEA	-0x2c(%RBP),%RAX;
+0x45b7;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:309;MOV	%RAX,%RDI;
+0x45ba;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:309;MOV	$0,%EAX;
+0x45bf;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:309;CALL	2320 <@plt_start@+0x300>;
+0x45c4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:311;MOV	-0xd8(%RBP),%RAX;
+0x45cb;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:311;MOV	0x40(%RAX),%EAX;
+0x45ce;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:311;PXOR	%XMM1,%XMM1;
+0x45d2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:311;CVTSI2SS	%EAX,%XMM1;
+0x45d6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:311;MOVSS	-0x2c(%RBP),%XMM0;
+0x45db;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:311;MULSS	%XMM1,%XMM0;
+0x45df;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:311;CVTTSS2SI	%XMM0,%EAX;
+0x45e3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:311;MOV	%EAX,-0x28(%RBP);
+0x45e6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;MOV	-0x28(%RBP),%R14D;
+0x45ea;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;MOVL	$0x1,-0x24(%RBP);
+0x45f1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;MOV	-0x24(%RBP),%R12D;
+0x45f5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;CMP	%R14D,-0x24(%RBP);(6) 
+0x45f9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;SETG	%AL;(6) 
+0x45fc;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;MOVZX	%AL,%EAX;(6) 
+0x45ff;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;TEST	%EAX,%EAX;(6) 
+0x4601;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;JNE	49ed <crossover_+0x62c>;(6) 
+0x4607;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;CMPL	$0x7fffffff,-0x24(%RBP);(6) 
+0x460e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;JNE	462e <crossover_+0x26d>;(6) 
+0x4610;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;LEA	0xceab(%RIP),%RAX;(6) 
+0x4617;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;MOV	%RAX,%RSI;(6) 
+0x461a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;LEA	0xd157(%RIP),%RAX;(6) 
+0x4621;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;MOV	%RAX,%RDI;(6) 
+0x4624;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;MOV	$0,%EAX;(6) 
+0x4629;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;CALL	2070 <@plt_start@+0x50>;(6) 
+0x462e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0xe8(%RBP),%RAX;(6) 
+0x4635;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;CMP	-0xd8(%RBP),%RAX;(6) 
+0x463c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;SETE	%AL;(6) 
+0x463f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOVZX	%AL,%R13D;(6) 
+0x4643;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0xe8(%RBP),%RAX;(6) 
+0x464a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	(%RAX),%RCX;(6) 
+0x464d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x8(%RAX),%RBX;(6) 
+0x4651;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RCX,-0x80(%RBP);(6) 
+0x4655;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RBX,-0x78(%RBP);(6) 
+0x4659;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x10(%RAX),%RCX;(6) 
+0x465d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x18(%RAX),%RBX;(6) 
+0x4661;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RCX,-0x70(%RBP);(6) 
+0x4665;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RBX,-0x68(%RBP);(6) 
+0x4669;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x20(%RAX),%RCX;(6) 
+0x466d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x28(%RAX),%RBX;(6) 
+0x4671;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RCX,-0x60(%RBP);(6) 
+0x4675;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RBX,-0x58(%RBP);(6) 
+0x4679;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x30(%RAX),%RCX;(6) 
+0x467d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x38(%RAX),%RBX;(6) 
+0x4681;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RCX,-0x50(%RBP);(6) 
+0x4685;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RBX,-0x48(%RBP);(6) 
+0x4689;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x40(%RAX),%RAX;(6) 
+0x468d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RAX,-0x40(%RBP);(6) 
+0x4691;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0xe8(%RBP),%RAX;(6) 
+0x4698;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0xd8(%RBP),%RDX;(6) 
+0x469f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	(%RDX),%RCX;(6) 
+0x46a2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x8(%RDX),%RBX;(6) 
+0x46a6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RCX,(%RAX);(6) 
+0x46a9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RBX,0x8(%RAX);(6) 
+0x46ad;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x10(%RDX),%RCX;(6) 
+0x46b1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x18(%RDX),%RBX;(6) 
+0x46b5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RCX,0x10(%RAX);(6) 
+0x46b9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RBX,0x18(%RAX);(6) 
+0x46bd;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x20(%RDX),%RCX;(6) 
+0x46c1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x28(%RDX),%RBX;(6) 
+0x46c5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RCX,0x20(%RAX);(6) 
+0x46c9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RBX,0x28(%RAX);(6) 
+0x46cd;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x30(%RDX),%RCX;(6) 
+0x46d1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x38(%RDX),%RBX;(6) 
+0x46d5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RCX,0x30(%RAX);(6) 
+0x46d9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RBX,0x38(%RAX);(6) 
+0x46dd;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x40(%RDX),%RDX;(6) 
+0x46e1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RDX,0x40(%RAX);(6) 
+0x46e5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;TEST	%R13D,%R13D;(6) 
+0x46e8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;JNE	47d3 <crossover_+0x412>;(6) 
+0x46ee;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0xd8(%RBP),%RAX;(6) 
+0x46f5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	(%RAX),%RAX;(6) 
+0x46f8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;TEST	%RAX,%RAX;(6) 
+0x46fb;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;JE	47c5 <crossover_+0x404>;(6) 
+0x4701;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0xd8(%RBP),%RAX;(6) 
+0x4708;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x38(%RAX),%RDX;(6) 
+0x470c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0xd8(%RBP),%RAX;(6) 
+0x4713;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	0x30(%RAX),%RCX;(6) 
+0x4717;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RDX,%RAX;(6) 
+0x471a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;SUB	%RCX,%RAX;(6) 
+0x471d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;LEA	0x1(%RAX),%RBX;(6) 
+0x4721;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RBX,%RAX;(6) 
+0x4724;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;SAL	$0x4,%RAX;(6) 
+0x4728;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;ADD	%RBX,%RAX;(6) 
+0x472b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;SAL	$0x2,%RAX;(6) 
+0x472f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	$0x1,%EDX;(6) 
+0x4734;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;TEST	%RAX,%RAX;(6) 
+0x4737;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;CMOVE	%RDX,%RAX;(6) 
+0x473b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RAX,%RDI;(6) 
+0x473e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;CALL	20e0 <@plt_start@+0xc0>;(6) 
+0x4743;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;TEST	%RAX,%RAX;(6) 
+0x4746;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;JNE	4783 <crossover_+0x3c2>;(6) 
+0x4748;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RBX,%RAX;(6) 
+0x474b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;SAL	$0x4,%RAX;(6) 
+0x474f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;ADD	%RBX,%RAX;(6) 
+0x4752;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;SAL	$0x2,%RAX;(6) 
+0x4756;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	$0x1,%EDX;(6) 
+0x475b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;TEST	%RAX,%RAX;(6) 
+0x475e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;CMOVE	%RDX,%RAX;(6) 
+0x4762;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RAX,%RDX;(6) 
+0x4765;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;LEA	0xc9de(%RIP),%RAX;(6) 
+0x476c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RAX,%RSI;(6) 
+0x476f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;LEA	0xd032(%RIP),%RAX;(6) 
+0x4776;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RAX,%RDI;(6) 
+0x4779;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	$0,%EAX;(6) 
+0x477e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;CALL	21d0 <@plt_start@+0x1b0>;(6) 
+0x4783;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0xe8(%RBP),%RDX;(6) 
+0x478a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RAX,(%RDX);(6) 
+0x478d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RBX,%RAX;(6) 
+0x4790;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;SAL	$0x4,%RAX;(6) 
+0x4794;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;ADD	%RBX,%RAX;(6) 
+0x4797;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;SAL	$0x2,%RAX;(6) 
+0x479b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RAX,%RSI;(6) 
+0x479e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0xd8(%RBP),%RAX;(6) 
+0x47a5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	(%RAX),%RDX;(6) 
+0x47a8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0xe8(%RBP),%RAX;(6) 
+0x47af;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	(%RAX),%RAX;(6) 
+0x47b2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RDX,%RCX;(6) 
+0x47b5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RSI,%RDX;(6) 
+0x47b8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RCX,%RSI;(6) 
+0x47bb;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RAX,%RDI;(6) 
+0x47be;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;CALL	2340 <@plt_start@+0x320>;(6) 
+0x47c3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;JMP	47d3 <crossover_+0x412>;(6) 
+0x47c5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0xe8(%RBP),%RAX;(6) 
+0x47cc;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOVQ	$0,(%RAX);(6) 
+0x47d3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;TEST	%R13D,%R13D;(6) 
+0x47d6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;JNE	47f5 <crossover_+0x434>;(6) 
+0x47d8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0x80(%RBP),%RAX;(6) 
+0x47dc;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;TEST	%RAX,%RAX;(6) 
+0x47df;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;JE	47f5 <crossover_+0x434>;(6) 
+0x47e1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	-0x80(%RBP),%RAX;(6) 
+0x47e5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOV	%RAX,%RDI;(6) 
+0x47e8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;CALL	2170 <@plt_start@+0x150>;(6) 
+0x47ed;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:315;MOVQ	$0,-0x80(%RBP);(6) 
+0x47f5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0xf0(%RBP),%RAX;(6) 
+0x47fc;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;CMP	-0xe0(%RBP),%RAX;(6) 
+0x4803;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;SETE	%AL;(6) 
+0x4806;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOVZX	%AL,%R13D;(6) 
+0x480a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0xf0(%RBP),%RAX;(6) 
+0x4811;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	(%RAX),%RCX;(6) 
+0x4814;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x8(%RAX),%RBX;(6) 
+0x4818;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RCX,-0x80(%RBP);(6) 
+0x481c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RBX,-0x78(%RBP);(6) 
+0x4820;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x10(%RAX),%RCX;(6) 
+0x4824;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x18(%RAX),%RBX;(6) 
+0x4828;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RCX,-0x70(%RBP);(6) 
+0x482c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RBX,-0x68(%RBP);(6) 
+0x4830;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x20(%RAX),%RCX;(6) 
+0x4834;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x28(%RAX),%RBX;(6) 
+0x4838;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RCX,-0x60(%RBP);(6) 
+0x483c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RBX,-0x58(%RBP);(6) 
+0x4840;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x30(%RAX),%RCX;(6) 
+0x4844;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x38(%RAX),%RBX;(6) 
+0x4848;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RCX,-0x50(%RBP);(6) 
+0x484c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RBX,-0x48(%RBP);(6) 
+0x4850;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x40(%RAX),%RAX;(6) 
+0x4854;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RAX,-0x40(%RBP);(6) 
+0x4858;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0xf0(%RBP),%RAX;(6) 
+0x485f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0xe0(%RBP),%RDX;(6) 
+0x4866;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	(%RDX),%RCX;(6) 
+0x4869;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x8(%RDX),%RBX;(6) 
+0x486d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RCX,(%RAX);(6) 
+0x4870;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RBX,0x8(%RAX);(6) 
+0x4874;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x10(%RDX),%RCX;(6) 
+0x4878;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x18(%RDX),%RBX;(6) 
+0x487c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RCX,0x10(%RAX);(6) 
+0x4880;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RBX,0x18(%RAX);(6) 
+0x4884;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x20(%RDX),%RCX;(6) 
+0x4888;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x28(%RDX),%RBX;(6) 
+0x488c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RCX,0x20(%RAX);(6) 
+0x4890;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RBX,0x28(%RAX);(6) 
+0x4894;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x30(%RDX),%RCX;(6) 
+0x4898;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x38(%RDX),%RBX;(6) 
+0x489c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RCX,0x30(%RAX);(6) 
+0x48a0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RBX,0x38(%RAX);(6) 
+0x48a4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x40(%RDX),%RDX;(6) 
+0x48a8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RDX,0x40(%RAX);(6) 
+0x48ac;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;TEST	%R13D,%R13D;(6) 
+0x48af;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;JNE	499a <crossover_+0x5d9>;(6) 
+0x48b5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0xe0(%RBP),%RAX;(6) 
+0x48bc;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	(%RAX),%RAX;(6) 
+0x48bf;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;TEST	%RAX,%RAX;(6) 
+0x48c2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;JE	498c <crossover_+0x5cb>;(6) 
+0x48c8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0xe0(%RBP),%RAX;(6) 
+0x48cf;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x38(%RAX),%RDX;(6) 
+0x48d3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0xe0(%RBP),%RAX;(6) 
+0x48da;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	0x30(%RAX),%RCX;(6) 
+0x48de;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RDX,%RAX;(6) 
+0x48e1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;SUB	%RCX,%RAX;(6) 
+0x48e4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;LEA	0x1(%RAX),%RBX;(6) 
+0x48e8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RBX,%RAX;(6) 
+0x48eb;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;SAL	$0x4,%RAX;(6) 
+0x48ef;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;ADD	%RBX,%RAX;(6) 
+0x48f2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;SAL	$0x2,%RAX;(6) 
+0x48f6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	$0x1,%EDX;(6) 
+0x48fb;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;TEST	%RAX,%RAX;(6) 
+0x48fe;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;CMOVE	%RDX,%RAX;(6) 
+0x4902;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RAX,%RDI;(6) 
+0x4905;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;CALL	20e0 <@plt_start@+0xc0>;(6) 
+0x490a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;TEST	%RAX,%RAX;(6) 
+0x490d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;JNE	494a <crossover_+0x589>;(6) 
+0x490f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RBX,%RAX;(6) 
+0x4912;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;SAL	$0x4,%RAX;(6) 
+0x4916;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;ADD	%RBX,%RAX;(6) 
+0x4919;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;SAL	$0x2,%RAX;(6) 
+0x491d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	$0x1,%EDX;(6) 
+0x4922;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;TEST	%RAX,%RAX;(6) 
+0x4925;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;CMOVE	%RDX,%RAX;(6) 
+0x4929;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RAX,%RDX;(6) 
+0x492c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;LEA	0xc817(%RIP),%RAX;(6) 
+0x4933;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RAX,%RSI;(6) 
+0x4936;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;LEA	0xcea3(%RIP),%RAX;(6) 
+0x493d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RAX,%RDI;(6) 
+0x4940;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	$0,%EAX;(6) 
+0x4945;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;CALL	21d0 <@plt_start@+0x1b0>;(6) 
+0x494a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0xf0(%RBP),%RDX;(6) 
+0x4951;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RAX,(%RDX);(6) 
+0x4954;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RBX,%RAX;(6) 
+0x4957;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;SAL	$0x4,%RAX;(6) 
+0x495b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;ADD	%RBX,%RAX;(6) 
+0x495e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;SAL	$0x2,%RAX;(6) 
+0x4962;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RAX,%RSI;(6) 
+0x4965;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0xe0(%RBP),%RAX;(6) 
+0x496c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	(%RAX),%RDX;(6) 
+0x496f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0xf0(%RBP),%RAX;(6) 
+0x4976;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	(%RAX),%RAX;(6) 
+0x4979;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RDX,%RCX;(6) 
+0x497c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RSI,%RDX;(6) 
+0x497f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RCX,%RSI;(6) 
+0x4982;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RAX,%RDI;(6) 
+0x4985;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;CALL	2340 <@plt_start@+0x320>;(6) 
+0x498a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;JMP	499a <crossover_+0x5d9>;(6) 
+0x498c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0xf0(%RBP),%RAX;(6) 
+0x4993;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOVQ	$0,(%RAX);(6) 
+0x499a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;TEST	%R13D,%R13D;(6) 
+0x499d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;JNE	49bc <crossover_+0x5fb>;(6) 
+0x499f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0x80(%RBP),%RAX;(6) 
+0x49a3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;TEST	%RAX,%RAX;(6) 
+0x49a6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;JE	49bc <crossover_+0x5fb>;(6) 
+0x49a8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	-0x80(%RBP),%RAX;(6) 
+0x49ac;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOV	%RAX,%RDI;(6) 
+0x49af;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;CALL	2170 <@plt_start@+0x150>;(6) 
+0x49b4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;MOVQ	$0,-0x80(%RBP);(6) 
+0x49bc;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;CMP	%R12D,-0x24(%RBP);(6) 
+0x49c0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;JE	49e0 <crossover_+0x61f>;(6) 
+0x49c2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;LEA	0xcaaf(%RIP),%RAX;(6) 
+0x49c9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;MOV	%RAX,%RSI;(6) 
+0x49cc;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;LEA	0xcda5(%RIP),%RAX;(6) 
+0x49d3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;MOV	%RAX,%RDI;(6) 
+0x49d6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;MOV	$0,%EAX;(6) 
+0x49db;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;CALL	2070 <@plt_start@+0x50>;(6) 
+0x49e0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;ADDL	$0x1,-0x24(%RBP);(6) 
+0x49e4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;MOV	-0x24(%RBP),%R12D;(6) 
+0x49e8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:314;JMP	45f5 <crossover_+0x234>;(6) 
+0x49ed;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:316;NOP;
+0x49ee;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	-0x28(%RBP),%EAX;
+0x49f1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;LEA	0x1(%RAX),%EDX;
+0x49f4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	-0xd8(%RBP),%RAX;
+0x49fb;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	0x40(%RAX),%R14D;
+0x49ff;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	%EDX,-0x24(%RBP);
+0x4a02;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	-0x24(%RBP),%R12D;
+0x4a06;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;CMP	%R14D,-0x24(%RBP);(5) 
+0x4a0a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;SETG	%AL;(5) 
+0x4a0d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOVZX	%AL,%EAX;(5) 
+0x4a10;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;TEST	%EAX,%EAX;(5) 
+0x4a12;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;JNE	4dfe <crossover_+0xa3d>;(5) 
+0x4a18;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;CMPL	$0x7fffffff,-0x24(%RBP);(5) 
+0x4a1f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;JNE	4a3f <crossover_+0x67e>;(5) 
+0x4a21;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;LEA	0xca9a(%RIP),%RAX;(5) 
+0x4a28;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	%RAX,%RSI;(5) 
+0x4a2b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;LEA	0xcde6(%RIP),%RAX;(5) 
+0x4a32;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	%RAX,%RDI;(5) 
+0x4a35;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	$0,%EAX;(5) 
+0x4a3a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;CALL	2070 <@plt_start@+0x50>;(5) 
+0x4a3f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0xe8(%RBP),%RAX;(5) 
+0x4a46;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;CMP	-0xe0(%RBP),%RAX;(5) 
+0x4a4d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;SETE	%AL;(5) 
+0x4a50;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOVZX	%AL,%R13D;(5) 
+0x4a54;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0xe8(%RBP),%RAX;(5) 
+0x4a5b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	(%RAX),%RCX;(5) 
+0x4a5e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x8(%RAX),%RBX;(5) 
+0x4a62;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RCX,-0x80(%RBP);(5) 
+0x4a66;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RBX,-0x78(%RBP);(5) 
+0x4a6a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x10(%RAX),%RCX;(5) 
+0x4a6e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x18(%RAX),%RBX;(5) 
+0x4a72;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RCX,-0x70(%RBP);(5) 
+0x4a76;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RBX,-0x68(%RBP);(5) 
+0x4a7a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x20(%RAX),%RCX;(5) 
+0x4a7e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x28(%RAX),%RBX;(5) 
+0x4a82;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RCX,-0x60(%RBP);(5) 
+0x4a86;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RBX,-0x58(%RBP);(5) 
+0x4a8a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x30(%RAX),%RCX;(5) 
+0x4a8e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x38(%RAX),%RBX;(5) 
+0x4a92;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RCX,-0x50(%RBP);(5) 
+0x4a96;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RBX,-0x48(%RBP);(5) 
+0x4a9a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x40(%RAX),%RAX;(5) 
+0x4a9e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RAX,-0x40(%RBP);(5) 
+0x4aa2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0xe8(%RBP),%RAX;(5) 
+0x4aa9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0xe0(%RBP),%RDX;(5) 
+0x4ab0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	(%RDX),%RCX;(5) 
+0x4ab3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x8(%RDX),%RBX;(5) 
+0x4ab7;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RCX,(%RAX);(5) 
+0x4aba;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RBX,0x8(%RAX);(5) 
+0x4abe;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x10(%RDX),%RCX;(5) 
+0x4ac2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x18(%RDX),%RBX;(5) 
+0x4ac6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RCX,0x10(%RAX);(5) 
+0x4aca;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RBX,0x18(%RAX);(5) 
+0x4ace;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x20(%RDX),%RCX;(5) 
+0x4ad2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x28(%RDX),%RBX;(5) 
+0x4ad6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RCX,0x20(%RAX);(5) 
+0x4ada;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RBX,0x28(%RAX);(5) 
+0x4ade;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x30(%RDX),%RCX;(5) 
+0x4ae2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x38(%RDX),%RBX;(5) 
+0x4ae6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RCX,0x30(%RAX);(5) 
+0x4aea;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RBX,0x38(%RAX);(5) 
+0x4aee;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x40(%RDX),%RDX;(5) 
+0x4af2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RDX,0x40(%RAX);(5) 
+0x4af6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;TEST	%R13D,%R13D;(5) 
+0x4af9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;JNE	4be4 <crossover_+0x823>;(5) 
+0x4aff;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0xe0(%RBP),%RAX;(5) 
+0x4b06;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	(%RAX),%RAX;(5) 
+0x4b09;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;TEST	%RAX,%RAX;(5) 
+0x4b0c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;JE	4bd6 <crossover_+0x815>;(5) 
+0x4b12;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0xe0(%RBP),%RAX;(5) 
+0x4b19;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x38(%RAX),%RDX;(5) 
+0x4b1d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0xe0(%RBP),%RAX;(5) 
+0x4b24;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	0x30(%RAX),%RCX;(5) 
+0x4b28;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RDX,%RAX;(5) 
+0x4b2b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;SUB	%RCX,%RAX;(5) 
+0x4b2e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;LEA	0x1(%RAX),%RBX;(5) 
+0x4b32;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RBX,%RAX;(5) 
+0x4b35;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;SAL	$0x4,%RAX;(5) 
+0x4b39;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;ADD	%RBX,%RAX;(5) 
+0x4b3c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;SAL	$0x2,%RAX;(5) 
+0x4b40;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	$0x1,%EDX;(5) 
+0x4b45;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;TEST	%RAX,%RAX;(5) 
+0x4b48;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;CMOVE	%RDX,%RAX;(5) 
+0x4b4c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RAX,%RDI;(5) 
+0x4b4f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;CALL	20e0 <@plt_start@+0xc0>;(5) 
+0x4b54;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;TEST	%RAX,%RAX;(5) 
+0x4b57;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;JNE	4b94 <crossover_+0x7d3>;(5) 
+0x4b59;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RBX,%RAX;(5) 
+0x4b5c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;SAL	$0x4,%RAX;(5) 
+0x4b60;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;ADD	%RBX,%RAX;(5) 
+0x4b63;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;SAL	$0x2,%RAX;(5) 
+0x4b67;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	$0x1,%EDX;(5) 
+0x4b6c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;TEST	%RAX,%RAX;(5) 
+0x4b6f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;CMOVE	%RDX,%RAX;(5) 
+0x4b73;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RAX,%RDX;(5) 
+0x4b76;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;LEA	0xc5cd(%RIP),%RAX;(5) 
+0x4b7d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RAX,%RSI;(5) 
+0x4b80;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;LEA	0xccc1(%RIP),%RAX;(5) 
+0x4b87;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RAX,%RDI;(5) 
+0x4b8a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	$0,%EAX;(5) 
+0x4b8f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;CALL	21d0 <@plt_start@+0x1b0>;(5) 
+0x4b94;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0xe8(%RBP),%RDX;(5) 
+0x4b9b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RAX,(%RDX);(5) 
+0x4b9e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RBX,%RAX;(5) 
+0x4ba1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;SAL	$0x4,%RAX;(5) 
+0x4ba5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;ADD	%RBX,%RAX;(5) 
+0x4ba8;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;SAL	$0x2,%RAX;(5) 
+0x4bac;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RAX,%RSI;(5) 
+0x4baf;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0xe0(%RBP),%RAX;(5) 
+0x4bb6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	(%RAX),%RDX;(5) 
+0x4bb9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0xe8(%RBP),%RAX;(5) 
+0x4bc0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	(%RAX),%RAX;(5) 
+0x4bc3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RDX,%RCX;(5) 
+0x4bc6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RSI,%RDX;(5) 
+0x4bc9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RCX,%RSI;(5) 
+0x4bcc;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RAX,%RDI;(5) 
+0x4bcf;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;CALL	2340 <@plt_start@+0x320>;(5) 
+0x4bd4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;JMP	4be4 <crossover_+0x823>;(5) 
+0x4bd6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0xe8(%RBP),%RAX;(5) 
+0x4bdd;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOVQ	$0,(%RAX);(5) 
+0x4be4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;TEST	%R13D,%R13D;(5) 
+0x4be7;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;JNE	4c06 <crossover_+0x845>;(5) 
+0x4be9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0x80(%RBP),%RAX;(5) 
+0x4bed;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;TEST	%RAX,%RAX;(5) 
+0x4bf0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;JE	4c06 <crossover_+0x845>;(5) 
+0x4bf2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	-0x80(%RBP),%RAX;(5) 
+0x4bf6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOV	%RAX,%RDI;(5) 
+0x4bf9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;CALL	2170 <@plt_start@+0x150>;(5) 
+0x4bfe;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:321;MOVQ	$0,-0x80(%RBP);(5) 
+0x4c06;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0xf0(%RBP),%RAX;(5) 
+0x4c0d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;CMP	-0xd8(%RBP),%RAX;(5) 
+0x4c14;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;SETE	%AL;(5) 
+0x4c17;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOVZX	%AL,%R13D;(5) 
+0x4c1b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0xf0(%RBP),%RAX;(5) 
+0x4c22;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	(%RAX),%RCX;(5) 
+0x4c25;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x8(%RAX),%RBX;(5) 
+0x4c29;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RCX,-0x80(%RBP);(5) 
+0x4c2d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RBX,-0x78(%RBP);(5) 
+0x4c31;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x10(%RAX),%RCX;(5) 
+0x4c35;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x18(%RAX),%RBX;(5) 
+0x4c39;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RCX,-0x70(%RBP);(5) 
+0x4c3d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RBX,-0x68(%RBP);(5) 
+0x4c41;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x20(%RAX),%RCX;(5) 
+0x4c45;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x28(%RAX),%RBX;(5) 
+0x4c49;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RCX,-0x60(%RBP);(5) 
+0x4c4d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RBX,-0x58(%RBP);(5) 
+0x4c51;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x30(%RAX),%RCX;(5) 
+0x4c55;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x38(%RAX),%RBX;(5) 
+0x4c59;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RCX,-0x50(%RBP);(5) 
+0x4c5d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RBX,-0x48(%RBP);(5) 
+0x4c61;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x40(%RAX),%RAX;(5) 
+0x4c65;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RAX,-0x40(%RBP);(5) 
+0x4c69;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0xf0(%RBP),%RAX;(5) 
+0x4c70;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0xd8(%RBP),%RDX;(5) 
+0x4c77;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	(%RDX),%RCX;(5) 
+0x4c7a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x8(%RDX),%RBX;(5) 
+0x4c7e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RCX,(%RAX);(5) 
+0x4c81;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RBX,0x8(%RAX);(5) 
+0x4c85;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x10(%RDX),%RCX;(5) 
+0x4c89;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x18(%RDX),%RBX;(5) 
+0x4c8d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RCX,0x10(%RAX);(5) 
+0x4c91;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RBX,0x18(%RAX);(5) 
+0x4c95;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x20(%RDX),%RCX;(5) 
+0x4c99;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x28(%RDX),%RBX;(5) 
+0x4c9d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RCX,0x20(%RAX);(5) 
+0x4ca1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RBX,0x28(%RAX);(5) 
+0x4ca5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x30(%RDX),%RCX;(5) 
+0x4ca9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x38(%RDX),%RBX;(5) 
+0x4cad;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RCX,0x30(%RAX);(5) 
+0x4cb1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RBX,0x38(%RAX);(5) 
+0x4cb5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x40(%RDX),%RDX;(5) 
+0x4cb9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RDX,0x40(%RAX);(5) 
+0x4cbd;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;TEST	%R13D,%R13D;(5) 
+0x4cc0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;JNE	4dab <crossover_+0x9ea>;(5) 
+0x4cc6;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0xd8(%RBP),%RAX;(5) 
+0x4ccd;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	(%RAX),%RAX;(5) 
+0x4cd0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;TEST	%RAX,%RAX;(5) 
+0x4cd3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;JE	4d9d <crossover_+0x9dc>;(5) 
+0x4cd9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0xd8(%RBP),%RAX;(5) 
+0x4ce0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x38(%RAX),%RDX;(5) 
+0x4ce4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0xd8(%RBP),%RAX;(5) 
+0x4ceb;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	0x30(%RAX),%RCX;(5) 
+0x4cef;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RDX,%RAX;(5) 
+0x4cf2;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;SUB	%RCX,%RAX;(5) 
+0x4cf5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;LEA	0x1(%RAX),%RBX;(5) 
+0x4cf9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RBX,%RAX;(5) 
+0x4cfc;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;SAL	$0x4,%RAX;(5) 
+0x4d00;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;ADD	%RBX,%RAX;(5) 
+0x4d03;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;SAL	$0x2,%RAX;(5) 
+0x4d07;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	$0x1,%EDX;(5) 
+0x4d0c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;TEST	%RAX,%RAX;(5) 
+0x4d0f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;CMOVE	%RDX,%RAX;(5) 
+0x4d13;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RAX,%RDI;(5) 
+0x4d16;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;CALL	20e0 <@plt_start@+0xc0>;(5) 
+0x4d1b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;TEST	%RAX,%RAX;(5) 
+0x4d1e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;JNE	4d5b <crossover_+0x99a>;(5) 
+0x4d20;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RBX,%RAX;(5) 
+0x4d23;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;SAL	$0x4,%RAX;(5) 
+0x4d27;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;ADD	%RBX,%RAX;(5) 
+0x4d2a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;SAL	$0x2,%RAX;(5) 
+0x4d2e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	$0x1,%EDX;(5) 
+0x4d33;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;TEST	%RAX,%RAX;(5) 
+0x4d36;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;CMOVE	%RDX,%RAX;(5) 
+0x4d3a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RAX,%RDX;(5) 
+0x4d3d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;LEA	0xc406(%RIP),%RAX;(5) 
+0x4d44;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RAX,%RSI;(5) 
+0x4d47;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;LEA	0xcb32(%RIP),%RAX;(5) 
+0x4d4e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RAX,%RDI;(5) 
+0x4d51;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	$0,%EAX;(5) 
+0x4d56;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;CALL	21d0 <@plt_start@+0x1b0>;(5) 
+0x4d5b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0xf0(%RBP),%RDX;(5) 
+0x4d62;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RAX,(%RDX);(5) 
+0x4d65;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RBX,%RAX;(5) 
+0x4d68;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;SAL	$0x4,%RAX;(5) 
+0x4d6c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;ADD	%RBX,%RAX;(5) 
+0x4d6f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;SAL	$0x2,%RAX;(5) 
+0x4d73;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RAX,%RSI;(5) 
+0x4d76;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0xd8(%RBP),%RAX;(5) 
+0x4d7d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	(%RAX),%RDX;(5) 
+0x4d80;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0xf0(%RBP),%RAX;(5) 
+0x4d87;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	(%RAX),%RAX;(5) 
+0x4d8a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RDX,%RCX;(5) 
+0x4d8d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RSI,%RDX;(5) 
+0x4d90;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RCX,%RSI;(5) 
+0x4d93;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RAX,%RDI;(5) 
+0x4d96;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;CALL	2340 <@plt_start@+0x320>;(5) 
+0x4d9b;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;JMP	4dab <crossover_+0x9ea>;(5) 
+0x4d9d;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0xf0(%RBP),%RAX;(5) 
+0x4da4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOVQ	$0,(%RAX);(5) 
+0x4dab;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;TEST	%R13D,%R13D;(5) 
+0x4dae;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;JNE	4dcd <crossover_+0xa0c>;(5) 
+0x4db0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0x80(%RBP),%RAX;(5) 
+0x4db4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;TEST	%RAX,%RAX;(5) 
+0x4db7;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;JE	4dcd <crossover_+0xa0c>;(5) 
+0x4db9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	-0x80(%RBP),%RAX;(5) 
+0x4dbd;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOV	%RAX,%RDI;(5) 
+0x4dc0;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;CALL	2170 <@plt_start@+0x150>;(5) 
+0x4dc5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;MOVQ	$0,-0x80(%RBP);(5) 
+0x4dcd;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;CMP	%R12D,-0x24(%RBP);(5) 
+0x4dd1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;JE	4df1 <crossover_+0xa30>;(5) 
+0x4dd3;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;LEA	0xc69e(%RIP),%RAX;(5) 
+0x4dda;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	%RAX,%RSI;(5) 
+0x4ddd;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;LEA	0xca34(%RIP),%RAX;(5) 
+0x4de4;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	%RAX,%RDI;(5) 
+0x4de7;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	$0,%EAX;(5) 
+0x4dec;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;CALL	2070 <@plt_start@+0x50>;(5) 
+0x4df1;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;ADDL	$0x1,-0x24(%RBP);(5) 
+0x4df5;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;MOV	-0x24(%RBP),%R12D;(5) 
+0x4df9;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:320;JMP	4a06 <crossover_+0x645>;(5) 
+0x4dfe;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:322;NOP;
+0x4dff;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:324;NOP;
+0x4e00;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:324;ADD	$0xd0,%RSP;
+0x4e07;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:324;POP	%RBX;
+0x4e08;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:324;POP	%R12;
+0x4e0a;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:324;POP	%R13;
+0x4e0c;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:324;POP	%R14;
+0x4e0e;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:324;POP	%RBP;
+0x4e0f;/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90:324;RET;

@@ -1,0 +1,1 @@
+maqao oneview -R1 xp=ov_omp --replace -- ./genetic_algorithm ../files/ligand_NO_BOND.mol2 ../files/site.mol2 

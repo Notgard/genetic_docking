@@ -1,0 +1,25 @@
+{
+  "__fct":
+    {
+      "loops":
+        {
+          "_24":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90",
+                    "regions":
+                      [
+                        [
+                        410,
+                        410
+                        ]
+                      ]
+                  }
+                ],
+              "src": "complete_mol2_omp_mod.f90:410-410"
+            }
+        }
+    }
+}

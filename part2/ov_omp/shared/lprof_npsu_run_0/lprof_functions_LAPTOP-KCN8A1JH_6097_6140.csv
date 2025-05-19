@@ -1,0 +1,11 @@
+function_id;module;function_name;source_info;inc_time_p;inc_time_s;inc_time_s_min;inc_time_s_avg;inc_time_s_max;inc_cov_deviation;inc_time_deviation;exc_time_p;exc_time_s;exc_time_s_min;exc_time_s_avg;exc_time_s_max;exc_cov_deviation;exc_time_deviation;nb_threads;cats;label_name;flops;
+269;libgomp.so.1.0.0;omp_get_num_procs;;38.42113494873;0.73000019788742;0;0;0;0;0;38.42113494873;0.73000019788742;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";omp_get_num_procs;;
+29;genetic_algorithm;__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;complete_mol2_omp_mod.f90:350-389;29.2105884552;0.55500012636185;0;0;0;0;0;0.78947860002518;0.015000064857304;0;0;0;0;0;;"100,0,0,0,0,0,0,0,0,0";__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;;
+1578;libc.so.6;_mcleanup;;23.157941818237;0.44000005722046;0;0;0;0;0;23.157941818237;0.44000005722046;0;0;0;0;0;;"0,0,0,0,100,0,0,0,0,0";_mcleanup;;
+20;genetic_algorithm;is_bonded;complete_mol2_omp_mod.f90:6-14;5.000009059906;0.094999991357327;0;0;0;0;0;5.000009059906;0.094999991357327;0;0;0;0;0;;"100,0,0,0,0,0,0,0,0,0";__bond_utils_MOD_is_bonded;;
+1582;libc.so.6;_mcount;;2.3684248924255;0.044999986886978;0;0;0;0;0;2.3684248924255;0.044999986886978;0;0;0;0;0;;"0,0,0,0,100,0,0,0,0,0";_mcount;;
+377;libm.so.6;__acosf_finite;;0.52631676197052;0.00999999884516;0;0;0;0;0;0.52631676197052;0.00999999884516;0;0;0;0;0;;"0,0,0,100,0,0,0,0,0,0";__acosf_finite;;
+253;libgomp.so.1.0.0;omp_fulfill_event;;0.52631676197052;0.00999999884516;0;0;0;0;0;0.52631676197052;0.00999999884516;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";omp_fulfill_event;;
+182;libgomp.so.1.0.0;GOMP_loop_end;;0.26315838098526;0.00499999942258;0;0;0;0;0;0.26315838098526;0.00499999942258;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";GOMP_loop_end;;
+150;libgomp.so.1.0.0;omp_get_device_num;;0.26315838098526;0.00499999942258;0;0;0;0;0;0.26315838098526;0.00499999942258;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";omp_get_device_num;;
+109;libm.so.6;acosf;;0.26315838098526;0.00499999942258;0;0;0;0;0;0.26315838098526;0.00499999942258;0;0;0;0;0;;"0,0,0,100,0,0,0,0,0,0";acosf;;

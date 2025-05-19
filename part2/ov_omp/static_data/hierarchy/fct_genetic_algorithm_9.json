@@ -1,0 +1,93 @@
+{
+  "__fct":
+    {
+      "loops":
+        {
+          "_0":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90",
+                    "regions":
+                      [
+                        [
+                        263,
+                        263
+                        ]
+                      ]
+                  }
+                ],
+              "src": "genetic_algorithm.f90:263-263"
+            },
+          "_2":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90",
+                    "regions":
+                      [
+                        [
+                        255,
+                        258
+                        ]
+                      ]
+                  }
+                ],
+              "src": "genetic_algorithm.f90:255-258"
+            },
+          "_4":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90",
+                    "regions":
+                      [
+                        [
+                        238,
+                        238
+                        ]
+                      ]
+                  }
+                ],
+              "src": "genetic_algorithm.f90:238-238"
+            },
+          "_1":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90",
+                    "regions":
+                      [
+                        [
+                        262,
+                        262
+                        ]
+                      ]
+                  }
+                ],
+              "src": "genetic_algorithm.f90:262-262"
+            },
+          "_3":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90",
+                    "regions":
+                      [
+                        [
+                        240,
+                        251
+                        ]
+                      ]
+                  }
+                ],
+              "src": "genetic_algorithm.f90:240-251"
+            }
+        }
+    }
+}
