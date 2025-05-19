@@ -3,9 +3,14 @@ MAQAO 2.21.1 - a9bb74606c7e260f7f87782e64f16b00a6f20c1b::20250121-112452 || 2025
 maqao oneview -R1 xp=ov_omp --replace -- ./genetic_algorithm ../files/ligand_NO_BOND.mol2 ../files/site.mol2 
 CPY:  [true] ./genetic_algorithm --> /home/notgard/chps1002/genetic_docking/part2/ov_omp/binaries/genetic_algorithm
 CMD:   /usr/bin/maqao lprof _caller=oneview  --xp="/home/notgard/chps1002/genetic_docking/part2/ov_omp/tools/lprof_npsu_run_0" --mpi-command="" --collect-CPU-time-intervals --collect-topology   -- /home/notgard/chps1002/genetic_docking/part2/ov_omp/binaries/genetic_algorithm  ../files/ligand_NO_BOND.mol2 ../files/site.mol2
-10 functions were discarded from static analysis because their coverage
+In run run_0, 10 loops were discarded from static analysis because their coverage
 are lower than object_coverage_threshold value (0.01%).
-That represents 0.063828518614173% of the execution time. To include them, change the value
+That represents 0.039727832656354% of the execution time. To include them, change the value
+in the experiment directory configuration file, then rerun the command with the additionnal parameter
+--force-static-analysis
+18 functions were discarded from static analysis because their coverage
+are lower than object_coverage_threshold value (0.01%).
+That represents 0.084421644452959% of the execution time. To include them, change the value
 in the experiment directory configuration file, then rerun the command with the additionnal parameter
 --force-static-analysis
 CMD:  /usr/bin/maqao otter  -input=/home/notgard/chps1002/genetic_docking/part2/ov_omp/OTTER/input_manifest.csv -output=/home/notgard/chps1002/genetic_docking/part2/ov_omp/OTTER/output_manifest.csv

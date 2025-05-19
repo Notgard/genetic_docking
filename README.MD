@@ -18,6 +18,7 @@ make
 ```bash
 cd part2
 make genetic_algorithm
+rm -f results/* #vider ce dossier avant chaque lancement
 OMP_NUM_THREADS=<nombre_de_threads> ./genetic_algorithm ../files/ligand_NO_BOND.mol2 ../files/site.mol2
 ```
 

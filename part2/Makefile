@@ -5,10 +5,10 @@ FC = gfortran
 
 # Compilation flags
 FCFLAGS_DEBUG = -c -pg -g -fbacktrace -fbounds-check -fcheck=all -Wall -O0 -Jmod -Imod -fopenmp
-FCFLAGS = -O3 -c -Jmod -Imod -fopenmp
-LDFLAGS = -fopenmp -pg -g
+FCFLAGS = -O3 -march=x86-64 -c -pg -Jmod -Imod -fopenmp
+LDFLAGS = -O3 -march=x86-64 -fopenmp -pg
 
-FCFLAGS = $(FCFLAGS_DEBUG)
+#FCFLAGS = $(FCFLAGS_DEBUG)
 
 # Executables
 EXEC = complete_mol2_omp_mod molecule atom genetic_algorithm

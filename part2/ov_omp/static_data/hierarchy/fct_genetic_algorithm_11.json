@@ -3,7 +3,7 @@
     {
       "loops":
         {
-          "_6":
+          "_4":
             {
               "src_regions":
                 [
@@ -12,30 +12,13 @@
                     "regions":
                       [
                         [
-                        314,
-                        316
+                        340,
+                        346
                         ]
                       ]
                   }
                 ],
-              "src": "genetic_algorithm.f90:314-316"
-            },
-          "_5":
-            {
-              "src_regions":
-                [
-                  {
-                    "path": "/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90",
-                    "regions":
-                      [
-                        [
-                        320,
-                        322
-                        ]
-                      ]
-                  }
-                ],
-              "src": "genetic_algorithm.f90:320-322"
+              "src": "genetic_algorithm.f90:340-346"
             }
         }
     }

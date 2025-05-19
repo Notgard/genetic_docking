@@ -1,8 +1,0 @@
-/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90: 407 - 411
---------------------------------------------------------------------------------
-
-407:    pure function normalization(v) result(norm)
-408:       real, dimension(3), intent(in) :: v
-409:       real :: norm
-410:       norm = sqrt(sum(v**2))
-411:    end function normalization

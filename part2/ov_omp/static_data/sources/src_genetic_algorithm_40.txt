@@ -1,4 +1,0 @@
-/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90: 351 - 351
---------------------------------------------------------------------------------
-
-351:       !$omp do schedule(dynamic) reduction(+:hbond_count)

@@ -1,0 +1,110 @@
+{
+  "__fct":
+    {
+      "loops":
+        {
+          "_26":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90",
+                    "regions":
+                      [
+                        [
+                        340,
+                        343
+                        ]
+                      ]
+                  }
+                ],
+              "src": "complete_mol2_omp_mod.f90:340-343"
+            },
+          "_27":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90",
+                    "regions":
+                      [
+                        [
+                        334,
+                        337
+                        ]
+                      ]
+                  }
+                ],
+              "src": "complete_mol2_omp_mod.f90:334-337"
+            },
+          "_30":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90",
+                    "regions":
+                      [
+                        [
+                        330,
+                        330
+                        ]
+                      ]
+                  }
+                ],
+              "src": "complete_mol2_omp_mod.f90:330-330"
+            },
+          "_28":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90",
+                    "regions":
+                      [
+                        [
+                        332,
+                        332
+                        ]
+                      ]
+                  }
+                ],
+              "src": "complete_mol2_omp_mod.f90:332-332"
+            },
+          "_31":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90",
+                    "regions":
+                      [
+                        [
+                        329,
+                        329
+                        ]
+                      ]
+                  }
+                ],
+              "src": "complete_mol2_omp_mod.f90:329-329"
+            },
+          "_29":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90",
+                    "regions":
+                      [
+                        [
+                        331,
+                        331
+                        ]
+                      ]
+                  }
+                ],
+              "src": "complete_mol2_omp_mod.f90:331-331"
+            }
+        }
+    }
+}

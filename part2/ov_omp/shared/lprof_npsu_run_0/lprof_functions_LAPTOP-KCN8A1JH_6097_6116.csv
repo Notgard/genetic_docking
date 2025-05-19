@@ -1,9 +1,0 @@
-function_id;module;function_name;source_info;inc_time_p;inc_time_s;inc_time_s_min;inc_time_s_avg;inc_time_s_max;inc_cov_deviation;inc_time_deviation;exc_time_p;exc_time_s;exc_time_s_min;exc_time_s_avg;exc_time_s_max;exc_cov_deviation;exc_time_deviation;nb_threads;cats;label_name;flops;
-269;libgomp.so.1.0.0;omp_get_num_procs;;36.227603912354;0.60500001907349;0;0;0;0;0;36.227603912354;0.60500001907349;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";omp_get_num_procs;;
-29;genetic_algorithm;__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;complete_mol2_omp_mod.f90:350-389;28.14376449585;0.47000008821487;0;0;0;0;0;1.1976127624512;0.020000100135803;0;0;0;0;0;;"100,0,0,0,0,0,0,0,0,0";__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;;
-1578;libc.so.6;_mcleanup;;25.149742126465;0.4200000166893;0;0;0;0;0;25.149742126465;0.4200000166893;0;0;0;0;0;;"0,0,0,0,100,0,0,0,0,0";_mcleanup;;
-20;genetic_algorithm;is_bonded;complete_mol2_omp_mod.f90:6-14;6.5868363380432;0.10999999195337;0;0;0;0;0;6.5868363380432;0.10999999195337;0;0;0;0;0;;"100,0,0,0,0,0,0,0,0,0";__bond_utils_MOD_is_bonded;;
-1582;libc.so.6;_mcount;;1.7964097261429;0.029999993741512;0;0;0;0;0;1.7964097261429;0.029999993741512;0;0;0;0;0;;"0,0,0,0,100,0,0,0,0,0";_mcount;;
-253;libgomp.so.1.0.0;omp_fulfill_event;;1.4970082044601;0.024999996647239;0;0;0;0;0;1.4970082044601;0.024999996647239;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";omp_fulfill_event;;
-182;libgomp.so.1.0.0;GOMP_loop_end;;0.29940167069435;0.0049999998882413;0;0;0;0;0;0.29940167069435;0.0049999998882413;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";GOMP_loop_end;;
-150;libgomp.so.1.0.0;omp_get_device_num;;0.29940167069435;0.0049999998882413;0;0;0;0;0;0.29940167069435;0.0049999998882413;0;0;0;0;0;;"0,0,100,0,0,0,0,0,0,0";omp_get_device_num;;

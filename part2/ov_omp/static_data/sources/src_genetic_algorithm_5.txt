@@ -1,6 +1,0 @@
-/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90: 320 - 322
---------------------------------------------------------------------------------
-
-320:    do i = crossover_point+1, parent1%nb_atoms
-321:       child1 = parent2
-322:       child2 = parent1

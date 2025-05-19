@@ -256,7 +256,9 @@ subroutine evolve_population(pop, pop_size, fitness, crossover_rate, mutation_ra
    do i = 1, n
       call random_number(r)
       if (r < mutation_rate) then
+         !$omp critical
          call mutate(new_pop(i))
+         !$omp end critical
       end if
    end do
    !$omp end parallel do

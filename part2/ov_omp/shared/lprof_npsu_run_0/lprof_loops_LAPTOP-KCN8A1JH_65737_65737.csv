@@ -1,0 +1,17 @@
+loop_id;module;function_name;function_id;source_info;level;inc_time_p;inc_time_s;inc_time_s_min;inc_time_s_avg;inc_time_s_max;inc_cov_deviation;inc_time_deviation;exc_time_p;exc_time_s;exc_time_s_min;exc_time_s_avg;exc_time_s_max;exc_cov_deviation;exc_time_deviation;nb_threads;flops;
+46;genetic_algorithm;__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;30;complete_mol2_omp_mod.f90:367-375,complete_mol2_omp_mod.f90:378-385;InBetween;21.935396194458;11.00500202179;;;;;;21.915462493896;10.995001792908;;;;;;;;
+26;genetic_algorithm;detect_hydrogen_bonds_between;25;complete_mol2_omp_mod.f90:340-343;Single;3.7970867156982;1.9050008058548;;;;;;3.7970867156982;1.9050008058548;;;;;;;;
+44;genetic_algorithm;__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;30;complete_mol2_omp_mod.f90:358-363,complete_mol2_omp_mod.f90:366-368,complete_mol2_omp_mod.f90:386-387;InBetween;24.197700500488;12.140001296997;;;;;;1.8736274242401;0.9400001168251;;;;;;;;
+45;genetic_algorithm;__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;30;complete_mol2_omp_mod.f90:358-359;InBetween;24.925226211548;12.50500202179;;;;;;0.72752547264099;0.36500000953674;;;;;;;;
+47;genetic_algorithm;__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;30;complete_mol2_omp_mod.f90:367-368;InBetween;22.324073791504;11.200001716614;;;;;;0.38867798447609;0.19499999284744;;;;;;;;
+30;genetic_algorithm;detect_hydrogen_bonds_between;25;complete_mol2_omp_mod.f90:330-330;Single;0.21925424039364;0.10999999195337;;;;;;0.21925424039364;0.10999999195337;;;;;;;;
+27;genetic_algorithm;detect_hydrogen_bonds_between;25;complete_mol2_omp_mod.f90:334-337;Single;0.1295593380928;0.064999997615814;;;;;;0.1295593380928;0.064999997615814;;;;;;;;
+28;genetic_algorithm;detect_hydrogen_bonds_between;25;complete_mol2_omp_mod.f90:332-332;Single;0.079728819429874;0.03999999910593;;;;;;0.079728819429874;0.03999999910593;;;;;;;;
+4;genetic_algorithm;crossover;11;genetic_algorithm.f90:340-346;Single;0.059796612709761;0.029999999329448;;;;;;0.059796612709761;0.029999999329448;;;;;;;;
+19;genetic_algorithm;genetic_docking;17;genetic_algorithm.f90:117-119;Innermost;0.02989830635488;0.014999999664724;;;;;;0.02989830635488;0.014999999664724;;;;;;;;
+49;genetic_algorithm;__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;30;complete_mol2_omp_mod.f90:379-379;Innermost;0.019932204857469;0.0099999997764826;;;;;;0.019932204857469;0.0099999997764826;;;;;;;;
+31;genetic_algorithm;detect_hydrogen_bonds_between;25;complete_mol2_omp_mod.f90:329-329;Single;0.019932204857469;0.0099999997764826;;;;;;0.019932204857469;0.0099999997764826;;;;;;;;
+7;genetic_algorithm;select_parents;12;genetic_algorithm.f90:291-293;Single;0.019932204857469;0.0099999997764826;;;;;;0.019932204857469;0.0099999997764826;;;;;;;;
+42;genetic_algorithm;__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0;30;complete_mol2_omp_mod.f90:351-354,complete_mol2_omp_mod.f90:358-359;InBetween;24.935192108154;12.510001182556;;;;;;0.0099661024287343;0.0049999998882413;;;;;;;;
+6;genetic_algorithm;select_parents;12;genetic_algorithm.f90:303-306;Innermost;0.0099661024287343;0.0049999998882413;;;;;;0.0099661024287343;0.0049999998882413;;;;;;;;
+16;genetic_algorithm;genetic_docking;17;genetic_algorithm.f90:116-119,genetic_algorithm.f90:122-129,genetic_algorithm.f90:132-132;Outermost;0.039864409714937;0.019999999552965;;;;;;0.0099661024287343;0.0049999998882413;;;;;;;;

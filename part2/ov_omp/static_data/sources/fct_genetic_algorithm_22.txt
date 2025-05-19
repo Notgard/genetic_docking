@@ -1,8 +1,0 @@
-/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90: 413 - 417
---------------------------------------------------------------------------------
-
-413:    pure function dot_product3(v1, v2) result(dot)
-414:       real, dimension(3), intent(in) :: v1, v2
-415:       real :: dot
-416:       dot = sum(v1 * v2)
-417:    end function dot_product3

@@ -1,6 +1,6 @@
 name;time_p;time_s;cpi_ratio;
-/usr/lib/x86_64-linux-gnu/libc.so.6;39.618236541748;8.6942195892334;;
-/home/notgard/chps1002/genetic_docking/part2/ov_omp/binaries/genetic_algorithm;28.74836730957;6.3088274002075;;
-/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0;26.92925453186;5.9096231460571;;
-/usr/lib/x86_64-linux-gnu/libgfortran.so.5.0.0;4.5637383460999;1.001512169838;;
-/usr/lib/x86_64-linux-gnu/libm.so.6;0.14042273163795;0.030815759673715;;
+/usr/lib/x86_64-linux-gnu/libc.so.6;38.848865509033;19.587610244751;;
+/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0;30.2552318573;15.254697799683;;
+/home/notgard/chps1002/genetic_docking/part2/ov_omp/binaries/genetic_algorithm;29.073335647583;14.658785820007;;
+/usr/lib/x86_64-linux-gnu/libgfortran.so.5.0.0;1.792719244957;0.90388959646225;;
+/usr/lib/x86_64-linux-gnu/libm.so.6;0.029795873910189;0.015023089013994;;

@@ -1,7 +1,0 @@
-/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90: 342 - 345
---------------------------------------------------------------------------------
-
-342:       do i = 1, n_site
-343:          if (trim(site%atoms(i)%element(1:1)) == "H") hydrogens_site(i) = .true.
-344:          if (trim(site%atoms(i)%element(1:1)) == "N" .or. trim(site%atoms(i)%element(1:1)) == "O" .or. &
-345:             trim(site%atoms(i)%element(1:1)) == "F" .or. trim(site%atoms(i)%element(1:2)) == "Cl") electronegs_site(i) = .true.

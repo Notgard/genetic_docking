@@ -1,11 +1,11 @@
 {
   "report": [
     {
-      "id_str": "Loop 45 - genetic_algorithm",
+      "id_str": "Loop 46 - genetic_algorithm",
       "module": "genetic_algorithm",
-      "id": 45,
-      "analysis": "Execution Time: 12 % - Vectorization Ratio: 2.94 % - Vector Length Use: 16.42 %",
-      "coverage": 12.504009246826,
+      "id": 46,
+      "analysis": "Execution Time: 21 % - Vectorization Ratio: 2.94 % - Vector Length Use: 16.42 %",
+      "coverage": 21.656637191772,
       "issues": [
         {
           "id_str": "Loop Computation Issues",
@@ -79,11 +79,11 @@
       ]
     },
     {
-      "id_str": "Loop 43 - genetic_algorithm",
+      "id_str": "Loop 44 - genetic_algorithm",
       "module": "genetic_algorithm",
-      "id": 43,
-      "analysis": "Execution Time: 6 % - Vectorization Ratio: 4.26 % - Vector Length Use: 17.82 %",
-      "coverage": 6.0700936317444,
+      "id": 44,
+      "analysis": "Execution Time: 1 % - Vectorization Ratio: 4.26 % - Vector Length Use: 17.82 %",
+      "coverage": 1.9143850803375,
       "issues": [
         {
           "id_str": "Loop Computation Issues",
@@ -157,11 +157,11 @@
       ]
     },
     {
-      "id_str": "Loop 25 - genetic_algorithm",
+      "id_str": "Loop 26 - genetic_algorithm",
       "module": "genetic_algorithm",
-      "id": 25,
-      "analysis": "Execution Time: 2 % - Vectorization Ratio: 0.00 % - Vector Length Use: 23.08 %",
-      "coverage": 2.553130865097,
+      "id": 26,
+      "analysis": "Execution Time: 0 % - Vectorization Ratio: 0.00 % - Vector Length Use: 23.08 %",
+      "coverage": 0.94601941108704,
       "issues": [
         {
           "id_str": "Control Flow Issues",
@@ -204,11 +204,11 @@
       ]
     },
     {
-      "id_str": "Loop 44 - genetic_algorithm",
+      "id_str": "Loop 45 - genetic_algorithm",
       "module": "genetic_algorithm",
-      "id": 44,
-      "analysis": "Execution Time: 2 % - Vectorization Ratio: 0.00 % - Vector Length Use: 18.23 %",
-      "coverage": 2.1127238273621,
+      "id": 45,
+      "analysis": "Execution Time: 0 % - Vectorization Ratio: 0.00 % - Vector Length Use: 18.23 %",
+      "coverage": 0.72999888658524,
       "issues": [
         {
           "id_str": "Control Flow Issues",
@@ -256,11 +256,11 @@
       ]
     },
     {
-      "id_str": "Loop 46 - genetic_algorithm",
+      "id_str": "Loop 47 - genetic_algorithm",
       "module": "genetic_algorithm",
-      "id": 46,
+      "id": 47,
       "analysis": "Execution Time: 0 % - Vectorization Ratio: 0.00 % - Vector Length Use: 12.50 %",
-      "coverage": 0.26169693470001,
+      "coverage": 0.33520355820656,
       "issues": [
         {
           "id_str": "Control Flow Issues",
@@ -308,110 +308,11 @@
       ]
     },
     {
-      "id_str": "Loop 40 - genetic_algorithm",
+      "id_str": "Loop 30 - genetic_algorithm",
       "module": "genetic_algorithm",
-      "id": 40,
-      "analysis": "Execution Time: 0 % - Vectorization Ratio: 0.00 % - Vector Length Use: 12.50 %",
-      "coverage": 0.12765702605247,
-      "issues": [
-        {
-          "id_str": "Loop Computation Issues",
-          "score": 6,
-          "issues": [
-            {
-              "code": "L2_LC_4",
-              "analysis": "[SA] Less than 10% of the FP ADD/SUB/MUL arithmetic operations are performed using FMA - Reorganize arithmetic expressions to exhibit potential for FMA. This issue costs 4 points.",
-              "score": 4,
-            },
-            {
-              "code": "L2_LC_6",
-              "analysis": "[SA] Presence of a large number of scalar integer instructions - Simplify loop structure, perform loop splitting or perform unroll and jam. This issue costs 2 points.",
-              "score": 2,
-            }
-          ]
-        },
-        {
-          "id_str": "Data Access Issues",
-          "score": 2,
-          "issues": [
-            {
-              "code": "L2_DA_6",
-              "analysis": "[SA] More than 20% of the loads are accessing the stack - Perform loop splitting to decrease pressure on registers. This issue costs 2 points.",
-              "score": 2,
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id_str": "Loop 41 - genetic_algorithm",
-      "module": "genetic_algorithm",
-      "id": 41,
-      "analysis": "Execution Time: 0 % - Vectorization Ratio: 0.00 % - Vector Length Use: 19.81 %",
-      "coverage": 0.11489132791758,
-      "issues": [
-        {
-          "id_str": "Loop Computation Issues",
-          "score": 2,
-          "issues": [
-            {
-              "code": "L2_LC_6",
-              "analysis": "[SA] Presence of a large number of scalar integer instructions - Simplify loop structure, perform loop splitting or perform unroll and jam. This issue costs 2 points.",
-              "score": 2,
-            }
-          ]
-        },
-        {
-          "id_str": "Control Flow Issues",
-          "score": 5,
-          "issues": [
-            {
-              "code": "L2_CF_2",
-              "analysis": "[SA] Several paths (3 paths) - Simplify control structure or force the compiler to use masked instructions. There are 3 issues ( = paths) costing 1 point each.",
-              "score": 3,
-            },
-            {
-              "code": "L2_CF_4",
-              "analysis": "[SA] Non innermost loop (InBetween) - Collapse loop with innermost ones. This issue costs 2 points.",
-              "score": 2,
-            }
-          ]
-        },
-        {
-          "id_str": "Data Access Issues",
-          "score": 2,
-          "issues": [
-            {
-              "code": "L2_DA_6",
-              "analysis": "[SA] More than 20% of the loads are accessing the stack - Perform loop splitting to decrease pressure on registers. This issue costs 2 points.",
-              "score": 2,
-            }
-          ]
-        },
-        {
-          "id_str": "Vectorization Roadblocks",
-          "score": 5,
-          "issues": [
-            {
-              "code": "L2_CF_2",
-              "analysis": "[SA] Several paths (3 paths) - Simplify control structure or force the compiler to use masked instructions. There are 3 issues ( = paths) costing 1 point each.",
-              "score": 3,
-            },
-            {
-              "code": "L2_CF_4",
-              "analysis": "[SA] Non innermost loop (InBetween) - Collapse loop with innermost ones. This issue costs 2 points.",
-              "score": 2,
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id_str": "Loop 29 - genetic_algorithm",
-      "module": "genetic_algorithm",
-      "id": 29,
+      "id": 30,
       "analysis": "Execution Time: 0 % - Vectorization Ratio: 0.00 % - Vector Length Use: 18.75 %",
-      "coverage": 0.089359916746616,
+      "coverage": 0.054625768214464,
       "issues": [
         {
           "id_str": "Data Access Issues",
@@ -443,20 +344,36 @@
       ]
     },
     {
-      "id_str": "Loop 26 - genetic_algorithm",
+      "id_str": "Loop 42 - genetic_algorithm",
       "module": "genetic_algorithm",
-      "id": 26,
-      "analysis": "Execution Time: 0 % - Vectorization Ratio: 0.00 % - Vector Length Use: 23.08 %",
-      "coverage": 0.076594211161137,
+      "id": 42,
+      "analysis": "Execution Time: 0 % - Vectorization Ratio: 0.00 % - Vector Length Use: 19.81 %",
+      "coverage": 0.037244841456413,
       "issues": [
         {
-          "id_str": "Control Flow Issues",
-          "score": 1,
+          "id_str": "Loop Computation Issues",
+          "score": 2,
           "issues": [
             {
-              "code": "L2_CF_1",
-              "analysis": "[SA] Presence of calls - Inline either by compiler or by hand and use SVML for libm calls. There are 1 issues (= calls) costing 1 point each.",
-              "score": 1,
+              "code": "L2_LC_6",
+              "analysis": "[SA] Presence of a large number of scalar integer instructions - Simplify loop structure, perform loop splitting or perform unroll and jam. This issue costs 2 points.",
+              "score": 2,
+            }
+          ]
+        },
+        {
+          "id_str": "Control Flow Issues",
+          "score": 5,
+          "issues": [
+            {
+              "code": "L2_CF_2",
+              "analysis": "[SA] Several paths (3 paths) - Simplify control structure or force the compiler to use masked instructions. There are 3 issues ( = paths) costing 1 point each.",
+              "score": 3,
+            },
+            {
+              "code": "L2_CF_4",
+              "analysis": "[SA] Non innermost loop (InBetween) - Collapse loop with innermost ones. This issue costs 2 points.",
+              "score": 2,
             }
           ]
         },
@@ -473,17 +390,17 @@
         },
         {
           "id_str": "Vectorization Roadblocks",
-          "score": 1001,
+          "score": 5,
           "issues": [
             {
-              "code": "L2_CF_1",
-              "analysis": "[SA] Presence of calls - Inline either by compiler or by hand and use SVML for libm calls. There are 1 issues (= calls) costing 1 point each.",
-              "score": 1,
+              "code": "L2_CF_2",
+              "analysis": "[SA] Several paths (3 paths) - Simplify control structure or force the compiler to use masked instructions. There are 3 issues ( = paths) costing 1 point each.",
+              "score": 3,
             },
             {
-              "code": "L2_CF_3",
-              "analysis": "[SA] Too many paths (at least 1000 paths) - Simplify control structure. There are at least 1000 issues ( = paths) costing 1 point.",
-              "score": 1000,
+              "code": "L2_CF_4",
+              "analysis": "[SA] Non innermost loop (InBetween) - Collapse loop with innermost ones. This issue costs 2 points.",
+              "score": 2,
             }
           ]
         }
@@ -493,8 +410,55 @@
       "id_str": "Loop 27 - genetic_algorithm",
       "module": "genetic_algorithm",
       "id": 27,
+      "analysis": "Execution Time: 0 % - Vectorization Ratio: 0.00 % - Vector Length Use: 23.08 %",
+      "coverage": 0.0322788618505,
+      "issues": [
+        {
+          "id_str": "Control Flow Issues",
+          "score": 1,
+          "issues": [
+            {
+              "code": "L2_CF_1",
+              "analysis": "[SA] Presence of calls - Inline either by compiler or by hand and use SVML for libm calls. There are 1 issues (= calls) costing 1 point each.",
+              "score": 1,
+            }
+          ]
+        },
+        {
+          "id_str": "Data Access Issues",
+          "score": 2,
+          "issues": [
+            {
+              "code": "L2_DA_6",
+              "analysis": "[SA] More than 20% of the loads are accessing the stack - Perform loop splitting to decrease pressure on registers. This issue costs 2 points.",
+              "score": 2,
+            }
+          ]
+        },
+        {
+          "id_str": "Vectorization Roadblocks",
+          "score": 1001,
+          "issues": [
+            {
+              "code": "L2_CF_1",
+              "analysis": "[SA] Presence of calls - Inline either by compiler or by hand and use SVML for libm calls. There are 1 issues (= calls) costing 1 point each.",
+              "score": 1,
+            },
+            {
+              "code": "L2_CF_3",
+              "analysis": "[SA] Too many paths (at least 1000 paths) - Simplify control structure. There are at least 1000 issues ( = paths) costing 1 point.",
+              "score": 1000,
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_str": "Loop 28 - genetic_algorithm",
+      "module": "genetic_algorithm",
+      "id": 28,
       "analysis": "Execution Time: 0 % - Vectorization Ratio: 0.00 % - Vector Length Use: 18.75 %",
-      "coverage": 0.057445663958788,
+      "coverage": 0.019863916561007,
       "issues": [
         {
           "id_str": "Data Access Issues",
@@ -520,6 +484,58 @@
               "code": "L2_DA_1",
               "analysis": "[SA] Presence of constant non unit stride data access - Use array restructuring, perform loop interchange or use gather instructions to lower a bit the cost. There are 1 issues ( = data accesses) costing 2 point each.",
               "score": 2,
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_str": "Loop 4 - genetic_algorithm",
+      "module": "genetic_algorithm",
+      "id": 4,
+      "analysis": "Execution Time: 0 % - Vectorization Ratio: 0.00 % - Vector Length Use: 23.98 %",
+      "coverage": 0.014897936955094,
+      "issues": [
+        {
+          "id_str": "Control Flow Issues",
+          "score": 1001,
+          "issues": [
+            {
+              "code": "L2_CF_1",
+              "analysis": "[SA] Presence of calls - Inline either by compiler or by hand and use SVML for libm calls. There are 1 issues (= calls) costing 1 point each.",
+              "score": 1,
+            },
+            {
+              "code": "L2_CF_3",
+              "analysis": "[SA] Too many paths (2048 paths) - Simplify control structure. There are 2048 issues ( = paths) costing 1 point, limited to 1000.",
+              "score": 1000,
+            }
+          ]
+        },
+        {
+          "id_str": "Data Access Issues",
+          "score": 2,
+          "issues": [
+            {
+              "code": "L2_DA_6",
+              "analysis": "[SA] More than 20% of the loads are accessing the stack - Perform loop splitting to decrease pressure on registers. This issue costs 2 points.",
+              "score": 2,
+            }
+          ]
+        },
+        {
+          "id_str": "Vectorization Roadblocks",
+          "score": 1001,
+          "issues": [
+            {
+              "code": "L2_CF_1",
+              "analysis": "[SA] Presence of calls - Inline either by compiler or by hand and use SVML for libm calls. There are 1 issues (= calls) costing 1 point each.",
+              "score": 1,
+            },
+            {
+              "code": "L2_CF_3",
+              "analysis": "[SA] Too many paths (2048 paths) - Simplify control structure. There are 2048 issues ( = paths) costing 1 point, limited to 1000.",
+              "score": 1000,
             }
           ]
         }

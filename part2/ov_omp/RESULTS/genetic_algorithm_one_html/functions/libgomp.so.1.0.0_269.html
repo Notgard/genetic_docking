@@ -140,12 +140,12 @@ if (obj) {
 <!-- ========================== Summary about the function ========================== -->
   <table id="object_summary" style="width:100%;border: 1px solid var(--table_border);border-radius:5px;color:var(--header_font);background:var(--header_background);margin-bottom:15px;">
     <tr>
-      <th><button class="tooltip-maqao-button" title="" tooltip_id="0" style="cursor: not-allowed;">No Prev</button></th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='libc.so.6_1578.html';" title="" tooltip_id="0" >Prev</button></th>
 <th>Function: omp_get_num_procs</th>
       <th>Module: libgomp.so.1.0.0</th>
       <th>Source: Not Available</th>
-      <th>Coverage (incl. loops): 25.45%  |  (excl. loops): 25.45%</th>
-      <th><button class="tooltip-maqao-button" onclick="window.location.href='genetic_algorithm_29.html';" title="" tooltip_id="1" >Next</button></th>
+      <th>Coverage (incl. loops): 30.12%  |  (excl. loops): 30.12%</th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='genetic_algorithm_30.html';" title="" tooltip_id="1" >Next</button></th>
     </tr>
   </table>
   <div class="drag-container" id="main_section_content">
@@ -386,7 +386,7 @@ for (var i = 0, row; row = table_asm.rows[i]; i++) {
   <table style="width:100%;"><tr><td style="text-align:center;"><select id="callchains_select_run" size="1" onchange="set_callchains_input ();" autocomplete="off" style="cursor:pointer;">
            <option value="1">Run 1
   </select></td></tr></table>
-<div id="div_callchains_1"><div class="_div_table" ><table id="_tree_table_21" class="_tree_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="6" style="width:20%;"><span></span>Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="7" style="width:30%;"><span></span>Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="8" style="width:30%;"><span></span>Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="9" style="width:20%;"><span></span>Module</th></tr>
+<div id="div_callchains_1"><div class="_div_table" ><table id="_tree_table_16" class="_tree_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="6" style="width:20%;"><span></span>Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="7" style="width:30%;"><span></span>Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="8" style="width:30%;"><span></span>Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="9" style="width:20%;"><span></span>Module</th></tr>
 </table></div>
 </div>
   <script>
@@ -435,10 +435,10 @@ function callchains_loadhelp (divId) {
       <td style="width:40%;" />
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_158" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_110" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_159" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_111" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
@@ -448,16 +448,16 @@ function set_ldbal_input () {
   document.getElementById ("main_section_div").dataset.ldbal = selector_type.value;
   document.getElementById ("main_section_div").dataset.run = selector_run.value;
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_158").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_158").getBoundingClientRect().width);
-  document.getElementById("chart_cat_159").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_159").getBoundingClientRect().width);
+  document.getElementById("chart_cat_110").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_110").getBoundingClientRect().width);
+  document.getElementById("chart_cat_111").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_111").getBoundingClientRect().width);
   // According to selectors, draw both charts
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6097','LAPTOP-KCN8A1JH_6097_6110','LAPTOP-KCN8A1JH_6097_6111','LAPTOP-KCN8A1JH_6097_6112','LAPTOP-KCN8A1JH_6097_6113','LAPTOP-KCN8A1JH_6097_6114','LAPTOP-KCN8A1JH_6097_6115','LAPTOP-KCN8A1JH_6097_6116','LAPTOP-KCN8A1JH_6097_6117','LAPTOP-KCN8A1JH_6097_6118','LAPTOP-KCN8A1JH_6097_6119','LAPTOP-KCN8A1JH_6097_6120','LAPTOP-KCN8A1JH_6097_6121','LAPTOP-KCN8A1JH_6097_6122','LAPTOP-KCN8A1JH_6097_6123','LAPTOP-KCN8A1JH_6097_6124','LAPTOP-KCN8A1JH_6097_6125','LAPTOP-KCN8A1JH_6097_6126','LAPTOP-KCN8A1JH_6097_6127','LAPTOP-KCN8A1JH_6097_6128','LAPTOP-KCN8A1JH_6097_6129','LAPTOP-KCN8A1JH_6097_6130','LAPTOP-KCN8A1JH_6097_6131','LAPTOP-KCN8A1JH_6097_6132','LAPTOP-KCN8A1JH_6097_6133','LAPTOP-KCN8A1JH_6097_6134','LAPTOP-KCN8A1JH_6097_6135','LAPTOP-KCN8A1JH_6097_6136','LAPTOP-KCN8A1JH_6097_6137','LAPTOP-KCN8A1JH_6097_6138','LAPTOP-KCN8A1JH_6097_6139','LAPTOP-KCN8A1JH_6097_6140'];
-  var data = [{value:1.1619962453842,offset:0, i:0,color:"#333399"},{value:34.277683258057,offset:0, i:1,color:"#333399"},{value:36.363723754883,offset:0, i:2,color:"#333399"},{value:37.425231933594,offset:0, i:3,color:"#333399"},{value:34.34073638916,offset:0, i:4,color:"#333399"},{value:33.756423950195,offset:0, i:5,color:"#333399"},{value:34.688423156738,offset:0, i:6,color:"#333399"},{value:36.227603912354,offset:0, i:7,color:"#333399"},{value:34.026050567627,offset:0, i:8,color:"#333399"},{value:32.0334815979,offset:0, i:9,color:"#333399"},{value:32.926887512207,offset:0, i:10,color:"#333399"},{value:37.352993011475,offset:0, i:11,color:"#333399"},{value:38.315307617188,offset:0, i:12,color:"#333399"},{value:32.506946563721,offset:0, i:13,color:"#333399"},{value:39.420364379883,offset:0, i:14,color:"#333399"},{value:31.806011199951,offset:0, i:15,color:"#333399"},{value:35.883979797363,offset:0, i:16,color:"#333399"},{value:34.300872802734,offset:0, i:17,color:"#333399"},{value:35.416736602783,offset:0, i:18,color:"#333399"},{value:34.550624847412,offset:0, i:19,color:"#333399"},{value:32.216567993164,offset:0, i:20,color:"#333399"},{value:33.522796630859,offset:0, i:21,color:"#333399"},{value:39.787891387939,offset:0, i:22,color:"#333399"},{value:33.746978759766,offset:0, i:23,color:"#333399"},{value:34.530452728271,offset:0, i:24,color:"#333399"},{value:37.677104949951,offset:0, i:25,color:"#333399"},{value:33.51961517334,offset:0, i:26,color:"#333399"},{value:34.072090148926,offset:0, i:27,color:"#333399"},{value:33.050914764404,offset:0, i:28,color:"#333399"},{value:35.62349319458,offset:0, i:29,color:"#333399"},{value:30.588298797607,offset:0, i:30,color:"#333399"},{value:38.42113494873,offset:0, i:31,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65737','LAPTOP-KCN8A1JH_65737_65750','LAPTOP-KCN8A1JH_65737_65751','LAPTOP-KCN8A1JH_65737_65752'];
+  var data = [{value:12.168610572815,offset:0, i:0,color:"#333399"},{value:35.647674560547,offset:0, i:1,color:"#333399"},{value:36.212009429932,offset:0, i:2,color:"#333399"},{value:36.364517211914,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -467,7 +467,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_158')
+  const svg = d3.select('#chart_cat_110')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -523,13 +523,13 @@ $(document).ready(function(){
     .text("Coverage (%)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_158')
+    .attr('id', 'zoom_chart_110')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_158_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_110_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -571,44 +571,16 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_158_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
-$("#zoom_chart_158_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6110.html");});
-$("#zoom_chart_158_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6111.html");});
-$("#zoom_chart_158_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6112.html");});
-$("#zoom_chart_158_4").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6113.html");});
-$("#zoom_chart_158_5").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6114.html");});
-$("#zoom_chart_158_6").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6115.html");});
-$("#zoom_chart_158_7").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6116.html");});
-$("#zoom_chart_158_8").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6117.html");});
-$("#zoom_chart_158_9").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6118.html");});
-$("#zoom_chart_158_10").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6119.html");});
-$("#zoom_chart_158_11").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6120.html");});
-$("#zoom_chart_158_12").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6121.html");});
-$("#zoom_chart_158_13").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6122.html");});
-$("#zoom_chart_158_14").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6123.html");});
-$("#zoom_chart_158_15").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6124.html");});
-$("#zoom_chart_158_16").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6125.html");});
-$("#zoom_chart_158_17").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6126.html");});
-$("#zoom_chart_158_18").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6127.html");});
-$("#zoom_chart_158_19").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6128.html");});
-$("#zoom_chart_158_20").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6129.html");});
-$("#zoom_chart_158_21").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6130.html");});
-$("#zoom_chart_158_22").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6131.html");});
-$("#zoom_chart_158_23").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6132.html");});
-$("#zoom_chart_158_24").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6133.html");});
-$("#zoom_chart_158_25").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6134.html");});
-$("#zoom_chart_158_26").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6135.html");});
-$("#zoom_chart_158_27").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6136.html");});
-$("#zoom_chart_158_28").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6137.html");});
-$("#zoom_chart_158_29").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6138.html");});
-$("#zoom_chart_158_30").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6139.html");});
-$("#zoom_chart_158_31").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6140.html");});
+$("#zoom_chart_110_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
+$("#zoom_chart_110_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65750.html");});
+$("#zoom_chart_110_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65751.html");});
+$("#zoom_chart_110_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65752.html");});
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6097','LAPTOP-KCN8A1JH_6097_6110','LAPTOP-KCN8A1JH_6097_6111','LAPTOP-KCN8A1JH_6097_6112','LAPTOP-KCN8A1JH_6097_6113','LAPTOP-KCN8A1JH_6097_6114','LAPTOP-KCN8A1JH_6097_6115','LAPTOP-KCN8A1JH_6097_6116','LAPTOP-KCN8A1JH_6097_6117','LAPTOP-KCN8A1JH_6097_6118','LAPTOP-KCN8A1JH_6097_6119','LAPTOP-KCN8A1JH_6097_6120','LAPTOP-KCN8A1JH_6097_6121','LAPTOP-KCN8A1JH_6097_6122','LAPTOP-KCN8A1JH_6097_6123','LAPTOP-KCN8A1JH_6097_6124','LAPTOP-KCN8A1JH_6097_6125','LAPTOP-KCN8A1JH_6097_6126','LAPTOP-KCN8A1JH_6097_6127','LAPTOP-KCN8A1JH_6097_6128','LAPTOP-KCN8A1JH_6097_6129','LAPTOP-KCN8A1JH_6097_6130','LAPTOP-KCN8A1JH_6097_6131','LAPTOP-KCN8A1JH_6097_6132','LAPTOP-KCN8A1JH_6097_6133','LAPTOP-KCN8A1JH_6097_6134','LAPTOP-KCN8A1JH_6097_6135','LAPTOP-KCN8A1JH_6097_6136','LAPTOP-KCN8A1JH_6097_6137','LAPTOP-KCN8A1JH_6097_6138','LAPTOP-KCN8A1JH_6097_6139','LAPTOP-KCN8A1JH_6097_6140'];
-  var data = [{value:0.25500002503395,offset:0, i:0,color:"#333399"},{value:0.60500001907349,offset:0, i:1,color:"#333399"},{value:0.64000016450882,offset:0, i:2,color:"#333399"},{value:0.62500011920929,offset:0, i:3,color:"#333399"},{value:0.62500005960464,offset:0, i:4,color:"#333399"},{value:0.66500008106232,offset:0, i:5,color:"#333399"},{value:0.64000004529953,offset:0, i:6,color:"#333399"},{value:0.60500001907349,offset:0, i:7,color:"#333399"},{value:0.65500003099442,offset:0, i:8,color:"#333399"},{value:0.57500004768372,offset:0, i:9,color:"#333399"},{value:0.54000008106232,offset:0, i:10,color:"#333399"},{value:0.63499999046326,offset:0, i:11,color:"#333399"},{value:0.70500010251999,offset:0, i:12,color:"#333399"},{value:0.59000021219254,offset:0, i:13,color:"#333399"},{value:0.68000012636185,offset:0, i:14,color:"#333399"},{value:0.5900000333786,offset:0, i:15,color:"#333399"},{value:0.68000012636185,offset:0, i:16,color:"#333399"},{value:0.64999997615814,offset:0, i:17,color:"#333399"},{value:0.68000018596649,offset:0, i:18,color:"#333399"},{value:0.61500006914139,offset:0, i:19,color:"#333399"},{value:0.625,offset:0, i:20,color:"#333399"},{value:0.5900000333786,offset:0, i:21,color:"#333399"},{value:0.75000005960464,offset:0, i:22,color:"#333399"},{value:0.6800000667572,offset:0, i:23,color:"#333399"},{value:0.625,offset:0, i:24,color:"#333399"},{value:0.66500008106232,offset:0, i:25,color:"#333399"},{value:0.59999996423721,offset:0, i:26,color:"#333399"},{value:0.6149999499321,offset:0, i:27,color:"#333399"},{value:0.58500015735626,offset:0, i:28,color:"#333399"},{value:0.70000010728836,offset:0, i:29,color:"#333399"},{value:0.51999998092651,offset:0, i:30,color:"#333399"},{value:0.73000019788742,offset:0, i:31,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65737','LAPTOP-KCN8A1JH_65737_65750','LAPTOP-KCN8A1JH_65737_65751','LAPTOP-KCN8A1JH_65737_65752'];
+  var data = [{value:6.1049995422363,offset:0, i:0,color:"#333399"},{value:17.970003128052,offset:0, i:1,color:"#333399"},{value:18.240001678467,offset:0, i:2,color:"#333399"},{value:18.335000991821,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -618,7 +590,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_159')
+  const svg = d3.select('#chart_cat_111')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -674,13 +646,13 @@ $(document).ready(function(){
     .text("Time (s)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_159')
+    .attr('id', 'zoom_chart_111')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_159_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_111_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -722,44 +694,16 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_159_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
-$("#zoom_chart_159_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6110.html");});
-$("#zoom_chart_159_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6111.html");});
-$("#zoom_chart_159_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6112.html");});
-$("#zoom_chart_159_4").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6113.html");});
-$("#zoom_chart_159_5").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6114.html");});
-$("#zoom_chart_159_6").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6115.html");});
-$("#zoom_chart_159_7").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6116.html");});
-$("#zoom_chart_159_8").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6117.html");});
-$("#zoom_chart_159_9").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6118.html");});
-$("#zoom_chart_159_10").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6119.html");});
-$("#zoom_chart_159_11").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6120.html");});
-$("#zoom_chart_159_12").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6121.html");});
-$("#zoom_chart_159_13").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6122.html");});
-$("#zoom_chart_159_14").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6123.html");});
-$("#zoom_chart_159_15").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6124.html");});
-$("#zoom_chart_159_16").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6125.html");});
-$("#zoom_chart_159_17").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6126.html");});
-$("#zoom_chart_159_18").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6127.html");});
-$("#zoom_chart_159_19").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6128.html");});
-$("#zoom_chart_159_20").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6129.html");});
-$("#zoom_chart_159_21").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6130.html");});
-$("#zoom_chart_159_22").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6131.html");});
-$("#zoom_chart_159_23").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6132.html");});
-$("#zoom_chart_159_24").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6133.html");});
-$("#zoom_chart_159_25").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6134.html");});
-$("#zoom_chart_159_26").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6135.html");});
-$("#zoom_chart_159_27").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6136.html");});
-$("#zoom_chart_159_28").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6137.html");});
-$("#zoom_chart_159_29").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6138.html");});
-$("#zoom_chart_159_30").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6139.html");});
-$("#zoom_chart_159_31").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6140.html");});
+$("#zoom_chart_111_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
+$("#zoom_chart_111_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65750.html");});
+$("#zoom_chart_111_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65751.html");});
+$("#zoom_chart_111_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65752.html");});
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6131','LAPTOP-KCN8A1JH_6097_6123','LAPTOP-KCN8A1JH_6097_6140','LAPTOP-KCN8A1JH_6097_6121','LAPTOP-KCN8A1JH_6097_6134','LAPTOP-KCN8A1JH_6097_6112','LAPTOP-KCN8A1JH_6097_6120','LAPTOP-KCN8A1JH_6097_6111','LAPTOP-KCN8A1JH_6097_6116','LAPTOP-KCN8A1JH_6097_6125','LAPTOP-KCN8A1JH_6097_6138','LAPTOP-KCN8A1JH_6097_6127','LAPTOP-KCN8A1JH_6097_6115','LAPTOP-KCN8A1JH_6097_6128','LAPTOP-KCN8A1JH_6097_6133','LAPTOP-KCN8A1JH_6097_6113','LAPTOP-KCN8A1JH_6097_6126','LAPTOP-KCN8A1JH_6097_6110','LAPTOP-KCN8A1JH_6097_6136','LAPTOP-KCN8A1JH_6097_6117','LAPTOP-KCN8A1JH_6097_6114','LAPTOP-KCN8A1JH_6097_6132','LAPTOP-KCN8A1JH_6097_6130','LAPTOP-KCN8A1JH_6097_6135','LAPTOP-KCN8A1JH_6097_6137','LAPTOP-KCN8A1JH_6097_6119','LAPTOP-KCN8A1JH_6097_6122','LAPTOP-KCN8A1JH_6097_6129','LAPTOP-KCN8A1JH_6097_6118','LAPTOP-KCN8A1JH_6097_6124','LAPTOP-KCN8A1JH_6097_6139','LAPTOP-KCN8A1JH_6097_6097'];
-  var data = [{value:39.787891387939,offset:0, i:0,color:"#333399"},{value:39.420364379883,offset:0, i:1,color:"#333399"},{value:38.42113494873,offset:0, i:2,color:"#333399"},{value:38.315307617188,offset:0, i:3,color:"#333399"},{value:37.677104949951,offset:0, i:4,color:"#333399"},{value:37.425231933594,offset:0, i:5,color:"#333399"},{value:37.352993011475,offset:0, i:6,color:"#333399"},{value:36.363723754883,offset:0, i:7,color:"#333399"},{value:36.227603912354,offset:0, i:8,color:"#333399"},{value:35.883979797363,offset:0, i:9,color:"#333399"},{value:35.62349319458,offset:0, i:10,color:"#333399"},{value:35.416736602783,offset:0, i:11,color:"#333399"},{value:34.688423156738,offset:0, i:12,color:"#333399"},{value:34.550624847412,offset:0, i:13,color:"#333399"},{value:34.530452728271,offset:0, i:14,color:"#333399"},{value:34.34073638916,offset:0, i:15,color:"#333399"},{value:34.300872802734,offset:0, i:16,color:"#333399"},{value:34.277683258057,offset:0, i:17,color:"#333399"},{value:34.072090148926,offset:0, i:18,color:"#333399"},{value:34.026050567627,offset:0, i:19,color:"#333399"},{value:33.756423950195,offset:0, i:20,color:"#333399"},{value:33.746978759766,offset:0, i:21,color:"#333399"},{value:33.522796630859,offset:0, i:22,color:"#333399"},{value:33.51961517334,offset:0, i:23,color:"#333399"},{value:33.050914764404,offset:0, i:24,color:"#333399"},{value:32.926887512207,offset:0, i:25,color:"#333399"},{value:32.506946563721,offset:0, i:26,color:"#333399"},{value:32.216567993164,offset:0, i:27,color:"#333399"},{value:32.0334815979,offset:0, i:28,color:"#333399"},{value:31.806011199951,offset:0, i:29,color:"#333399"},{value:30.588298797607,offset:0, i:30,color:"#333399"},{value:1.1619962453842,offset:0, i:31,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65752','LAPTOP-KCN8A1JH_65737_65751','LAPTOP-KCN8A1JH_65737_65750','LAPTOP-KCN8A1JH_65737_65737'];
+  var data = [{value:36.364517211914,offset:0, i:0,color:"#333399"},{value:36.212009429932,offset:0, i:1,color:"#333399"},{value:35.647674560547,offset:0, i:2,color:"#333399"},{value:12.168610572815,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -769,7 +713,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_158')
+  const svg = d3.select('#chart_cat_110')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -825,13 +769,13 @@ $(document).ready(function(){
     .text("Coverage (%)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_158')
+    .attr('id', 'zoom_chart_110')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_158_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_110_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -873,44 +817,16 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_158_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6131.html");});
-$("#zoom_chart_158_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6123.html");});
-$("#zoom_chart_158_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6140.html");});
-$("#zoom_chart_158_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6121.html");});
-$("#zoom_chart_158_4").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6134.html");});
-$("#zoom_chart_158_5").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6112.html");});
-$("#zoom_chart_158_6").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6120.html");});
-$("#zoom_chart_158_7").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6111.html");});
-$("#zoom_chart_158_8").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6116.html");});
-$("#zoom_chart_158_9").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6125.html");});
-$("#zoom_chart_158_10").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6138.html");});
-$("#zoom_chart_158_11").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6127.html");});
-$("#zoom_chart_158_12").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6115.html");});
-$("#zoom_chart_158_13").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6128.html");});
-$("#zoom_chart_158_14").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6133.html");});
-$("#zoom_chart_158_15").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6113.html");});
-$("#zoom_chart_158_16").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6126.html");});
-$("#zoom_chart_158_17").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6110.html");});
-$("#zoom_chart_158_18").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6136.html");});
-$("#zoom_chart_158_19").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6117.html");});
-$("#zoom_chart_158_20").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6114.html");});
-$("#zoom_chart_158_21").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6132.html");});
-$("#zoom_chart_158_22").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6130.html");});
-$("#zoom_chart_158_23").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6135.html");});
-$("#zoom_chart_158_24").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6137.html");});
-$("#zoom_chart_158_25").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6119.html");});
-$("#zoom_chart_158_26").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6122.html");});
-$("#zoom_chart_158_27").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6129.html");});
-$("#zoom_chart_158_28").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6118.html");});
-$("#zoom_chart_158_29").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6124.html");});
-$("#zoom_chart_158_30").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6139.html");});
-$("#zoom_chart_158_31").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
+$("#zoom_chart_110_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65752.html");});
+$("#zoom_chart_110_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65751.html");});
+$("#zoom_chart_110_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65750.html");});
+$("#zoom_chart_110_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6131','LAPTOP-KCN8A1JH_6097_6140','LAPTOP-KCN8A1JH_6097_6121','LAPTOP-KCN8A1JH_6097_6138','LAPTOP-KCN8A1JH_6097_6127','LAPTOP-KCN8A1JH_6097_6125','LAPTOP-KCN8A1JH_6097_6123','LAPTOP-KCN8A1JH_6097_6132','LAPTOP-KCN8A1JH_6097_6114','LAPTOP-KCN8A1JH_6097_6134','LAPTOP-KCN8A1JH_6097_6117','LAPTOP-KCN8A1JH_6097_6126','LAPTOP-KCN8A1JH_6097_6111','LAPTOP-KCN8A1JH_6097_6115','LAPTOP-KCN8A1JH_6097_6120','LAPTOP-KCN8A1JH_6097_6112','LAPTOP-KCN8A1JH_6097_6113','LAPTOP-KCN8A1JH_6097_6129','LAPTOP-KCN8A1JH_6097_6133','LAPTOP-KCN8A1JH_6097_6128','LAPTOP-KCN8A1JH_6097_6136','LAPTOP-KCN8A1JH_6097_6110','LAPTOP-KCN8A1JH_6097_6116','LAPTOP-KCN8A1JH_6097_6135','LAPTOP-KCN8A1JH_6097_6122','LAPTOP-KCN8A1JH_6097_6124','LAPTOP-KCN8A1JH_6097_6130','LAPTOP-KCN8A1JH_6097_6137','LAPTOP-KCN8A1JH_6097_6118','LAPTOP-KCN8A1JH_6097_6119','LAPTOP-KCN8A1JH_6097_6139','LAPTOP-KCN8A1JH_6097_6097'];
-  var data = [{value:0.75000005960464,offset:0, i:0,color:"#333399"},{value:0.73000019788742,offset:0, i:1,color:"#333399"},{value:0.70500010251999,offset:0, i:2,color:"#333399"},{value:0.70000010728836,offset:0, i:3,color:"#333399"},{value:0.68000018596649,offset:0, i:4,color:"#333399"},{value:0.68000012636185,offset:0, i:5,color:"#333399"},{value:0.68000012636185,offset:0, i:6,color:"#333399"},{value:0.6800000667572,offset:0, i:7,color:"#333399"},{value:0.66500008106232,offset:0, i:8,color:"#333399"},{value:0.66500008106232,offset:0, i:9,color:"#333399"},{value:0.65500003099442,offset:0, i:10,color:"#333399"},{value:0.64999997615814,offset:0, i:11,color:"#333399"},{value:0.64000016450882,offset:0, i:12,color:"#333399"},{value:0.64000004529953,offset:0, i:13,color:"#333399"},{value:0.63499999046326,offset:0, i:14,color:"#333399"},{value:0.62500011920929,offset:0, i:15,color:"#333399"},{value:0.62500005960464,offset:0, i:16,color:"#333399"},{value:0.625,offset:0, i:17,color:"#333399"},{value:0.625,offset:0, i:18,color:"#333399"},{value:0.61500006914139,offset:0, i:19,color:"#333399"},{value:0.6149999499321,offset:0, i:20,color:"#333399"},{value:0.60500001907349,offset:0, i:21,color:"#333399"},{value:0.60500001907349,offset:0, i:22,color:"#333399"},{value:0.59999996423721,offset:0, i:23,color:"#333399"},{value:0.59000021219254,offset:0, i:24,color:"#333399"},{value:0.5900000333786,offset:0, i:25,color:"#333399"},{value:0.5900000333786,offset:0, i:26,color:"#333399"},{value:0.58500015735626,offset:0, i:27,color:"#333399"},{value:0.57500004768372,offset:0, i:28,color:"#333399"},{value:0.54000008106232,offset:0, i:29,color:"#333399"},{value:0.51999998092651,offset:0, i:30,color:"#333399"},{value:0.25500002503395,offset:0, i:31,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65752','LAPTOP-KCN8A1JH_65737_65751','LAPTOP-KCN8A1JH_65737_65750','LAPTOP-KCN8A1JH_65737_65737'];
+  var data = [{value:18.335000991821,offset:0, i:0,color:"#333399"},{value:18.240001678467,offset:0, i:1,color:"#333399"},{value:17.970003128052,offset:0, i:2,color:"#333399"},{value:6.1049995422363,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -920,7 +836,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_159')
+  const svg = d3.select('#chart_cat_111')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -976,13 +892,13 @@ $(document).ready(function(){
     .text("Time (s)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_159')
+    .attr('id', 'zoom_chart_111')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_159_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_111_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -1024,44 +940,16 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_159_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6131.html");});
-$("#zoom_chart_159_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6140.html");});
-$("#zoom_chart_159_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6121.html");});
-$("#zoom_chart_159_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6138.html");});
-$("#zoom_chart_159_4").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6127.html");});
-$("#zoom_chart_159_5").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6125.html");});
-$("#zoom_chart_159_6").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6123.html");});
-$("#zoom_chart_159_7").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6132.html");});
-$("#zoom_chart_159_8").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6114.html");});
-$("#zoom_chart_159_9").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6134.html");});
-$("#zoom_chart_159_10").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6117.html");});
-$("#zoom_chart_159_11").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6126.html");});
-$("#zoom_chart_159_12").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6111.html");});
-$("#zoom_chart_159_13").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6115.html");});
-$("#zoom_chart_159_14").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6120.html");});
-$("#zoom_chart_159_15").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6112.html");});
-$("#zoom_chart_159_16").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6113.html");});
-$("#zoom_chart_159_17").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6129.html");});
-$("#zoom_chart_159_18").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6133.html");});
-$("#zoom_chart_159_19").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6128.html");});
-$("#zoom_chart_159_20").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6136.html");});
-$("#zoom_chart_159_21").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6110.html");});
-$("#zoom_chart_159_22").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6116.html");});
-$("#zoom_chart_159_23").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6135.html");});
-$("#zoom_chart_159_24").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6122.html");});
-$("#zoom_chart_159_25").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6124.html");});
-$("#zoom_chart_159_26").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6130.html");});
-$("#zoom_chart_159_27").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6137.html");});
-$("#zoom_chart_159_28").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6118.html");});
-$("#zoom_chart_159_29").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6119.html");});
-$("#zoom_chart_159_30").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6139.html");});
-$("#zoom_chart_159_31").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
+$("#zoom_chart_111_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65752.html");});
+$("#zoom_chart_111_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65751.html");});
+$("#zoom_chart_111_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65750.html");});
+$("#zoom_chart_111_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6097','LAPTOP-KCN8A1JH_6097_6110','LAPTOP-KCN8A1JH_6097_6111','LAPTOP-KCN8A1JH_6097_6112','LAPTOP-KCN8A1JH_6097_6113','LAPTOP-KCN8A1JH_6097_6114','LAPTOP-KCN8A1JH_6097_6115','LAPTOP-KCN8A1JH_6097_6116','LAPTOP-KCN8A1JH_6097_6117','LAPTOP-KCN8A1JH_6097_6118','LAPTOP-KCN8A1JH_6097_6119','LAPTOP-KCN8A1JH_6097_6120','LAPTOP-KCN8A1JH_6097_6121','LAPTOP-KCN8A1JH_6097_6122','LAPTOP-KCN8A1JH_6097_6123','LAPTOP-KCN8A1JH_6097_6124','LAPTOP-KCN8A1JH_6097_6125','LAPTOP-KCN8A1JH_6097_6126','LAPTOP-KCN8A1JH_6097_6127','LAPTOP-KCN8A1JH_6097_6128','LAPTOP-KCN8A1JH_6097_6129','LAPTOP-KCN8A1JH_6097_6130','LAPTOP-KCN8A1JH_6097_6131','LAPTOP-KCN8A1JH_6097_6132','LAPTOP-KCN8A1JH_6097_6133','LAPTOP-KCN8A1JH_6097_6134','LAPTOP-KCN8A1JH_6097_6135','LAPTOP-KCN8A1JH_6097_6136','LAPTOP-KCN8A1JH_6097_6137','LAPTOP-KCN8A1JH_6097_6138','LAPTOP-KCN8A1JH_6097_6139','LAPTOP-KCN8A1JH_6097_6140'];
-  var data = [{value:1.1619962453842,offset:0, i:0,color:"#333399"},{value:34.277683258057,offset:0, i:1,color:"#333399"},{value:36.363723754883,offset:0, i:2,color:"#333399"},{value:37.425231933594,offset:0, i:3,color:"#333399"},{value:34.34073638916,offset:0, i:4,color:"#333399"},{value:33.756423950195,offset:0, i:5,color:"#333399"},{value:34.688423156738,offset:0, i:6,color:"#333399"},{value:36.227603912354,offset:0, i:7,color:"#333399"},{value:34.026050567627,offset:0, i:8,color:"#333399"},{value:32.0334815979,offset:0, i:9,color:"#333399"},{value:32.926887512207,offset:0, i:10,color:"#333399"},{value:37.352993011475,offset:0, i:11,color:"#333399"},{value:38.315307617188,offset:0, i:12,color:"#333399"},{value:32.506946563721,offset:0, i:13,color:"#333399"},{value:39.420364379883,offset:0, i:14,color:"#333399"},{value:31.806011199951,offset:0, i:15,color:"#333399"},{value:35.883979797363,offset:0, i:16,color:"#333399"},{value:34.300872802734,offset:0, i:17,color:"#333399"},{value:35.416736602783,offset:0, i:18,color:"#333399"},{value:34.550624847412,offset:0, i:19,color:"#333399"},{value:32.216567993164,offset:0, i:20,color:"#333399"},{value:33.522796630859,offset:0, i:21,color:"#333399"},{value:39.787891387939,offset:0, i:22,color:"#333399"},{value:33.746978759766,offset:0, i:23,color:"#333399"},{value:34.530452728271,offset:0, i:24,color:"#333399"},{value:37.677104949951,offset:0, i:25,color:"#333399"},{value:33.51961517334,offset:0, i:26,color:"#333399"},{value:34.072090148926,offset:0, i:27,color:"#333399"},{value:33.050914764404,offset:0, i:28,color:"#333399"},{value:35.62349319458,offset:0, i:29,color:"#333399"},{value:30.588298797607,offset:0, i:30,color:"#333399"},{value:38.42113494873,offset:0, i:31,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65737','LAPTOP-KCN8A1JH_65737_65750','LAPTOP-KCN8A1JH_65737_65751','LAPTOP-KCN8A1JH_65737_65752'];
+  var data = [{value:12.168610572815,offset:0, i:0,color:"#333399"},{value:35.647674560547,offset:0, i:1,color:"#333399"},{value:36.212009429932,offset:0, i:2,color:"#333399"},{value:36.364517211914,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -1071,7 +959,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_158')
+  const svg = d3.select('#chart_cat_110')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -1127,13 +1015,13 @@ $(document).ready(function(){
     .text("Coverage (%)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_158')
+    .attr('id', 'zoom_chart_110')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_158_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_110_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -1175,44 +1063,16 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_158_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
-$("#zoom_chart_158_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6110.html");});
-$("#zoom_chart_158_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6111.html");});
-$("#zoom_chart_158_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6112.html");});
-$("#zoom_chart_158_4").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6113.html");});
-$("#zoom_chart_158_5").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6114.html");});
-$("#zoom_chart_158_6").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6115.html");});
-$("#zoom_chart_158_7").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6116.html");});
-$("#zoom_chart_158_8").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6117.html");});
-$("#zoom_chart_158_9").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6118.html");});
-$("#zoom_chart_158_10").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6119.html");});
-$("#zoom_chart_158_11").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6120.html");});
-$("#zoom_chart_158_12").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6121.html");});
-$("#zoom_chart_158_13").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6122.html");});
-$("#zoom_chart_158_14").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6123.html");});
-$("#zoom_chart_158_15").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6124.html");});
-$("#zoom_chart_158_16").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6125.html");});
-$("#zoom_chart_158_17").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6126.html");});
-$("#zoom_chart_158_18").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6127.html");});
-$("#zoom_chart_158_19").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6128.html");});
-$("#zoom_chart_158_20").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6129.html");});
-$("#zoom_chart_158_21").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6130.html");});
-$("#zoom_chart_158_22").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6131.html");});
-$("#zoom_chart_158_23").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6132.html");});
-$("#zoom_chart_158_24").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6133.html");});
-$("#zoom_chart_158_25").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6134.html");});
-$("#zoom_chart_158_26").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6135.html");});
-$("#zoom_chart_158_27").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6136.html");});
-$("#zoom_chart_158_28").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6137.html");});
-$("#zoom_chart_158_29").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6138.html");});
-$("#zoom_chart_158_30").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6139.html");});
-$("#zoom_chart_158_31").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6140.html");});
+$("#zoom_chart_110_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
+$("#zoom_chart_110_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65750.html");});
+$("#zoom_chart_110_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65751.html");});
+$("#zoom_chart_110_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65752.html");});
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6097','LAPTOP-KCN8A1JH_6097_6110','LAPTOP-KCN8A1JH_6097_6111','LAPTOP-KCN8A1JH_6097_6112','LAPTOP-KCN8A1JH_6097_6113','LAPTOP-KCN8A1JH_6097_6114','LAPTOP-KCN8A1JH_6097_6115','LAPTOP-KCN8A1JH_6097_6116','LAPTOP-KCN8A1JH_6097_6117','LAPTOP-KCN8A1JH_6097_6118','LAPTOP-KCN8A1JH_6097_6119','LAPTOP-KCN8A1JH_6097_6120','LAPTOP-KCN8A1JH_6097_6121','LAPTOP-KCN8A1JH_6097_6122','LAPTOP-KCN8A1JH_6097_6123','LAPTOP-KCN8A1JH_6097_6124','LAPTOP-KCN8A1JH_6097_6125','LAPTOP-KCN8A1JH_6097_6126','LAPTOP-KCN8A1JH_6097_6127','LAPTOP-KCN8A1JH_6097_6128','LAPTOP-KCN8A1JH_6097_6129','LAPTOP-KCN8A1JH_6097_6130','LAPTOP-KCN8A1JH_6097_6131','LAPTOP-KCN8A1JH_6097_6132','LAPTOP-KCN8A1JH_6097_6133','LAPTOP-KCN8A1JH_6097_6134','LAPTOP-KCN8A1JH_6097_6135','LAPTOP-KCN8A1JH_6097_6136','LAPTOP-KCN8A1JH_6097_6137','LAPTOP-KCN8A1JH_6097_6138','LAPTOP-KCN8A1JH_6097_6139','LAPTOP-KCN8A1JH_6097_6140'];
-  var data = [{value:0.25500002503395,offset:0, i:0,color:"#333399"},{value:0.60500001907349,offset:0, i:1,color:"#333399"},{value:0.64000016450882,offset:0, i:2,color:"#333399"},{value:0.62500011920929,offset:0, i:3,color:"#333399"},{value:0.62500005960464,offset:0, i:4,color:"#333399"},{value:0.66500008106232,offset:0, i:5,color:"#333399"},{value:0.64000004529953,offset:0, i:6,color:"#333399"},{value:0.60500001907349,offset:0, i:7,color:"#333399"},{value:0.65500003099442,offset:0, i:8,color:"#333399"},{value:0.57500004768372,offset:0, i:9,color:"#333399"},{value:0.54000008106232,offset:0, i:10,color:"#333399"},{value:0.63499999046326,offset:0, i:11,color:"#333399"},{value:0.70500010251999,offset:0, i:12,color:"#333399"},{value:0.59000021219254,offset:0, i:13,color:"#333399"},{value:0.68000012636185,offset:0, i:14,color:"#333399"},{value:0.5900000333786,offset:0, i:15,color:"#333399"},{value:0.68000012636185,offset:0, i:16,color:"#333399"},{value:0.64999997615814,offset:0, i:17,color:"#333399"},{value:0.68000018596649,offset:0, i:18,color:"#333399"},{value:0.61500006914139,offset:0, i:19,color:"#333399"},{value:0.625,offset:0, i:20,color:"#333399"},{value:0.5900000333786,offset:0, i:21,color:"#333399"},{value:0.75000005960464,offset:0, i:22,color:"#333399"},{value:0.6800000667572,offset:0, i:23,color:"#333399"},{value:0.625,offset:0, i:24,color:"#333399"},{value:0.66500008106232,offset:0, i:25,color:"#333399"},{value:0.59999996423721,offset:0, i:26,color:"#333399"},{value:0.6149999499321,offset:0, i:27,color:"#333399"},{value:0.58500015735626,offset:0, i:28,color:"#333399"},{value:0.70000010728836,offset:0, i:29,color:"#333399"},{value:0.51999998092651,offset:0, i:30,color:"#333399"},{value:0.73000019788742,offset:0, i:31,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65737','LAPTOP-KCN8A1JH_65737_65750','LAPTOP-KCN8A1JH_65737_65751','LAPTOP-KCN8A1JH_65737_65752'];
+  var data = [{value:6.1049995422363,offset:0, i:0,color:"#333399"},{value:17.970003128052,offset:0, i:1,color:"#333399"},{value:18.240001678467,offset:0, i:2,color:"#333399"},{value:18.335000991821,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -1222,7 +1082,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_159')
+  const svg = d3.select('#chart_cat_111')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -1278,13 +1138,13 @@ $(document).ready(function(){
     .text("Time (s)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_159')
+    .attr('id', 'zoom_chart_111')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_159_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_111_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -1326,38 +1186,10 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_159_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
-$("#zoom_chart_159_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6110.html");});
-$("#zoom_chart_159_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6111.html");});
-$("#zoom_chart_159_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6112.html");});
-$("#zoom_chart_159_4").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6113.html");});
-$("#zoom_chart_159_5").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6114.html");});
-$("#zoom_chart_159_6").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6115.html");});
-$("#zoom_chart_159_7").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6116.html");});
-$("#zoom_chart_159_8").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6117.html");});
-$("#zoom_chart_159_9").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6118.html");});
-$("#zoom_chart_159_10").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6119.html");});
-$("#zoom_chart_159_11").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6120.html");});
-$("#zoom_chart_159_12").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6121.html");});
-$("#zoom_chart_159_13").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6122.html");});
-$("#zoom_chart_159_14").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6123.html");});
-$("#zoom_chart_159_15").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6124.html");});
-$("#zoom_chart_159_16").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6125.html");});
-$("#zoom_chart_159_17").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6126.html");});
-$("#zoom_chart_159_18").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6127.html");});
-$("#zoom_chart_159_19").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6128.html");});
-$("#zoom_chart_159_20").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6129.html");});
-$("#zoom_chart_159_21").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6130.html");});
-$("#zoom_chart_159_22").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6131.html");});
-$("#zoom_chart_159_23").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6132.html");});
-$("#zoom_chart_159_24").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6133.html");});
-$("#zoom_chart_159_25").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6134.html");});
-$("#zoom_chart_159_26").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6135.html");});
-$("#zoom_chart_159_27").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6136.html");});
-$("#zoom_chart_159_28").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6137.html");});
-$("#zoom_chart_159_29").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6138.html");});
-$("#zoom_chart_159_30").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6139.html");});
-$("#zoom_chart_159_31").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6140.html");});
+$("#zoom_chart_111_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
+$("#zoom_chart_111_1").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65750.html");});
+$("#zoom_chart_111_2").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65751.html");});
+$("#zoom_chart_111_3").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65752.html");});
   }
 }
 function ldbal_onresize (panelId) {
@@ -1441,8 +1273,8 @@ function cqa_onunload () {
   </style>
 </div>
 <div class="panelcontent" id="OV_panel_loops">
-<div class="_div_table" ><table id="_tree_table_22" class="_tree_table"><tr><th class="_freezed_row  _left " style="width:70%;"><span></span>Name</th><th class="_freezed_row " style="width:15%;"><span></span>Coverage (%)</th><th class="_freezed_row " style="width:15%;"><span></span>Time (s)</th></tr>
-<tr class=" _outer_row"  id="_tr_22_1" ><td id="_tr_22_1-1"  data-_i="1" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:3px;" >&#x25CB;</span>omp_get_num_procs</td><td id="_tr_22_1-2"  data-_i="1" data-_j="2"  class=" _centered" >25.45</td><td id="_tr_22_1-3"  data-_i="1" data-_j="3"  class=" _centered" >5.59</td></tr>
+<div class="_div_table" ><table id="_tree_table_17" class="_tree_table"><tr><th class="_freezed_row  _left " style="width:70%;"><span></span>Name</th><th class="_freezed_row " style="width:15%;"><span></span>Coverage (%)</th><th class="_freezed_row " style="width:15%;"><span></span>Time (s)</th></tr>
+<tr class=" _outer_row"  id="_tr_17_1" ><td id="_tr_17_1-1"  data-_i="1" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:3px;" >&#x25CB;</span>omp_get_num_procs</td><td id="_tr_17_1-2"  data-_i="1" data-_j="2"  class=" _centered" >30.12</td><td id="_tr_17_1-3"  data-_i="1" data-_j="3"  class=" _centered" >15.19</td></tr>
 </table></div>
   <script>
 function loops_onresize () {
@@ -1838,7 +1670,7 @@ addLoadEvent(function(){
     </div>
   </div>
 </div><script>
-var tooltips_texts = ['No previous function',
+var tooltips_texts = ['Go to previous function: _mcleanup',
 'Go to next function: __read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0',
 'Open on a new tab',
 'Open on a new tab',

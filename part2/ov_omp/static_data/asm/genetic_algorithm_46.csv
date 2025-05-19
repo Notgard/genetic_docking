@@ -1,278 +1,265 @@
 address;source_location;insn;indent
-0xce58;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;CMP	%R14D,-0x40(%RBP);
-0xce5c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;SETG	%AL;
-0xce5f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOVZX	%AL,%EAX;
-0xce62;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;TEST	%EAX,%EAX;
-0xce64;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;JNE	cc4a <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x2b7>;
-0xce6a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;CMPL	$0x7fffffff,-0x40(%RBP);
-0xce71;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;JE	d5c8 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xc35>;
-0xce77;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	-0x40(%RBP),%EAX;
-0xce7a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;CMP	-0x3c(%RBP),%EAX;
-0xce7d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;JNE	cead <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x51a>;
-0xce7f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;CMP	%R12D,-0x40(%RBP);  (45) 
-0xce83;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;JNE	ce8f <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x4fc>;  (45) 
-0xce85;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;ADDL	$0x1,-0x40(%RBP);
-0xce89;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	-0x40(%RBP),%R12D;
-0xce8d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;JMP	ce58 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x4c5>;
-0xce8f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;LEA	0x5bba(%RIP),%RAX;  (45) 
-0xce96;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	%RAX,%RSI;  (45) 
-0xce99;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;LEA	0x6860(%RIP),%RAX;  (45) 
-0xcea0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	%RAX,%RDI;  (45) 
-0xcea3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	$0,%EAX;  (45) 
-0xcea8;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;CALL	2070 <@plt_start@+0x50>;  (45) 
-0xcead;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	-0x40(%RBP),%EAX;  (45) 
-0xceb0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;CLTQ;  (45) 
-0xceb2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	-0x118(%RBP),%RDX;  (45) 
-0xceb9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x10(%RDX),%RDX;  (45) 
-0xcebd;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x30(%RDX),%RDX;  (45) 
-0xcec1;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;CMP	%RDX,%RAX;  (45) 
-0xcec4;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;JL	d595 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xc02>;  (45) 
-0xceca;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	-0x118(%RBP),%RDX;  (45) 
-0xced1;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x10(%RDX),%RDX;  (45) 
-0xced5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x38(%RDX),%RDX;  (45) 
-0xced9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;CMP	%RDX,%RAX;  (45) 
-0xcedc;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;JG	d562 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xbcf>;  (45) 
-0xcee2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	-0x118(%RBP),%RDX;  (45) 
-0xcee9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x10(%RDX),%RDX;  (45) 
-0xceed;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	(%RDX),%RCX;  (45) 
-0xcef0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	-0x118(%RBP),%RDX;  (45) 
-0xcef7;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x10(%RDX),%RDX;  (45) 
-0xcefb;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x8(%RDX),%RDX;  (45) 
-0xceff;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;ADD	%RAX,%RDX;  (45) 
-0xcf02;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	%RDX,%RAX;  (45) 
-0xcf05;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;SAL	$0x4,%RAX;  (45) 
-0xcf09;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;ADD	%RDX,%RAX;  (45) 
-0xcf0c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;SAL	$0x2,%RAX;  (45) 
-0xcf10;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;ADD	%RCX,%RAX;  (45) 
-0xcf13;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;ADD	$0x8,%RAX;  (45) 
-0xcf17;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOVSS	(%RAX),%XMM0;  (45) 
-0xcf1b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOVSS	%XMM0,-0x70(%RBP);  (45) 
-0xcf20;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	-0x40(%RBP),%EAX;  (45) 
-0xcf23;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;CLTQ;  (45) 
-0xcf25;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	-0x118(%RBP),%RDX;  (45) 
-0xcf2c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	0x10(%RDX),%RDX;  (45) 
-0xcf30;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	0x30(%RDX),%RDX;  (45) 
-0xcf34;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;CMP	%RDX,%RAX;  (45) 
-0xcf37;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;JL	d52f <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xb9c>;  (45) 
-0xcf3d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	-0x118(%RBP),%RDX;  (45) 
-0xcf44;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	0x10(%RDX),%RDX;  (45) 
-0xcf48;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	0x38(%RDX),%RDX;  (45) 
-0xcf4c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;CMP	%RDX,%RAX;  (45) 
-0xcf4f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;JG	d4fc <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xb69>;  (45) 
-0xcf55;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	-0x118(%RBP),%RDX;  (45) 
-0xcf5c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	0x10(%RDX),%RDX;  (45) 
-0xcf60;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	(%RDX),%RCX;  (45) 
-0xcf63;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	-0x118(%RBP),%RDX;  (45) 
-0xcf6a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	0x10(%RDX),%RDX;  (45) 
-0xcf6e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	0x8(%RDX),%RDX;  (45) 
-0xcf72;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;ADD	%RAX,%RDX;  (45) 
-0xcf75;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOV	%RDX,%RAX;  (45) 
-0xcf78;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;SAL	$0x4,%RAX;  (45) 
-0xcf7c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;ADD	%RDX,%RAX;  (45) 
-0xcf7f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;SAL	$0x2,%RAX;  (45) 
-0xcf83;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;ADD	%RCX,%RAX;  (45) 
-0xcf86;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;ADD	$0xc,%RAX;  (45) 
-0xcf8a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOVSS	(%RAX),%XMM0;  (45) 
-0xcf8e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:372;MOVSS	%XMM0,-0x74(%RBP);  (45) 
-0xcf93;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x40(%RBP),%EAX;  (45) 
-0xcf96;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;CLTQ;  (45) 
-0xcf98;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RDX;  (45) 
-0xcf9f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RDX),%RDX;  (45) 
-0xcfa3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x30(%RDX),%RDX;  (45) 
-0xcfa7;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;CMP	%RDX,%RAX;  (45) 
-0xcfaa;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;JL	d4c9 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xb36>;  (45) 
-0xcfb0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RDX;  (45) 
-0xcfb7;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RDX),%RDX;  (45) 
-0xcfbb;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x38(%RDX),%RDX;  (45) 
-0xcfbf;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;CMP	%RDX,%RAX;  (45) 
-0xcfc2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;JG	d496 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xb03>;  (45) 
-0xcfc8;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RDX;  (45) 
-0xcfcf;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RDX),%RDX;  (45) 
-0xcfd3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	(%RDX),%RCX;  (45) 
-0xcfd6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RDX;  (45) 
-0xcfdd;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RDX),%RDX;  (45) 
-0xcfe1;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x8(%RDX),%RDX;  (45) 
-0xcfe5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;ADD	%RAX,%RDX;  (45) 
-0xcfe8;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	%RDX,%RAX;  (45) 
-0xcfeb;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;SAL	$0x4,%RAX;  (45) 
-0xcfef;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;ADD	%RDX,%RAX;  (45) 
-0xcff2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;SAL	$0x2,%RAX;  (45) 
-0xcff6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;ADD	%RCX,%RAX;  (45) 
-0xcff9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;ADD	$0x10,%RAX;  (45) 
-0xcffd;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOVSS	(%RAX),%XMM0;  (45) 
-0xd001;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOVSS	%XMM0,-0x78(%RBP);  (45) 
-0xd006;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x3c(%RBP),%EAX;  (45) 
-0xd009;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;CLTQ;  (45) 
-0xd00b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x118(%RBP),%RDX;  (45) 
-0xd012;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x10(%RDX),%RDX;  (45) 
-0xd016;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x30(%RDX),%RDX;  (45) 
-0xd01a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;CMP	%RDX,%RAX;  (45) 
-0xd01d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;JL	d463 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xad0>;  (45) 
-0xd023;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x118(%RBP),%RDX;  (45) 
-0xd02a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x10(%RDX),%RDX;  (45) 
-0xd02e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x38(%RDX),%RDX;  (45) 
-0xd032;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;CMP	%RDX,%RAX;  (45) 
-0xd035;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;JG	d430 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xa9d>;  (45) 
-0xd03b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x40(%RBP),%EDX;  (45) 
-0xd03e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOVSXD	%EDX,%RDX;  (45) 
-0xd041;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x118(%RBP),%RCX;  (45) 
-0xd048;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x10(%RCX),%RCX;  (45) 
-0xd04c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x30(%RCX),%RCX;  (45) 
-0xd050;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;CMP	%RCX,%RDX;  (45) 
-0xd053;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;JL	d400 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xa6d>;  (45) 
-0xd059;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x118(%RBP),%RCX;  (45) 
-0xd060;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x10(%RCX),%RCX;  (45) 
-0xd064;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x38(%RCX),%RCX;  (45) 
-0xd068;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;CMP	%RCX,%RDX;  (45) 
-0xd06b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;JG	d3d0 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xa3d>;  (45) 
-0xd071;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x118(%RBP),%RCX;  (45) 
-0xd078;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x10(%RCX),%RCX;  (45) 
-0xd07c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	(%RCX),%RSI;  (45) 
-0xd07f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x118(%RBP),%RCX;  (45) 
-0xd086;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x10(%RCX),%RCX;  (45) 
-0xd08a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x8(%RCX),%RCX;  (45) 
-0xd08e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;ADD	%RDX,%RCX;  (45) 
-0xd091;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	%RCX,%RDX;  (45) 
-0xd094;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;SAL	$0x4,%RDX;  (45) 
-0xd098;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;ADD	%RCX,%RDX;  (45) 
-0xd09b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;SAL	$0x2,%RDX;  (45) 
-0xd09f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;ADD	%RSI,%RDX;  (45) 
-0xd0a2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x118(%RBP),%RCX;  (45) 
-0xd0a9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x10(%RCX),%RCX;  (45) 
-0xd0ad;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	(%RCX),%RSI;  (45) 
-0xd0b0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x118(%RBP),%RCX;  (45) 
-0xd0b7;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x10(%RCX),%RCX;  (45) 
-0xd0bb;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x8(%RCX),%RCX;  (45) 
-0xd0bf;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;ADD	%RAX,%RCX;  (45) 
-0xd0c2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	%RCX,%RAX;  (45) 
-0xd0c5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;SAL	$0x4,%RAX;  (45) 
-0xd0c9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;ADD	%RCX,%RAX;  (45) 
-0xd0cc;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;SAL	$0x2,%RAX;  (45) 
-0xd0d0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;ADD	%RSI,%RAX;  (45) 
-0xd0d3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	%RDX,%RSI;  (45) 
-0xd0d6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	%RAX,%RDI;  (45) 
-0xd0d9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;CALL	7d44 <__bond_utils_MOD_is_bonded>;  (45) 
-0xd0de;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x118(%RBP),%RDX;  (45) 
-0xd0e5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	%EAX,0x44(%RDX);  (45) 
-0xd0e8;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:377;MOV	-0x118(%RBP),%RAX;  (45) 
-0xd0ef;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:377;MOV	0x44(%RAX),%EAX;  (45) 
-0xd0f2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:377;TEST	%EAX,%EAX;  (45) 
-0xd0f4;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:377;JE	ce7f <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x4ec>;  (45) 
-0xd0fa;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVQ	$0,-0x100(%RBP);  (45) 
-0xd105;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVQ	$0,-0xf8(%RBP);  (45) 
-0xd110;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVQ	$0x4,-0x100(%RBP);  (45) 
-0xd11b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVB	$0x1,-0xf4(%RBP);  (45) 
-0xd122;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVB	$0x3,-0xf3(%RBP);  (45) 
-0xd129;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVQ	$0x1,-0xe8(%RBP);  (45) 
-0xd134;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVQ	$0,-0xe0(%RBP);  (45) 
-0xd13f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVQ	$0x2,-0xd8(%RBP);  (45) 
-0xd14a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVQ	$0x4,-0xf0(%RBP);  (45) 
-0xd155;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;LEA	-0xbc(%RBP),%RAX;  (45) 
-0xd15c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOV	%RAX,-0x110(%RBP);  (45) 
-0xd163;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVQ	$0,-0x108(%RBP);  (45) 
-0xd16e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOV	-0x110(%RBP),%RAX;  (45) 
-0xd175;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVSS	-0x54(%RBP),%XMM0;  (45) 
-0xd17a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;SUBSS	-0x60(%RBP),%XMM0;  (45) 
-0xd17f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVSS	%XMM0,(%RAX);  (45) 
-0xd183;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOV	-0x110(%RBP),%RAX;  (45) 
-0xd18a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVSS	-0x58(%RBP),%XMM0;  (45) 
-0xd18f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;SUBSS	-0x64(%RBP),%XMM0;  (45) 
-0xd194;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVSS	%XMM0,0x4(%RAX);  (45) 
-0xd199;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOV	-0x110(%RBP),%RAX;  (45) 
-0xd1a0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVSS	-0x5c(%RBP),%XMM0;  (45) 
-0xd1a5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;SUBSS	-0x68(%RBP),%XMM0;  (45) 
-0xd1aa;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVSS	%XMM0,0x8(%RAX);  (45) 
-0xd1af;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOV	$0,%EAX;  (45) 
-0xd1b4;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;CMP	$0x2,%RAX;    (47) 
-0xd1b8;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;JLE	d3b2 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xa1f>;    (47) 
-0xd1be;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVQ	$0,-0x100(%RBP);  (45) 
-0xd1c9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVQ	$0,-0xf8(%RBP);  (45) 
-0xd1d4;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVQ	$0x4,-0x100(%RBP);  (45) 
-0xd1df;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVB	$0x1,-0xf4(%RBP);  (45) 
-0xd1e6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVB	$0x3,-0xf3(%RBP);  (45) 
-0xd1ed;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVQ	$0x1,-0xe8(%RBP);  (45) 
-0xd1f8;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVQ	$0,-0xe0(%RBP);  (45) 
-0xd203;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVQ	$0x2,-0xd8(%RBP);  (45) 
-0xd20e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVQ	$0x4,-0xf0(%RBP);  (45) 
-0xd219;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;LEA	-0xc8(%RBP),%RAX;  (45) 
-0xd220;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOV	%RAX,-0x110(%RBP);  (45) 
-0xd227;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVQ	$0,-0x108(%RBP);  (45) 
-0xd232;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOV	-0x110(%RBP),%RAX;  (45) 
-0xd239;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVSS	-0x70(%RBP),%XMM0;  (45) 
-0xd23e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;SUBSS	-0x60(%RBP),%XMM0;  (45) 
-0xd243;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVSS	%XMM0,(%RAX);  (45) 
-0xd247;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOV	-0x110(%RBP),%RAX;  (45) 
-0xd24e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVSS	-0x74(%RBP),%XMM0;  (45) 
-0xd253;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;SUBSS	-0x64(%RBP),%XMM0;  (45) 
-0xd258;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVSS	%XMM0,0x4(%RAX);  (45) 
-0xd25d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOV	-0x110(%RBP),%RAX;  (45) 
-0xd264;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVSS	-0x78(%RBP),%XMM0;  (45) 
-0xd269;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;SUBSS	-0x68(%RBP),%XMM0;  (45) 
-0xd26e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVSS	%XMM0,0x8(%RAX);  (45) 
-0xd273;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOV	$0,%EAX;  (45) 
-0xd278;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;CMP	$0x2,%RAX;    (48) 
-0xd27c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;JLE	d394 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xa01>;    (48) 
-0xd282;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;LEA	-0xb0(%RBP),%RAX;  (45) 
-0xd289;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;MOV	%RAX,%RDI;  (45) 
-0xd28c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;CALL	90ca <__read_mol2_MOD_normalization>;  (45) 
-0xd291;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;MOVD	%XMM0,%EAX;  (45) 
-0xd295;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;MOV	%EAX,-0x7c(%RBP);  (45) 
-0xd298;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;LEA	-0xa4(%RBP),%RAX;  (45) 
-0xd29f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;MOV	%RAX,%RDI;  (45) 
-0xd2a2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;CALL	90ca <__read_mol2_MOD_normalization>;  (45) 
-0xd2a7;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;MOVD	%XMM0,%EAX;  (45) 
-0xd2ab;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;MOV	%EAX,-0x80(%RBP);  (45) 
-0xd2ae;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVSS	-0x7c(%RBP),%XMM0;  (45) 
-0xd2b3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;PXOR	%XMM1,%XMM1;  (45) 
-0xd2b7;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;COMISS	%XMM1,%XMM0;  (45) 
-0xd2ba;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;SETA	%AL;  (45) 
-0xd2bd;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVZX	%AL,%EDX;  (45) 
-0xd2c0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVSS	-0x80(%RBP),%XMM0;  (45) 
-0xd2c5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;PXOR	%XMM1,%XMM1;  (45) 
-0xd2c9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;COMISS	%XMM1,%XMM0;  (45) 
-0xd2cc;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;SETA	%AL;  (45) 
-0xd2cf;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVZX	%AL,%EAX;  (45) 
-0xd2d2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;AND	%EDX,%EAX;  (45) 
-0xd2d4;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;TEST	%EAX,%EAX;  (45) 
-0xd2d6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;JE	ce7f <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x4ec>;  (45) 
-0xd2dc;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;LEA	-0xa4(%RBP),%RDX;  (45) 
-0xd2e3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;LEA	-0xb0(%RBP),%RAX;  (45) 
-0xd2ea;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;MOV	%RDX,%RSI;  (45) 
-0xd2ed;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;MOV	%RAX,%RDI;  (45) 
-0xd2f0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;CALL	9071 <__read_mol2_MOD_dot_product3>;  (45) 
-0xd2f5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;MOVD	%XMM0,%EAX;  (45) 
-0xd2f9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;MOV	%EAX,-0x84(%RBP);  (45) 
-0xd2ff;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;MOVSS	-0x7c(%RBP),%XMM0;  (45) 
-0xd304;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;MULSS	-0x80(%RBP),%XMM0;  (45) 
-0xd309;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;MOVAPS	%XMM0,%XMM1;  (45) 
-0xd30c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;MOVSS	-0x84(%RBP),%XMM0;  (45) 
-0xd314;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;DIVSS	%XMM1,%XMM0;  (45) 
-0xd318;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;MOVD	%XMM0,%EAX;  (45) 
-0xd31c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;MOVD	%EAX,%XMM0;  (45) 
-0xd320;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;CALL	2160 <@plt_start@+0x140>;  (45) 
-0xd325;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;MOVSS	0x697f(%RIP),%XMM1;  (45) 
-0xd32d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;MULSS	%XMM1,%XMM0;  (45) 
-0xd331;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;MOVSS	0x6977(%RIP),%XMM1;  (45) 
-0xd339;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;DIVSS	%XMM1,%XMM0;  (45) 
-0xd33d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:386;MOVSS	%XMM0,-0x88(%RBP);  (45) 
-0xd345;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:387;MOVSS	-0x88(%RBP),%XMM0;  (45) 
-0xd34d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:387;COMISS	0x6960(%RIP),%XMM0;  (45) 
-0xd354;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:387;SETAE	%AL;  (45) 
-0xd357;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:387;MOVZX	%AL,%EDX;  (45) 
-0xd35a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:387;MOVSS	0x6956(%RIP),%XMM0;  (45) 
-0xd362;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:387;COMISS	-0x88(%RBP),%XMM0;  (45) 
-0xd369;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:387;SETAE	%AL;  (45) 
-0xd36c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:387;MOVZX	%AL,%EAX;  (45) 
-0xd36f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:387;AND	%EDX,%EAX;  (45) 
-0xd371;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:387;TEST	%EAX,%EAX;  (45) 
-0xd373;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:387;JE	ce7f <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x4ec>;  (45) 
-0xd394;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOV	-0x110(%RBP),%RDX;    (48) 
-0xd39b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVSS	(%RDX,%RAX,4),%XMM0;    (48) 
-0xd3a0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVSS	%XMM0,-0xa4(%RBP,%RAX,4);    (48) 
-0xd3a9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;ADD	$0x1,%RAX;    (48) 
-0xd3ad;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;JMP	d278 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x8e5>;    (48) 
-0xd3b2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOV	-0x110(%RBP),%RDX;    (47) 
-0xd3b9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVSS	(%RDX,%RAX,4),%XMM0;    (47) 
-0xd3be;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVSS	%XMM0,-0xb0(%RBP,%RAX,4);    (47) 
-0xd3c7;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;ADD	$0x1,%RAX;    (47) 
-0xd3cb;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;JMP	d1b4 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x821>;    (47) 
+0xd0f6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:367;CMP	%R12D,-0x40(%RBP);
+0xd0fa;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:367;JNE	d106 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x4fc>;
+0xd106;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:367;LEA	0x5bcb(%RIP),%RAX;
+0xd10d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:367;MOV	%RAX,%RSI;
+0xd110;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:367;LEA	0x6871(%RIP),%RAX;
+0xd117;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:367;MOV	%RAX,%RDI;
+0xd11a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:367;MOV	$0,%EAX;
+0xd11f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:367;CALL	2080 <@plt_start@+0x60>;
+0xd124;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	-0x40(%RBP),%EAX;
+0xd127;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;CLTQ;
+0xd129;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	-0x118(%RBP),%RDX;
+0xd130;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	0x10(%RDX),%RDX;
+0xd134;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	0x30(%RDX),%RDX;
+0xd138;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;CMP	%RDX,%RAX;
+0xd13b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;JL	d80c <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xc02>;
+0xd141;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	-0x118(%RBP),%RDX;
+0xd148;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	0x10(%RDX),%RDX;
+0xd14c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	0x38(%RDX),%RDX;
+0xd150;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;CMP	%RDX,%RAX;
+0xd153;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;JG	d7d9 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xbcf>;
+0xd159;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	-0x118(%RBP),%RDX;
+0xd160;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	0x10(%RDX),%RDX;
+0xd164;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	(%RDX),%RCX;
+0xd167;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	-0x118(%RBP),%RDX;
+0xd16e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	0x10(%RDX),%RDX;
+0xd172;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	0x8(%RDX),%RDX;
+0xd176;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;ADD	%RAX,%RDX;
+0xd179;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOV	%RDX,%RAX;
+0xd17c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;SAL	$0x4,%RAX;
+0xd180;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;ADD	%RDX,%RAX;
+0xd183;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;SAL	$0x2,%RAX;
+0xd187;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;ADD	%RCX,%RAX;
+0xd18a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;ADD	$0x8,%RAX;
+0xd18e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOVSS	(%RAX),%XMM0;
+0xd192;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:369;MOVSS	%XMM0,-0x70(%RBP);
+0xd197;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	-0x40(%RBP),%EAX;
+0xd19a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;CLTQ;
+0xd19c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	-0x118(%RBP),%RDX;
+0xd1a3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	0x10(%RDX),%RDX;
+0xd1a7;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	0x30(%RDX),%RDX;
+0xd1ab;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;CMP	%RDX,%RAX;
+0xd1ae;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;JL	d7a6 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xb9c>;
+0xd1b4;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	-0x118(%RBP),%RDX;
+0xd1bb;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	0x10(%RDX),%RDX;
+0xd1bf;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	0x38(%RDX),%RDX;
+0xd1c3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;CMP	%RDX,%RAX;
+0xd1c6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;JG	d773 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xb69>;
+0xd1cc;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	-0x118(%RBP),%RDX;
+0xd1d3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	0x10(%RDX),%RDX;
+0xd1d7;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	(%RDX),%RCX;
+0xd1da;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	-0x118(%RBP),%RDX;
+0xd1e1;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	0x10(%RDX),%RDX;
+0xd1e5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	0x8(%RDX),%RDX;
+0xd1e9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;ADD	%RAX,%RDX;
+0xd1ec;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOV	%RDX,%RAX;
+0xd1ef;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;SAL	$0x4,%RAX;
+0xd1f3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;ADD	%RDX,%RAX;
+0xd1f6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;SAL	$0x2,%RAX;
+0xd1fa;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;ADD	%RCX,%RAX;
+0xd1fd;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;ADD	$0xc,%RAX;
+0xd201;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOVSS	(%RAX),%XMM0;
+0xd205;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:370;MOVSS	%XMM0,-0x74(%RBP);
+0xd20a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	-0x40(%RBP),%EAX;
+0xd20d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;CLTQ;
+0xd20f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	-0x118(%RBP),%RDX;
+0xd216;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x10(%RDX),%RDX;
+0xd21a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x30(%RDX),%RDX;
+0xd21e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;CMP	%RDX,%RAX;
+0xd221;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;JL	d740 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xb36>;
+0xd227;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	-0x118(%RBP),%RDX;
+0xd22e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x10(%RDX),%RDX;
+0xd232;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x38(%RDX),%RDX;
+0xd236;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;CMP	%RDX,%RAX;
+0xd239;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;JG	d70d <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xb03>;
+0xd23f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	-0x118(%RBP),%RDX;
+0xd246;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x10(%RDX),%RDX;
+0xd24a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	(%RDX),%RCX;
+0xd24d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	-0x118(%RBP),%RDX;
+0xd254;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x10(%RDX),%RDX;
+0xd258;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	0x8(%RDX),%RDX;
+0xd25c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;ADD	%RAX,%RDX;
+0xd25f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOV	%RDX,%RAX;
+0xd262;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;SAL	$0x4,%RAX;
+0xd266;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;ADD	%RDX,%RAX;
+0xd269;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;SAL	$0x2,%RAX;
+0xd26d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;ADD	%RCX,%RAX;
+0xd270;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;ADD	$0x10,%RAX;
+0xd274;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOVSS	(%RAX),%XMM0;
+0xd278;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:371;MOVSS	%XMM0,-0x78(%RBP);
+0xd27d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x3c(%RBP),%EAX;
+0xd280;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;CLTQ;
+0xd282;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RDX;
+0xd289;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RDX),%RDX;
+0xd28d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x30(%RDX),%RDX;
+0xd291;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;CMP	%RDX,%RAX;
+0xd294;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;JL	d6da <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xad0>;
+0xd29a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RDX;
+0xd2a1;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RDX),%RDX;
+0xd2a5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x38(%RDX),%RDX;
+0xd2a9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;CMP	%RDX,%RAX;
+0xd2ac;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;JG	d6a7 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xa9d>;
+0xd2b2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x40(%RBP),%EDX;
+0xd2b5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOVSXD	%EDX,%RDX;
+0xd2b8;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RCX;
+0xd2bf;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RCX),%RCX;
+0xd2c3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x30(%RCX),%RCX;
+0xd2c7;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;CMP	%RCX,%RDX;
+0xd2ca;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;JL	d677 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xa6d>;
+0xd2d0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RCX;
+0xd2d7;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RCX),%RCX;
+0xd2db;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x38(%RCX),%RCX;
+0xd2df;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;CMP	%RCX,%RDX;
+0xd2e2;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;JG	d647 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xa3d>;
+0xd2e8;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RCX;
+0xd2ef;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RCX),%RCX;
+0xd2f3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	(%RCX),%RSI;
+0xd2f6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RCX;
+0xd2fd;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RCX),%RCX;
+0xd301;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x8(%RCX),%RCX;
+0xd305;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;ADD	%RDX,%RCX;
+0xd308;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	%RCX,%RDX;
+0xd30b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;SAL	$0x4,%RDX;
+0xd30f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;ADD	%RCX,%RDX;
+0xd312;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;SAL	$0x2,%RDX;
+0xd316;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;ADD	%RSI,%RDX;
+0xd319;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RCX;
+0xd320;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RCX),%RCX;
+0xd324;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	(%RCX),%RSI;
+0xd327;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RCX;
+0xd32e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x10(%RCX),%RCX;
+0xd332;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	0x8(%RCX),%RCX;
+0xd336;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;ADD	%RAX,%RCX;
+0xd339;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	%RCX,%RAX;
+0xd33c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;SAL	$0x4,%RAX;
+0xd340;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;ADD	%RCX,%RAX;
+0xd343;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;SAL	$0x2,%RAX;
+0xd347;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;ADD	%RSI,%RAX;
+0xd34a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	%RDX,%RSI;
+0xd34d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	%RAX,%RDI;
+0xd350;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;CALL	7fbb <__bond_utils_MOD_is_bonded>;
+0xd355;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	-0x118(%RBP),%RDX;
+0xd35c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:373;MOV	%EAX,0x44(%RDX);
+0xd35f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	-0x118(%RBP),%RAX;
+0xd366;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;MOV	0x44(%RAX),%EAX;
+0xd369;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;TEST	%EAX,%EAX;
+0xd36b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:375;JE	d0f6 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x4ec>;
+0xd371;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVQ	$0,-0x100(%RBP);
+0xd37c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVQ	$0,-0xf8(%RBP);
+0xd387;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVQ	$0x4,-0x100(%RBP);
+0xd392;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVB	$0x1,-0xf4(%RBP);
+0xd399;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVB	$0x3,-0xf3(%RBP);
+0xd3a0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVQ	$0x1,-0xe8(%RBP);
+0xd3ab;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVQ	$0,-0xe0(%RBP);
+0xd3b6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVQ	$0x2,-0xd8(%RBP);
+0xd3c1;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVQ	$0x4,-0xf0(%RBP);
+0xd3cc;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;LEA	-0xbc(%RBP),%RAX;
+0xd3d3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOV	%RAX,-0x110(%RBP);
+0xd3da;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVQ	$0,-0x108(%RBP);
+0xd3e5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOV	-0x110(%RBP),%RAX;
+0xd3ec;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVSS	-0x54(%RBP),%XMM0;
+0xd3f1;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;SUBSS	-0x60(%RBP),%XMM0;
+0xd3f6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVSS	%XMM0,(%RAX);
+0xd3fa;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOV	-0x110(%RBP),%RAX;
+0xd401;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVSS	-0x58(%RBP),%XMM0;
+0xd406;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;SUBSS	-0x64(%RBP),%XMM0;
+0xd40b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVSS	%XMM0,0x4(%RAX);
+0xd410;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOV	-0x110(%RBP),%RAX;
+0xd417;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVSS	-0x5c(%RBP),%XMM0;
+0xd41c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;SUBSS	-0x68(%RBP),%XMM0;
+0xd421;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVSS	%XMM0,0x8(%RAX);
+0xd426;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOV	$0,%EAX;
+0xd42b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;CMP	$0x2,%RAX;  (48) 
+0xd42f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;JLE	d629 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xa1f>;  (48) 
+0xd435;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVQ	$0,-0x100(%RBP);
+0xd440;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVQ	$0,-0xf8(%RBP);
+0xd44b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVQ	$0x4,-0x100(%RBP);
+0xd456;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVB	$0x1,-0xf4(%RBP);
+0xd45d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVB	$0x3,-0xf3(%RBP);
+0xd464;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVQ	$0x1,-0xe8(%RBP);
+0xd46f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVQ	$0,-0xe0(%RBP);
+0xd47a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVQ	$0x2,-0xd8(%RBP);
+0xd485;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVQ	$0x4,-0xf0(%RBP);
+0xd490;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;LEA	-0xc8(%RBP),%RAX;
+0xd497;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOV	%RAX,-0x110(%RBP);
+0xd49e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVQ	$0,-0x108(%RBP);
+0xd4a9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOV	-0x110(%RBP),%RAX;
+0xd4b0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVSS	-0x70(%RBP),%XMM0;
+0xd4b5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;SUBSS	-0x60(%RBP),%XMM0;
+0xd4ba;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVSS	%XMM0,(%RAX);
+0xd4be;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOV	-0x110(%RBP),%RAX;
+0xd4c5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVSS	-0x74(%RBP),%XMM0;
+0xd4ca;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;SUBSS	-0x64(%RBP),%XMM0;
+0xd4cf;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVSS	%XMM0,0x4(%RAX);
+0xd4d4;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOV	-0x110(%RBP),%RAX;
+0xd4db;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVSS	-0x78(%RBP),%XMM0;
+0xd4e0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;SUBSS	-0x68(%RBP),%XMM0;
+0xd4e5;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVSS	%XMM0,0x8(%RAX);
+0xd4ea;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOV	$0,%EAX;
+0xd4ef;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;CMP	$0x2,%RAX;  (49) 
+0xd4f3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;JLE	d60b <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0xa01>;  (49) 
+0xd4f9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;LEA	-0xb0(%RBP),%RAX;
+0xd500;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOV	%RAX,%RDI;
+0xd503;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;CALL	9341 <__read_mol2_MOD_normalization>;
+0xd508;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOVD	%XMM0,%EAX;
+0xd50c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:380;MOV	%EAX,-0x7c(%RBP);
+0xd50f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;LEA	-0xa4(%RBP),%RAX;
+0xd516;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOV	%RAX,%RDI;
+0xd519;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;CALL	9341 <__read_mol2_MOD_normalization>;
+0xd51e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOVD	%XMM0,%EAX;
+0xd522;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:381;MOV	%EAX,-0x80(%RBP);
+0xd525;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;MOVSS	-0x7c(%RBP),%XMM0;
+0xd52a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;PXOR	%XMM1,%XMM1;
+0xd52e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;COMISS	%XMM1,%XMM0;
+0xd531;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;SETA	%AL;
+0xd534;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;MOVZX	%AL,%EDX;
+0xd537;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;MOVSS	-0x80(%RBP),%XMM0;
+0xd53c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;PXOR	%XMM1,%XMM1;
+0xd540;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;COMISS	%XMM1,%XMM0;
+0xd543;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;SETA	%AL;
+0xd546;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;MOVZX	%AL,%EAX;
+0xd549;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;AND	%EDX,%EAX;
+0xd54b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;TEST	%EAX,%EAX;
+0xd54d;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:382;JE	d0f6 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x4ec>;
+0xd553;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;LEA	-0xa4(%RBP),%RDX;
+0xd55a;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;LEA	-0xb0(%RBP),%RAX;
+0xd561;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;MOV	%RDX,%RSI;
+0xd564;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;MOV	%RAX,%RDI;
+0xd567;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;CALL	92e8 <__read_mol2_MOD_dot_product3>;
+0xd56c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;MOVD	%XMM0,%EAX;
+0xd570;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:383;MOV	%EAX,-0x84(%RBP);
+0xd576;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVSS	-0x7c(%RBP),%XMM0;
+0xd57b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MULSS	-0x80(%RBP),%XMM0;
+0xd580;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVAPS	%XMM0,%XMM1;
+0xd583;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVSS	-0x84(%RBP),%XMM0;
+0xd58b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;DIVSS	%XMM1,%XMM0;
+0xd58f;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVD	%XMM0,%EAX;
+0xd593;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVD	%EAX,%XMM0;
+0xd597;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;CALL	2170 <@plt_start@+0x150>;
+0xd59c;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVSS	0x6990(%RIP),%XMM1;
+0xd5a4;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MULSS	%XMM1,%XMM0;
+0xd5a8;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVSS	0x6988(%RIP),%XMM1;
+0xd5b0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;DIVSS	%XMM1,%XMM0;
+0xd5b4;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:384;MOVSS	%XMM0,-0x88(%RBP);
+0xd5bc;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;MOVSS	-0x88(%RBP),%XMM0;
+0xd5c4;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;COMISS	0x6971(%RIP),%XMM0;
+0xd5cb;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;SETAE	%AL;
+0xd5ce;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;MOVZX	%AL,%EDX;
+0xd5d1;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;MOVSS	0x6967(%RIP),%XMM0;
+0xd5d9;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;COMISS	-0x88(%RBP),%XMM0;
+0xd5e0;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;SETAE	%AL;
+0xd5e3;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;MOVZX	%AL,%EAX;
+0xd5e6;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;AND	%EDX,%EAX;
+0xd5e8;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;TEST	%EAX,%EAX;
+0xd5ea;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:385;JE	d0f6 <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x4ec>;
+0xd60b;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOV	-0x110(%RBP),%RDX;  (49) 
+0xd612;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVSS	(%RDX,%RAX,4),%XMM0;  (49) 
+0xd617;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;MOVSS	%XMM0,-0xa4(%RBP,%RAX,4);  (49) 
+0xd620;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;ADD	$0x1,%RAX;  (49) 
+0xd624;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:379;JMP	d4ef <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x8e5>;  (49) 
+0xd629;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOV	-0x110(%RBP),%RDX;  (48) 
+0xd630;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVSS	(%RDX,%RAX,4),%XMM0;  (48) 
+0xd635;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;MOVSS	%XMM0,-0xb0(%RBP,%RAX,4);  (48) 
+0xd63e;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;ADD	$0x1,%RAX;  (48) 
+0xd642;/home/notgard/chps1002/genetic_docking/part2/complete_mol2_omp_mod.f90:378;JMP	d42b <__read_mol2_MOD_detect_hydrogen_bonds_between._omp_fn.0+0x821>;  (48) 

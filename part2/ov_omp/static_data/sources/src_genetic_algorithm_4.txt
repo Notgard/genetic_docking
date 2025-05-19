@@ -1,0 +1,10 @@
+/home/notgard/chps1002/genetic_docking/part2/genetic_algorithm.f90: 340 - 346
+--------------------------------------------------------------------------------
+
+340:    do i = 1, parent1%nb_atoms
+341:       if (i <= crossover_point) then
+342:          child1%atoms(i) = parent1%atoms(i)
+343:          child2%atoms(i) = parent2%atoms(i)
+344:       else
+345:          child1%atoms(i) = parent2%atoms(i)
+346:          child2%atoms(i) = parent1%atoms(i)

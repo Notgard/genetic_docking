@@ -97,25 +97,25 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input_ ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_590" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_530" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_591" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_531" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
 function set_ldbal_input_ () {
   var selector_run  = document.getElementById ("ldbal_select_run_");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_590").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_590").getBoundingClientRect().width);
-  document.getElementById("chart_cat_591").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_591").getBoundingClientRect().width);
+  document.getElementById("chart_cat_530").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_530").getBoundingClientRect().width);
+  document.getElementById("chart_cat_531").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_531").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6097'];
-  var data = [{value:3.3037152290344,offset:0, i:0,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65737'];
+  var data = [{value:1.724135518074,offset:0, i:0,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -125,7 +125,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_590')
+  const svg = d3.select('#chart_cat_530')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -181,13 +181,13 @@ $(document).ready(function(){
     .text("Coverage (%)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_590')
+    .attr('id', 'zoom_chart_530')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_590_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_530_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -229,12 +229,12 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_590_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
+$("#zoom_chart_530_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
   }
   if (selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6097'];
-  var data = [{value:0.7250000834465,offset:0, i:0,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65737'];
+  var data = [{value:0.86499989032745,offset:0, i:0,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -244,7 +244,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_591')
+  const svg = d3.select('#chart_cat_531')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -300,13 +300,13 @@ $(document).ready(function(){
     .text("Time (s)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_591')
+    .attr('id', 'zoom_chart_531')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_591_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_531_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -348,7 +348,7 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_591_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
+$("#zoom_chart_531_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
   }
 }
 function set_previous_ldbal_input_ () {
@@ -383,25 +383,25 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input_sorted ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_594" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_534" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_595" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_535" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
 function set_ldbal_input_sorted () {
   var selector_run  = document.getElementById ("ldbal_select_run_sorted");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_594").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_594").getBoundingClientRect().width);
-  document.getElementById("chart_cat_595").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_595").getBoundingClientRect().width);
+  document.getElementById("chart_cat_534").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_534").getBoundingClientRect().width);
+  document.getElementById("chart_cat_535").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_535").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6097'];
-  var data = [{value:3.3037152290344,offset:0, i:0,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65737'];
+  var data = [{value:1.724135518074,offset:0, i:0,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -411,7 +411,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_594')
+  const svg = d3.select('#chart_cat_534')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -467,13 +467,13 @@ $(document).ready(function(){
     .text("Coverage (%)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_594')
+    .attr('id', 'zoom_chart_534')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_594_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_534_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -515,12 +515,12 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_594_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
+$("#zoom_chart_534_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
   }
   if (selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6097'];
-  var data = [{value:0.7250000834465,offset:0, i:0,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65737'];
+  var data = [{value:0.86499989032745,offset:0, i:0,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -530,7 +530,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_595')
+  const svg = d3.select('#chart_cat_535')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -586,13 +586,13 @@ $(document).ready(function(){
     .text("Time (s)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_595')
+    .attr('id', 'zoom_chart_535')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_595_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_535_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -634,7 +634,7 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_595_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
+$("#zoom_chart_535_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
   }
 }
 function set_previous_ldbal_input_sorted () {
@@ -669,25 +669,25 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input_all ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_598" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_538" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_599" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_539" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
 function set_ldbal_input_all () {
   var selector_run  = document.getElementById ("ldbal_select_run_all");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_598").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_598").getBoundingClientRect().width);
-  document.getElementById("chart_cat_599").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_599").getBoundingClientRect().width);
+  document.getElementById("chart_cat_538").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_538").getBoundingClientRect().width);
+  document.getElementById("chart_cat_539").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_539").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6097','LAPTOP-KCN8A1JH_6097_6110','LAPTOP-KCN8A1JH_6097_6111','LAPTOP-KCN8A1JH_6097_6112','LAPTOP-KCN8A1JH_6097_6113','LAPTOP-KCN8A1JH_6097_6114','LAPTOP-KCN8A1JH_6097_6115','LAPTOP-KCN8A1JH_6097_6116','LAPTOP-KCN8A1JH_6097_6117','LAPTOP-KCN8A1JH_6097_6118','LAPTOP-KCN8A1JH_6097_6119','LAPTOP-KCN8A1JH_6097_6120','LAPTOP-KCN8A1JH_6097_6121','LAPTOP-KCN8A1JH_6097_6122','LAPTOP-KCN8A1JH_6097_6123','LAPTOP-KCN8A1JH_6097_6124','LAPTOP-KCN8A1JH_6097_6125','LAPTOP-KCN8A1JH_6097_6126','LAPTOP-KCN8A1JH_6097_6127','LAPTOP-KCN8A1JH_6097_6128','LAPTOP-KCN8A1JH_6097_6129','LAPTOP-KCN8A1JH_6097_6130','LAPTOP-KCN8A1JH_6097_6131','LAPTOP-KCN8A1JH_6097_6132','LAPTOP-KCN8A1JH_6097_6133','LAPTOP-KCN8A1JH_6097_6134','LAPTOP-KCN8A1JH_6097_6135','LAPTOP-KCN8A1JH_6097_6136','LAPTOP-KCN8A1JH_6097_6137','LAPTOP-KCN8A1JH_6097_6138','LAPTOP-KCN8A1JH_6097_6139','LAPTOP-KCN8A1JH_6097_6140'];
-  var data = [{value:3.3037152290344,offset:0, i:0,color:"#333399"},{value:0,offset:0, i:1,color:"#333399"},{value:0,offset:0, i:2,color:"#333399"},{value:0,offset:0, i:3,color:"#333399"},{value:0,offset:0, i:4,color:"#333399"},{value:0,offset:0, i:5,color:"#333399"},{value:0,offset:0, i:6,color:"#333399"},{value:0,offset:0, i:7,color:"#333399"},{value:0,offset:0, i:8,color:"#333399"},{value:0,offset:0, i:9,color:"#333399"},{value:0,offset:0, i:10,color:"#333399"},{value:0,offset:0, i:11,color:"#333399"},{value:0,offset:0, i:12,color:"#333399"},{value:0,offset:0, i:13,color:"#333399"},{value:0,offset:0, i:14,color:"#333399"},{value:0,offset:0, i:15,color:"#333399"},{value:0,offset:0, i:16,color:"#333399"},{value:0,offset:0, i:17,color:"#333399"},{value:0,offset:0, i:18,color:"#333399"},{value:0,offset:0, i:19,color:"#333399"},{value:0,offset:0, i:20,color:"#333399"},{value:0,offset:0, i:21,color:"#333399"},{value:0,offset:0, i:22,color:"#333399"},{value:0,offset:0, i:23,color:"#333399"},{value:0,offset:0, i:24,color:"#333399"},{value:0,offset:0, i:25,color:"#333399"},{value:0,offset:0, i:26,color:"#333399"},{value:0,offset:0, i:27,color:"#333399"},{value:0,offset:0, i:28,color:"#333399"},{value:0,offset:0, i:29,color:"#333399"},{value:0,offset:0, i:30,color:"#333399"},{value:0,offset:0, i:31,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65737','LAPTOP-KCN8A1JH_65737_65750','LAPTOP-KCN8A1JH_65737_65751','LAPTOP-KCN8A1JH_65737_65752'];
+  var data = [{value:1.724135518074,offset:0, i:0,color:"#333399"},{value:0,offset:0, i:1,color:"#333399"},{value:0,offset:0, i:2,color:"#333399"},{value:0,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -697,7 +697,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_598')
+  const svg = d3.select('#chart_cat_538')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -753,13 +753,13 @@ $(document).ready(function(){
     .text("Coverage (%)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_598')
+    .attr('id', 'zoom_chart_538')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_598_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_538_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -801,12 +801,12 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_598_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
+$("#zoom_chart_538_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
   }
   if (selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['LAPTOP-KCN8A1JH_6097_6097','LAPTOP-KCN8A1JH_6097_6110','LAPTOP-KCN8A1JH_6097_6111','LAPTOP-KCN8A1JH_6097_6112','LAPTOP-KCN8A1JH_6097_6113','LAPTOP-KCN8A1JH_6097_6114','LAPTOP-KCN8A1JH_6097_6115','LAPTOP-KCN8A1JH_6097_6116','LAPTOP-KCN8A1JH_6097_6117','LAPTOP-KCN8A1JH_6097_6118','LAPTOP-KCN8A1JH_6097_6119','LAPTOP-KCN8A1JH_6097_6120','LAPTOP-KCN8A1JH_6097_6121','LAPTOP-KCN8A1JH_6097_6122','LAPTOP-KCN8A1JH_6097_6123','LAPTOP-KCN8A1JH_6097_6124','LAPTOP-KCN8A1JH_6097_6125','LAPTOP-KCN8A1JH_6097_6126','LAPTOP-KCN8A1JH_6097_6127','LAPTOP-KCN8A1JH_6097_6128','LAPTOP-KCN8A1JH_6097_6129','LAPTOP-KCN8A1JH_6097_6130','LAPTOP-KCN8A1JH_6097_6131','LAPTOP-KCN8A1JH_6097_6132','LAPTOP-KCN8A1JH_6097_6133','LAPTOP-KCN8A1JH_6097_6134','LAPTOP-KCN8A1JH_6097_6135','LAPTOP-KCN8A1JH_6097_6136','LAPTOP-KCN8A1JH_6097_6137','LAPTOP-KCN8A1JH_6097_6138','LAPTOP-KCN8A1JH_6097_6139','LAPTOP-KCN8A1JH_6097_6140'];
-  var data = [{value:0.7250000834465,offset:0, i:0,color:"#333399"},{value:0,offset:0, i:1,color:"#333399"},{value:0,offset:0, i:2,color:"#333399"},{value:0,offset:0, i:3,color:"#333399"},{value:0,offset:0, i:4,color:"#333399"},{value:0,offset:0, i:5,color:"#333399"},{value:0,offset:0, i:6,color:"#333399"},{value:0,offset:0, i:7,color:"#333399"},{value:0,offset:0, i:8,color:"#333399"},{value:0,offset:0, i:9,color:"#333399"},{value:0,offset:0, i:10,color:"#333399"},{value:0,offset:0, i:11,color:"#333399"},{value:0,offset:0, i:12,color:"#333399"},{value:0,offset:0, i:13,color:"#333399"},{value:0,offset:0, i:14,color:"#333399"},{value:0,offset:0, i:15,color:"#333399"},{value:0,offset:0, i:16,color:"#333399"},{value:0,offset:0, i:17,color:"#333399"},{value:0,offset:0, i:18,color:"#333399"},{value:0,offset:0, i:19,color:"#333399"},{value:0,offset:0, i:20,color:"#333399"},{value:0,offset:0, i:21,color:"#333399"},{value:0,offset:0, i:22,color:"#333399"},{value:0,offset:0, i:23,color:"#333399"},{value:0,offset:0, i:24,color:"#333399"},{value:0,offset:0, i:25,color:"#333399"},{value:0,offset:0, i:26,color:"#333399"},{value:0,offset:0, i:27,color:"#333399"},{value:0,offset:0, i:28,color:"#333399"},{value:0,offset:0, i:29,color:"#333399"},{value:0,offset:0, i:30,color:"#333399"},{value:0,offset:0, i:31,color:"#333399"}];
+  var ordinals = ['LAPTOP-KCN8A1JH_65737_65737','LAPTOP-KCN8A1JH_65737_65750','LAPTOP-KCN8A1JH_65737_65751','LAPTOP-KCN8A1JH_65737_65752'];
+  var data = [{value:0.86499989032745,offset:0, i:0,color:"#333399"},{value:0,offset:0, i:1,color:"#333399"},{value:0,offset:0, i:2,color:"#333399"},{value:0,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -816,7 +816,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_599')
+  const svg = d3.select('#chart_cat_539')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -872,13 +872,13 @@ $(document).ready(function(){
     .text("Time (s)");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_599')
+    .attr('id', 'zoom_chart_539')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i){ return 'zoom_chart_599_'+i;})
+    .attr('id', function (d, i){ return 'zoom_chart_539_'+i;})
     .attr('x', function(d, i){
       return xScale(d.i) - xBand.bandwidth()*0.9/2
     })
@@ -920,7 +920,7 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_599_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_6097_6097.html");});
+$("#zoom_chart_539_0").click( function () {window.open("../topo/run_0_LAPTOP-KCN8A1JH_65737_65737.html");});
   }
 }
 function set_previous_ldbal_input_all () {
